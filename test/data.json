@@ -1,0 +1,1600 @@
+{
+  "_id": "tt0903747",
+  "imdb_id": "tt0903747",
+  "tvdb_id": "81189",
+  "title": "Breaking Bad",
+  "year": "2008",
+  "slug": "breaking-bad",
+  "synopsis": "Walter White, a struggling high school chemistry teacher, is diagnosed with advanced lung cancer. He turns to a life of crime, producing and selling methamphetamine accompanied by a former student, Jesse Pinkman, with the aim of securing his family's financial future before he dies.",
+  "runtime": "45",
+  "rating": {
+    "percentage": 94.4425,
+    "votes": 100,
+    "loved": 100,
+    "hated": 100
+  },
+  "country": "us",
+  "network": "AMC",
+  "air_day": "Sunday",
+  "air_time": "21:00",
+  "status": "ended",
+  "num_seasons": 5,
+  "last_updated": 1452996147540,
+  "__v": 0,
+  "images": {
+    "banner": "https://walter.trakt.us/images/shows/000/001/388/banners/original/c53872a7e2.jpg",
+    "fanart": "https://walter.trakt.us/images/shows/000/001/388/fanarts/original/fdbc0cb02d.jpg",
+    "poster": "https://walter.trakt.us/images/shows/000/001/388/posters/original/fa39b59954.jpg"
+  },
+  "episodes": [
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:65QF66ESNKNUKSJB6HAQUKFDM4ZK6D7V&dn=Breaking.Bad.S04E01.Box.Cutter.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:65QF66ESNKNUKSJB6HAQUKFDM4ZK6D7V&dn=Breaking.Bad.S04E01.Box.Cutter.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1310950800,
+      "date_based": false,
+      "overview": "Walt and Jesse face the deadly consequences of their actions. Skyler deals with a puzzling disappearance, as Marie struggles to help Hank with his recovery.",
+      "title": "Box Cutter",
+      "episode": 1,
+      "season": 4,
+      "tvdb_id": 2639411
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:VLJMUTDVPNCB5VRGQYJAEIBGU6FU7PX2&dn=Breaking.Bad.S04E02.REPACK.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:VLJMUTDVPNCB5VRGQYJAEIBGU6FU7PX2&dn=Breaking.Bad.S04E02.REPACK.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1311555600,
+      "date_based": false,
+      "overview": "Walt attempts to form a new alliance as he plans his next move. Skyler pushes Walt towards a business opportunity, in hopes of protecting the family.",
+      "title": "Thirty-Eight Snub",
+      "episode": 2,
+      "season": 4,
+      "tvdb_id": 4103847
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SWIJAIMHU3FBGPO6D7AGFCHBN7RFWZ5H&dn=Breaking.Bad.S04E03.Open.House.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SWIJAIMHU3FBGPO6D7AGFCHBN7RFWZ5H&dn=Breaking.Bad.S04E03.Open.House.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1312160400,
+      "date_based": false,
+      "overview": "Events spiral out of control at Jesse’s place. Skyler reluctantly asks for Saul’s help. Marie returns to an old pastime and a friend asks Hank for help.",
+      "title": "Open House",
+      "episode": 3,
+      "season": 4,
+      "tvdb_id": 4110088
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:PGZJSQDWRCSGUJUPWFPLGVH3EJBPZQYE&dn=Breaking.Bad.S04E04.Bullet.Points.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:PGZJSQDWRCSGUJUPWFPLGVH3EJBPZQYE&dn=Breaking.Bad.S04E04.Bullet.Points.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1312765200,
+      "date_based": false,
+      "overview": "The Cartel takes steps to gain the upper hand. Walt and Skyler share an embarrassing secret with the rest of the family. Jesse’s activities draw unwanted attention.",
+      "title": "Bullet Points",
+      "episode": 4,
+      "season": 4,
+      "tvdb_id": 4123350
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ISOBOPBTX6ECP3VIXN6GZFEIEOCSZVBN&dn=Breaking.Bad.S04E05.Shotgun.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ISOBOPBTX6ECP3VIXN6GZFEIEOCSZVBN&dn=Breaking.Bad.S04E05.Shotgun.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1313370000,
+      "date_based": false,
+      "overview": "When Jesse goes missing, Walt fears the worst. Skyler has an unlikely reunion. Hank shares some bad news with Detective Tim Roberts.",
+      "title": "Shotgun",
+      "episode": 5,
+      "season": 4,
+      "tvdb_id": 4123351
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3DEXKBSVL6I7TK4KTNJC6M6EB2X6TQBH&dn=Breaking.Bad.S04E06.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3DEXKBSVL6I7TK4KTNJC6M6EB2X6TQBH&dn=Breaking.Bad.S04E06.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1313974800,
+      "date_based": false,
+      "overview": "Skyler makes an unsettling discovery. Walter, Jr. pushes his dad into a questionable purchase. Jesse offers Mike some unexpected help.",
+      "title": "Cornered",
+      "episode": 6,
+      "season": 4,
+      "tvdb_id": 4123352
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IXDVQ4ZR4XASKV5PYX5HYBKV4XFO4LPZ&dn=Breaking.Bad.S04E07.Problem.Dog.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IXDVQ4ZR4XASKV5PYX5HYBKV4XFO4LPZ&dn=Breaking.Bad.S04E07.Problem.Dog.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1314579600,
+      "date_based": false,
+      "overview": "A frustrated Walt gambles on a risky new plan.  Skyler's business venture hits a snag.  Hank recruits Walter, Jr. for an unusual outing.",
+      "title": "Problem Dog",
+      "episode": 7,
+      "season": 4,
+      "tvdb_id": 4123353
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3CJKREMM762ZURQVPAJPK67D5BWXXR2A&dn=Breaking.Bad.S04E08.HDTV.XviD-TLA&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3CJKREMM762ZURQVPAJPK67D5BWXXR2A&dn=Breaking.Bad.S04E08.HDTV.XviD-TLA&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1315184400,
+      "date_based": false,
+      "overview": "Skyler develops an unusual solution to her money troubles. Hank enlists Walt to investigate a theory. Walt’s impatience with Jesse grows.",
+      "title": "Hermanos",
+      "episode": 8,
+      "season": 4,
+      "tvdb_id": 4127161
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3BRDOV2FGBSA5UJJ3ZHT4D2B2MZ5KA7J&dn=Breaking.Bad.S04E09.HDTV.XviD-TLA&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:3BRDOV2FGBSA5UJJ3ZHT4D2B2MZ5KA7J&dn=Breaking.Bad.S04E09.HDTV.XviD-TLA&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1315789200,
+      "date_based": false,
+      "overview": "Skyler's past mistakes come back to haunt her. Gus takes action to thwart his rivals. Jesse seeks Walt's help, with mixed results.",
+      "title": "Bug",
+      "episode": 9,
+      "season": 4,
+      "tvdb_id": 4145291
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:FEL7GOV5PDOMKJIPSKRE4QT62I7UGMXG&dn=Breaking.Bad.S04E10.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:FEL7GOV5PDOMKJIPSKRE4QT62I7UGMXG&dn=Breaking.Bad.S04E10.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1316394000,
+      "date_based": false,
+      "overview": "Walt's family worries when he doesn't turn up for Walter, Jr.'s 16th birthday.  Jesse is forced to put his lab skills to the test without Mr. White's help.",
+      "title": "Salud",
+      "episode": 10,
+      "season": 4,
+      "tvdb_id": 4157318
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:RBXXIOND2BEFFRIKFEOPGF62MHCTKU55&dn=Breaking.Bad.S04E11.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:RBXXIOND2BEFFRIKFEOPGF62MHCTKU55&dn=Breaking.Bad.S04E11.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1316998800,
+      "date_based": false,
+      "overview": "Walt takes drastic action to protect his secret and Gus. Skyler's efforts to solve Ted's financial problems hit a wall.",
+      "title": "Crawl Space",
+      "episode": 11,
+      "season": 4,
+      "tvdb_id": 4159118
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IJXCX6UKM7VTHPIPDRKI5JCHPSYQ62MY&dn=Breaking.Bad.S04E12.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IJXCX6UKM7VTHPIPDRKI5JCHPSYQ62MY&dn=Breaking.Bad.S04E12.HDTV.XviD-ASAP&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1317603600,
+      "date_based": false,
+      "overview": "Hank pushes Gomez to pursue one last lead, while Walt struggles to protect the family. Jesse gets alarming news and rushes to meet with Mr. White.",
+      "title": "End Times",
+      "episode": 12,
+      "season": 4,
+      "tvdb_id": 4164049
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ADQFR5TCTIM3IJCYV5G6UX3LTYXL5DRF&dn=Breaking.Bad.S04E13.Face.Off.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ADQFR5TCTIM3IJCYV5G6UX3LTYXL5DRF&dn=Breaking.Bad.S04E13.Face.Off.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1318208400,
+      "date_based": false,
+      "overview": "Walt and Jesse team up to take on Gus. With Saul's help, Walt finds an unexpected ally.",
+      "title": "Face Off",
+      "episode": 13,
+      "season": 4,
+      "tvdb_id": 4164050
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SD3M4FX2FGFEXUF5DJ7WJTKS6PWNUMQU&dn=Breaking.Bad.S02E01.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SD3M4FX2FGFEXUF5DJ7WJTKS6PWNUMQU&dn=Breaking.Bad.S02E01.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1236560400,
+      "date_based": false,
+      "overview": "Walt and Jesse are vividly reminded of Tuco’s volatile nature, and try to figure a way out of their business partnership. Hank attempts to mend fences between the estranged Marie and Skyler.",
+      "title": "Seven Thirty-Seven",
+      "episode": 1,
+      "season": 2,
+      "tvdb_id": 438912
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:E3T5V35WAYDSA7AS3FGBIWTDCQ2WXCVG&dn=Breaking.Bad.S02E02.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:E3T5V35WAYDSA7AS3FGBIWTDCQ2WXCVG&dn=Breaking.Bad.S02E02.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1237165200,
+      "date_based": false,
+      "overview": "Walt and Jesse find themselves in close quarters with an unhinged Tuco. Marie and Hank comfort Skyler, who is distraught over Walt’s disappearance. Hank pays a visit to Mrs. Pinkman on some not-so-official business.",
+      "title": "Grilled",
+      "episode": 2,
+      "season": 2,
+      "tvdb_id": 438913
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UDXUM7XXXZXFR4IELXONSZNNKUMYFF7G&dn=Breaking.Bad.S02E03.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UDXUM7XXXZXFR4IELXONSZNNKUMYFF7G&dn=Breaking.Bad.S02E03.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1237770000,
+      "date_based": false,
+      "overview": "Walt and Jesse cover their tracks, but as a result, both of their financial situations suffer. Meanwhile, Hank and his DEA colleagues may have a break in their meth investigation.",
+      "title": "Bit by a Dead Bee",
+      "episode": 3,
+      "season": 2,
+      "tvdb_id": 438914
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:DQ5X5MPGBQVGBOBOAAC5CAHC65G46HYO&dn=Breaking.Bad.S02E04.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:DQ5X5MPGBQVGBOBOAAC5CAHC65G46HYO&dn=Breaking.Bad.S02E04.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1238374800,
+      "date_based": false,
+      "overview": "Walt tries to reconnect with his family. Still suspicious of her husband's actions, Skyler keeps her distance. Jesse finds himself without a place to live and struggles to cope.",
+      "title": "Down",
+      "episode": 4,
+      "season": 2,
+      "tvdb_id": 438915
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:RWGXR2OW72BYJK6N2MGFARPHLUFWHHWR&dn=Breaking.Bad.S02E05.Breakage.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:RWGXR2OW72BYJK6N2MGFARPHLUFWHHWR&dn=Breaking.Bad.S02E05.Breakage.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1238979600,
+      "date_based": false,
+      "overview": "Tensions and bills mount at the White household. Hank makes progress at work, but struggles with some residual effects from his encounter with Tuco. Jesse takes charge and assembles a crew of dealers to get their product out on the streets.",
+      "title": "Breakage",
+      "episode": 5,
+      "season": 2,
+      "tvdb_id": 438916
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:VFVFJTYKR3NFOJWRN2WLPAUZZCWKRXDR&dn=Breaking.Bad.S02E06.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:VFVFJTYKR3NFOJWRN2WLPAUZZCWKRXDR&dn=Breaking.Bad.S02E06.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1239584400,
+      "date_based": false,
+      "overview": "Walt returns to work. Skinny Pete gets ripped off and when Jesse steps in to \"handle it,\" he gets more than he bargained for. Skyler finally gets to thank Gretchen for paying for Walt's treatment.",
+      "title": "Peekaboo",
+      "episode": 6,
+      "season": 2,
+      "tvdb_id": 438917
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CFGY5EJN62STISFXRNMIBC3LSWZ6NDRK&dn=Breaking.Bad.S02E07.Negro.Y.Azul.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CFGY5EJN62STISFXRNMIBC3LSWZ6NDRK&dn=Breaking.Bad.S02E07.Negro.Y.Azul.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1240189200,
+      "date_based": false,
+      "overview": "Rumors fly about Jesse's recent actions as he and Walt discuss expanding their business into new territories. Hank struggles to fit in with his new co-workers in El Paso. Skyler pursues a new job opportunity that reconnects her with a former colleague. Jesse gets to know his landlord, Jane.",
+      "title": "Negro y Azul",
+      "episode": 7,
+      "season": 2,
+      "tvdb_id": 438918
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SBRDG5B2YHLCHO7WYXJZGCATAV4QHI7G&dn=Breaking.Bad.2x08.(HDTV-DOT)&tr=http://74.220.128.30:6969/announce&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:SBRDG5B2YHLCHO7WYXJZGCATAV4QHI7G&dn=Breaking.Bad.2x08.(HDTV-DOT)&tr=http://74.220.128.30:6969/announce&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1240794000,
+      "date_based": false,
+      "overview": "When Badger finds himself in trouble with the law, Walt and Jesse seek the legal advice of a shady attorney, Saul Goodman. The DEA believe they may have finally caught up with the elusive 'Heisenberg.' Hank returns to Albuquerque, but his troubled mental state and demeanor cause Marie to worry.",
+      "title": "Better Call Saul",
+      "episode": 8,
+      "season": 2,
+      "tvdb_id": 438919
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LJMKDP3TVZNBAXDQRPVBBW2B2U4J2IS3&dn=Breaking.Bad.S02E09.REPACK.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LJMKDP3TVZNBAXDQRPVBBW2B2U4J2IS3&dn=Breaking.Bad.S02E09.REPACK.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1241398800,
+      "date_based": false,
+      "overview": "After Walt undergoes a PET-CT scan, he and his family wait for news about his cancer treatment progress. Fearing the worst, Walt follows Saul's advice to cook as much product as he can with the time he has left. Jesse's relationship with Jane develops, but is put on hold when he and Walt retreat to the desert for their marathon cook.",
+      "title": "4 Days Out",
+      "episode": 9,
+      "season": 2,
+      "tvdb_id": 438920
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:5JJQZH6QZSEZMFTBX7QZIVSFQTIAQM5V&dn=Breaking.Bad.S02E10.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:5JJQZH6QZSEZMFTBX7QZIVSFQTIAQM5V&dn=Breaking.Bad.S02E10.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1242003600,
+      "date_based": false,
+      "overview": "Walt and Hank get into a heated argument at a party the Whites host to thank friends and family for their support over the last few months. A stir-crazy Walt consumes himself with home improvements. Skyler is emotional and conflicted about Walt's treatment and opens up to her boss, Ted. Jane hides her relationship with Jesse from her father.",
+      "title": "Over",
+      "episode": 10,
+      "season": 2,
+      "tvdb_id": 438921
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:L7FPQ3W76BXUSYNIGONPFL2ZAR5POZK5&dn=Breaking.Bad.S02E11.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:L7FPQ3W76BXUSYNIGONPFL2ZAR5POZK5&dn=Breaking.Bad.S02E11.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1242608400,
+      "date_based": false,
+      "overview": "When Walt and Jesse's crew of dealers begins to dwindle, Saul proposes a new business partner. Meanwhile, Skyler makes a disturbing discovery at work and confronts Ted. Jesse divulges his real profession to Jane, and their relationship takes a dangerous turn.",
+      "title": "Mandala",
+      "episode": 11,
+      "season": 2,
+      "tvdb_id": 438922
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:33NUNEVERXOJS4DGJ3Q2ASUWWAOBPMDY&dn=Breaking.Bad.S02E12.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:33NUNEVERXOJS4DGJ3Q2ASUWWAOBPMDY&dn=Breaking.Bad.S02E12.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1243213200,
+      "date_based": false,
+      "overview": "The Whites welcome a new addition. Walter Jr. launches a new website in an effort to aid his struggling family. Jesse's addiction begins to spiral out of control. Jane and Jesse's relationship leads to friction with both Walt and Donald.",
+      "title": "Phoenix",
+      "episode": 12,
+      "season": 2,
+      "tvdb_id": 438923
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ZVFDQU3CXJ5JARCC72CWFZRKCHQQV4Z4&dn=Breaking.Bad.S02E13.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ZVFDQU3CXJ5JARCC72CWFZRKCHQQV4Z4&dn=Breaking.Bad.S02E13.HDTV.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1243818000,
+      "date_based": false,
+      "overview": "Skyler and Walt collide in the season finale as her frustration with his secrecy finally comes to a head. Jesse self-destructs after a personal blow, forcing Walt to come to his aid. Donald's grief leads to tragedy.",
+      "title": "ABQ",
+      "episode": 13,
+      "season": 2,
+      "tvdb_id": 438924
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LCN3AL2A3QEEFBJQRSBMRG3THIM3LJAU&dn=Breaking.Bad.S03E01.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LCN3AL2A3QEEFBJQRSBMRG3THIM3LJAU&dn=Breaking.Bad.S03E01.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1269219600,
+      "date_based": false,
+      "overview": "As Walt copes with the aftermath of the plane crash and Skyler's anger, Jesse comes to a new realization about himself. A new adversary tracks the elusive Heisenberg, Walter White's kingpin alter ego. Skyler seeks advice on the state of her marriage and confronts Walt.",
+      "title": "No Mas",
+      "episode": 1,
+      "season": 3,
+      "tvdb_id": 1533641
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:F4NP44BITZA2QB5QCYRLBSL54ODE5NPE&dn=Breaking.Bad.S03E02.Caballo.Sin.Nombre.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:F4NP44BITZA2QB5QCYRLBSL54ODE5NPE&dn=Breaking.Bad.S03E02.Caballo.Sin.Nombre.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1269824400,
+      "date_based": false,
+      "overview": "Walt tries to reconcile with Skyler, but when his advances are rejected he takes drastic action to bring his family back together. A confused and angry Walter, Jr. lashes out at his mother. With the help of Saul, Jesse makes a significant investment.",
+      "title": "Caballo Sin Nombre",
+      "episode": 2,
+      "season": 3,
+      "tvdb_id": 1894731
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NXHU4TIV7RRPW4C3Q4YHCFG6TI36UC5K&dn=Breaking.Bad.S03E03.I.F.T.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NXHU4TIV7RRPW4C3Q4YHCFG6TI36UC5K&dn=Breaking.Bad.S03E03.I.F.T.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1270429200,
+      "date_based": false,
+      "overview": "Walt ignores Skyler's demands, furthering the rift between them and pushing her to break bad. Still suffering from panic and anxiety attacks, Hank crosses a line at work.",
+      "title": "I.F.T.",
+      "episode": 3,
+      "season": 3,
+      "tvdb_id": 1894741
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:A2L6XU7K4KSO5HJG2KDMAXLICDAH5JCJ&dn=Breaking.Bad.S03E04.Green.Light.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:A2L6XU7K4KSO5HJG2KDMAXLICDAH5JCJ&dn=Breaking.Bad.S03E04.Green.Light.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1271034000,
+      "date_based": false,
+      "overview": "Walt loses control as he reacts to Skyler's news, endangering his job and relationships with Saul and Jesse. Hank throws himself into his blue meth investigation. Jesse enacts a new plan.",
+      "title": "Green Light",
+      "episode": 4,
+      "season": 3,
+      "tvdb_id": 2012411
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:GN73DBP2KLTPN2JNTS7RCAYX3N6NW56Y&dn=Breaking.Bad.S03E05.HDTV.XviD-FEVER&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:GN73DBP2KLTPN2JNTS7RCAYX3N6NW56Y&dn=Breaking.Bad.S03E05.HDTV.XviD-FEVER&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1271638800,
+      "date_based": false,
+      "overview": "Gus increases his efforts to lure Walt back into business, forcing a rift between Walt and Jesse. Skyler doubts her new relationship. Marie confides in Skyler about her concern for Hank's well-being.",
+      "title": "Mas",
+      "episode": 5,
+      "season": 3,
+      "tvdb_id": 2055301
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:WDXPTVVWVCMHN7PDUTUFDZL4BST7TZXU&dn=Breaking.Bad.S03E06.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:WDXPTVVWVCMHN7PDUTUFDZL4BST7TZXU&dn=Breaking.Bad.S03E06.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1272243600,
+      "date_based": false,
+      "overview": "As Walt settles into his new surroundings, Walter, Jr. demands answers about his parents' relationship. Hank's investigation creates an immediate problem for Walt and Jesse.",
+      "title": "Sunset",
+      "episode": 6,
+      "season": 3,
+      "tvdb_id": 2062371
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:YJPTIAL6P3R4YCK6EZZZS4L6UZ4ELSDK&dn=Breaking.Bad.S03E07.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:YJPTIAL6P3R4YCK6EZZZS4L6UZ4ELSDK&dn=Breaking.Bad.S03E07.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1272848400,
+      "date_based": false,
+      "overview": "Hank's increasing volatility forces a confrontation with Jesse and trouble at work. Skyler pressures Walt to make a deal. Gus' actions have severe consequences.",
+      "title": "One Minute",
+      "episode": 7,
+      "season": 3,
+      "tvdb_id": 2062381
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:TY6GG2DOK2K4AM5TIXTI4WIUNMAAT22I&dn=Breaking.Bad.S03E08.I.See.You.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:TY6GG2DOK2K4AM5TIXTI4WIUNMAAT22I&dn=Breaking.Bad.S03E08.I.See.You.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1273453200,
+      "date_based": false,
+      "overview": "The family waits for news about Hank. While Jesse covers at the lab, Walt attempts to placate Gus. After witnessing a disturbing outburst, Walt worries he and his family are in danger.",
+      "title": "I See You",
+      "episode": 8,
+      "season": 3,
+      "tvdb_id": 2062391
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:BTRJ654RGZAXP6XKJ2CGEXB7XRHSQPRG&dn=Breaking.Bad.S03E09.Kafkaesque.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:BTRJ654RGZAXP6XKJ2CGEXB7XRHSQPRG&dn=Breaking.Bad.S03E09.Kafkaesque.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1274058000,
+      "date_based": false,
+      "overview": "As Hank's hospital bills stack up, Skyler hatches a plan. Walt and Gus come to a better understanding. Jesse, looking for more independence, pursues a new opportunity.",
+      "title": "Kafkaesque",
+      "episode": 9,
+      "season": 3,
+      "tvdb_id": 2062401
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MMGUW7T6SSGMCT3KALRBRV475TY4MJE3&dn=Breaking.Bad.S03E10.Fly.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MMGUW7T6SSGMCT3KALRBRV475TY4MJE3&dn=Breaking.Bad.S03E10.Fly.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1274662800,
+      "date_based": false,
+      "overview": "Walt becomes obsessed with a contaminant in the lab and refuses to finish the cook until it is eliminated. A frustrated Jesse attempts to get Walt back on track.",
+      "title": "Fly",
+      "episode": 10,
+      "season": 3,
+      "tvdb_id": 2062411
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:7GL77VZIRVURTH544STWU3V7EVPINU2H&dn=Breaking.Bad.S03E11.Abiquiu.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:7GL77VZIRVURTH544STWU3V7EVPINU2H&dn=Breaking.Bad.S03E11.Abiquiu.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1275267600,
+      "date_based": false,
+      "overview": "Skyler gets more involved in Walt's business, much to his chagrin. Hank struggles with his recovery. Jesse takes an active role in his new enterprise, leading him to a startling discovery.",
+      "title": "Abiquiu",
+      "episode": 11,
+      "season": 3,
+      "tvdb_id": 2062421
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UMS7WIIFUUKJT5OYGPRLBP7ZDMPEPFCM&dn=Breaking.Bad.S03E12.Half.Measures.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UMS7WIIFUUKJT5OYGPRLBP7ZDMPEPFCM&dn=Breaking.Bad.S03E12.Half.Measures.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1275872400,
+      "date_based": false,
+      "overview": "Against Walt's advice, Jesse lashes out. Fearing for Jesse's safety, Walt takes drastic action to intervene. A tragic event leads to a shocking confrontation.",
+      "title": "Half Measures",
+      "episode": 12,
+      "season": 3,
+      "tvdb_id": 2106591
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:76XNV4CEQC32LCJYXR4IBUJR2TPBQR4M&dn=Breaking.Bad.S03E13.Full.Measure.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:76XNV4CEQC32LCJYXR4IBUJR2TPBQR4M&dn=Breaking.Bad.S03E13.Full.Measure.HDTV.XviD-FQM&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1276477200,
+      "date_based": false,
+      "overview": "With Jesse on the run and Mike in hot pursuit, Walt negotiates a bargain with Gus and concocts a disturbing plan to provide for his and Jesse's safety.",
+      "title": "Full Measure",
+      "episode": 13,
+      "season": 3,
+      "tvdb_id": 2106601
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:XJFHEGQDAQOGLPT5GEM2DCGB46K3N7N4&dn=Breaking.Bad.S01E01.DSR.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:XJFHEGQDAQOGLPT5GEM2DCGB46K3N7N4&dn=Breaking.Bad.S01E01.DSR.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1200880800,
+      "date_based": false,
+      "overview": "When an unassuming high school chemistry teacher discovers he has a rare form of lung cancer, he decides to team up with a former student and create a top of the line crystal meth in a used RV, to provide for his family once he is gone.",
+      "title": "Pilot",
+      "episode": 1,
+      "season": 1,
+      "tvdb_id": 349232
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:EJIK6DYUXAE26DATH327GOHS7XINVI45&dn=Breaking.Bad.S01E02.DSR.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:EJIK6DYUXAE26DATH327GOHS7XINVI45&dn=Breaking.Bad.S01E02.DSR.XviD-0TV&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1201485600,
+      "date_based": false,
+      "overview": "Walt and Jesse attempt to tie up loose ends. The desperate situation gets more complicated with the flip of a coin. Walt's wife, Skyler, becomes suspicious of Walt's strange behavior.",
+      "title": "Cat's in the Bag...",
+      "episode": 2,
+      "season": 1,
+      "tvdb_id": 349233
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MNC3QHRRDLYOGEQRIXRJSRFD2UO62GTN&dn=Breaking.Bad.S01E03.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MNC3QHRRDLYOGEQRIXRJSRFD2UO62GTN&dn=Breaking.Bad.S01E03.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1202695200,
+      "date_based": false,
+      "overview": "Walter fights with Jesse over his drug use, causing him to leave Walter alone with their captive, Krazy-8. Meanwhile, Hank has a scared straight moment with Walter Jr. after his aunt discovers he has been smoking pot. Also, Skylar is upset when Walter stays away from home.",
+      "title": "...And the Bag's in the River",
+      "episode": 3,
+      "season": 1,
+      "tvdb_id": 349235
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LCEKZPLFNPB42L2LMA3LHKJUHIFND3KL&dn=Breaking.Bad.S01E04.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:LCEKZPLFNPB42L2LMA3LHKJUHIFND3KL&dn=Breaking.Bad.S01E04.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1203300000,
+      "date_based": false,
+      "overview": "Walter finally tells his family that he has been stricken with cancer. Meanwhile, the DEA believes Albuquerque has a new, big time player to worry about. Meanwhile, a worthy recipient is the target of a depressed Walter's anger, and Jesse makes a surprise visit to his parents home.",
+      "title": "Cancer Man",
+      "episode": 4,
+      "season": 1,
+      "tvdb_id": 349236
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UZ4Y7UM533P2RXAC64I3XKPBY4KSXZP7&dn=Breaking.Bad.S01E05.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:UZ4Y7UM533P2RXAC64I3XKPBY4KSXZP7&dn=Breaking.Bad.S01E05.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1203904800,
+      "date_based": false,
+      "overview": "Walter and Skyler attend a former colleague's party. Jesse tries to free himself from the drugs, while Skyler organizes an intervention.",
+      "title": "Gray Matter",
+      "episode": 5,
+      "season": 1,
+      "tvdb_id": 349238
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CTHXQTBAIFVWBK5XVTONDS5UN4HVXKQB&dn=Breaking.Bad.S01E06.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CTHXQTBAIFVWBK5XVTONDS5UN4HVXKQB&dn=Breaking.Bad.S01E06.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1204509600,
+      "date_based": false,
+      "overview": "The side effects of chemo begin to plague Walt. Meanwhile, the DEA rounds up suspected dealers.",
+      "title": "Crazy Handful of Nothin'",
+      "episode": 6,
+      "season": 1,
+      "tvdb_id": 355100
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MTAPW5D64GANAJGG2BONE74XX23UE7R6&dn=Breaking.Bad.S01E07.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:MTAPW5D64GANAJGG2BONE74XX23UE7R6&dn=Breaking.Bad.S01E07.HDTV.XviD-LOL&tr=udp://tracker.openbittorrent.com:80&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1205110800,
+      "date_based": false,
+      "overview": "Walter accepts his new identity as a drug dealer after a PTA meeting. Elsewhere, Jesse decides to put his aunt's house on the market and Skyler is the recipient of a baby shower.",
+      "title": "A No-Rough-Stuff-Type Deal",
+      "episode": 7,
+      "season": 1,
+      "tvdb_id": 352534
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:TWZHHL7PTLZBKJQHXJ4GZ4PZEVB36ARB&dn=Breaking.Bad.S05E01.Live.Free.or.Die.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:TWZHHL7PTLZBKJQHXJ4GZ4PZEVB36ARB&dn=Breaking.Bad.S05E01.Live.Free.or.Die.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1342400400,
+      "date_based": false,
+      "overview": "As Walt deals with the aftermath of the Casa Tranquila explosion, Hank works to wrap up his investigation of Gus' empire.",
+      "title": "Live Free or Die",
+      "episode": 1,
+      "season": 5,
+      "tvdb_id": 4307741
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CJ6QRV3LZ44LUTLJ26C2Y6BDQET6JTTB&dn=Breaking.Bad.S05E02.Madrigal.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:CJ6QRV3LZ44LUTLJ26C2Y6BDQET6JTTB&dn=Breaking.Bad.S05E02.Madrigal.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:L2MAGQD6ZXN36CSZYLDDTGZMYNOROILG&dn=Breaking.Bad.S05E02.720p.HDTV.x264-ORENJI&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1343005200,
+      "date_based": false,
+      "overview": "Walt and Jesse seek out an unlikely partner for a new business venture. The DEA follows up new leads in its investigation.",
+      "title": "Madrigal",
+      "episode": 2,
+      "season": 5,
+      "tvdb_id": 4339517
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:EPBY6REGQR5MKBQFRFJ6BY4SCH6SQRA3&dn=Breaking.Bad.S05E03.Hazard.Pay.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IZ2MMCZIDGCSVWMG3ZOCMP5UZMA523JH&dn=Breaking.Bad.S05E03.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:EPBY6REGQR5MKBQFRFJ6BY4SCH6SQRA3&dn=Breaking.Bad.S05E03.Hazard.Pay.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1343610000,
+      "date_based": false,
+      "overview": "Walt and Jesse put a business plan into action. Walt confesses a secret to Marie.",
+      "title": "Hazard Pay",
+      "episode": 3,
+      "season": 5,
+      "tvdb_id": 4339518
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:O5QGB2WE4IUIR3X3BOFHBARXB64H4DMV&dn=Breaking.Bad.S05E04.Fifty-One.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:O5QGB2WE4IUIR3X3BOFHBARXB64H4DMV&dn=Breaking.Bad.S05E04.Fifty-One.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:H5JUZX2GBJ5GH2WXNIYNO4CHATP33WEY&dn=Breaking.Bad.S05E04.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1344214800,
+      "date_based": false,
+      "overview": "Walt celebrates another birthday. Skyler considers her options. An associate complicates Walt and Jesse's plan.",
+      "title": "Fifty-One",
+      "episode": 4,
+      "season": 5,
+      "tvdb_id": 4354293
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:PGPDSTLKKSCEF23QVAFUFOP5KOP6QRWC&dn=Breaking.Bad.S05E05.Dead.Freight.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:44L6UGKHXWAQNJHIA7MDYH5OZDC2JMVB&dn=Breaking.Bad.S05E05.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:PGPDSTLKKSCEF23QVAFUFOP5KOP6QRWC&dn=Breaking.Bad.S05E05.Dead.Freight.HDTV.x264-FQM&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1344819600,
+      "date_based": false,
+      "overview": "Walt's team must get creative to obtain the materials they need to continue their operation.",
+      "title": "Dead Freight",
+      "episode": 5,
+      "season": 5,
+      "tvdb_id": 4354294
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NBCVD44AF7TA3FJIHB6FE5SEPU6KH6IQ&dn=Breaking.Bad.S05E06.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NBCVD44AF7TA3FJIHB6FE5SEPU6KH6IQ&dn=Breaking.Bad.S05E06.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:746CUFPIB5DLEG2ALHYPSFX3XPY2FTOL&dn=Breaking.Bad.S05E06.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1345424400,
+      "date_based": false,
+      "overview": "Walt, Jesse, and Mike struggle over the future of their business, as occupational hazards weigh on Jesse.",
+      "title": "Buyout",
+      "episode": 6,
+      "season": 5,
+      "tvdb_id": 4354295
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:374B47385CADC158F47B41D266A7BD8736D04869&dn=Breaking.Bad.5x07.(HDTV-PROPER-x264-EVOLVE)&tr=http://tracker.ccc.de/announce&tr=udp://tracker.ccc.de:80/announce&tr=http://tracker.publicbt.com:80/announce&tr=udp://tracker.openbittorrent.com:80/announce&tr=udp://tracker.istole.it:80/announce&tr=http://pow7.com/announce&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:TQHTK67A4462RKNMACMY4SUVWORWESUY&dn=Breaking.Bad.S05E07.720p.HDTV.x264-COMPULSiON&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:374B47385CADC158F47B41D266A7BD8736D04869&dn=Breaking.Bad.5x07.(HDTV-PROPER-x264-EVOLVE)&tr=http://tracker.ccc.de/announce&tr=udp://tracker.ccc.de:80/announce&tr=http://tracker.publicbt.com:80/announce&tr=udp://tracker.openbittorrent.com:80/announce&tr=udp://tracker.istole.it:80/announce&tr=http://pow7.com/announce&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1346029200,
+      "date_based": false,
+      "overview": "Walt takes control of business matters as Mike grapples with the consequences of his actions.",
+      "title": "Say My Name",
+      "episode": 7,
+      "season": 5,
+      "tvdb_id": 4354296
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:HRPS3BWOGEGFUKO4SCVQRJXVSDM2TFAW&dn=Breaking.Bad.S05E08.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:HRPS3BWOGEGFUKO4SCVQRJXVSDM2TFAW&dn=Breaking.Bad.S05E08.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:U6HSCNKA2PC7IJBFMAOA6CBCSSN3OVDQ&dn=Breaking.Bad.S05E08.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1346634000,
+      "date_based": false,
+      "overview": "Walt ties up loose ends. Seeing the evidence of his success, he makes a startling and dangerous decision.",
+      "title": "Gliding Over All",
+      "episode": 8,
+      "season": 5,
+      "tvdb_id": 4364463
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:J2SQQGKEOAIPYF7Q6JEWSZDWNLRN7CFB&dn=Breaking.Bad.S05E09.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:J2SQQGKEOAIPYF7Q6JEWSZDWNLRN7CFB&dn=Breaking.Bad.S05E09.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:HCMAAA4ELXRLKVLJKW52SAEG3E2PIL6Q&dn=Breaking.Bad.S05E09.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1376269200,
+      "date_based": false,
+      "overview": "As Walt and Jesse adjust to life out of the business, Hank grapples with a troubling lead.",
+      "title": "Blood Money",
+      "episode": 9,
+      "season": 5,
+      "tvdb_id": 4460282
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:DIYPIZDMOI3MH3LFYWXVXAZOJKDAGKK5&dn=Breaking.Bad.S05E10.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:DIYPIZDMOI3MH3LFYWXVXAZOJKDAGKK5&dn=Breaking.Bad.S05E10.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:IUAV37TJMPAKHPBZ4S6QPZULUMPSAUMA&dn=Breaking.Bad.S05E10.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1376874000,
+      "date_based": false,
+      "overview": "While Skyler's past catches up with her, Walt covers his tracks. Jesse continues to struggle with his guilt.",
+      "title": "Buried",
+      "episode": 10,
+      "season": 5,
+      "tvdb_id": 4553036
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:456M6NEO6IWPXXHGS54HJYJDYRIW7HYG&dn=Breaking.Bad.S05E11.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:5T6G37VY2OPKY3FOGIZXWELVP64TI2XV&dn=Breaking.Bad.S05E11.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:456M6NEO6IWPXXHGS54HJYJDYRIW7HYG&dn=Breaking.Bad.S05E11.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1377478800,
+      "date_based": false,
+      "overview": "Jesse decides to make a change, while Walt and Skyler try to deal with an unexpected demand.",
+      "title": "Confessions",
+      "episode": 11,
+      "season": 5,
+      "tvdb_id": 4553037
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:XTQXOIXZSH6JTDOINLDUVBNYPDOQPMSK&dn=Breaking.Bad.S05E12.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:XTQXOIXZSH6JTDOINLDUVBNYPDOQPMSK&dn=Breaking.Bad.S05E12.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:7RS7C4M6SONBODNE4ESDV3FP4HLR5BRO&dn=Breaking.Bad.S05E12.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1378083600,
+      "date_based": false,
+      "overview": "An unusual strategy starts to bear fruit, while plans are set in motion that could change everything.",
+      "title": "Rabid Dog",
+      "episode": 12,
+      "season": 5,
+      "tvdb_id": 4553038
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NNIZJACSXDN42WVP7BMCY2NDIXO3BT64&dn=Breaking.Bad.S05E13.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:HSJHYLWRDHSBQ72O2UQPJ7VSFVZQHPFE&dn=Breaking.Bad.S05E13.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:NNIZJACSXDN42WVP7BMCY2NDIXO3BT64&dn=Breaking.Bad.S05E13.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1378688400,
+      "date_based": false,
+      "overview": "Things heat up for Walt in unexpected ways.",
+      "title": "To'hajiilee",
+      "episode": 13,
+      "season": 5,
+      "tvdb_id": 4553039
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:E4DB6ZWRKW7JP7X6NVKZQNNCSJXUVGNW&dn=Breaking.Bad.S05E14.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:E4DB6ZWRKW7JP7X6NVKZQNNCSJXUVGNW&dn=Breaking.Bad.S05E14.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:2UVZIRYJO3LD4XEDBSEHXQPMCPVYKQ5Q&dn=Breaking.Bad.S05E14.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1379293200,
+      "date_based": false,
+      "overview": "Everyone copes with radically changed circumstances.",
+      "title": "Ozymandias",
+      "episode": 14,
+      "season": 5,
+      "tvdb_id": 4553040
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:2BZTAM24EVNRYZVSBABURUITJZRG45VO&dn=Breaking.Bad.S05E15.HDTV.x264-2HD&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:2BZTAM24EVNRYZVSBABURUITJZRG45VO&dn=Breaking.Bad.S05E15.HDTV.x264-2HD&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:PPCWRIXTZDHFSRVBJX7WWTEEZ5UGQQPV&dn=Breaking.Bad.S05E15.720p.HDTV.x264-EVOLVE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1379898000,
+      "date_based": false,
+      "overview": "Events set in motion long ago move toward a conclusion.",
+      "title": "Granite State",
+      "episode": 15,
+      "season": 5,
+      "tvdb_id": 4553041
+    },
+    {
+      "torrents": {
+        "0": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:KYWH7IAESWJLF5IUHOVSECLYVHKIO4JD&dn=Breaking.Bad.S05E16.REPACK.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "480p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:KYWH7IAESWJLF5IUHOVSECLYVHKIO4JD&dn=Breaking.Bad.S05E16.REPACK.HDTV.x264-ASAP&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        },
+        "720p": {
+          "peers": 0,
+          "seeds": 0,
+          "url": "magnet:?xt=urn:btih:ICWGA5QHAGEKNHEX72FRA6YLDZNV5O2N&dn=Breaking.Bad.S05E16.720p.HDTV.x264-IMMERSE&tr=udp://tracker.openbittorrent.com:80/&tr=udp://open.demonii.com:80&tr=udp://tracker.coppersurfer.tk:80&tr=udp://tracker.leechers-paradise.org:6969&tr=udp://exodus.desync.com:6969"
+        }
+      },
+      "watched": {
+        "watched": false
+      },
+      "first_aired": 1380502800,
+      "date_based": false,
+      "overview": "All bad things must come to an end.",
+      "title": "Felina",
+      "episode": 16,
+      "season": 5,
+      "tvdb_id": 4553042
+    }
+  ],
+  "genres": [
+    "drama",
+    "crime",
+    "suspense",
+    "thriller"
+  ]
+}
