@@ -1,10 +1,11 @@
 {
   "name": "butter-component-show-detail",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Butter Component to show Seasons and Episode Lists, as well as Episode Info",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "eslint src"
+    "scripts": {
+        "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
+        "start": "node node_modules/butter-component-builder/server.js",
+        "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -27,35 +28,10 @@
     "url": "https://github.com/buttercomponents/butter-component-show-detail/issues"
   },
   "homepage": "https://github.com/buttercomponents/butter-component-show-detail",
-  "devDependencies": {
-    "babel-core": "^6.0.20",
-    "babel-eslint": "^4.1.3",
-    "babel-loader": "^6.0.1",
-    "babel-preset-es2015": "^6.0.15",
-    "babel-preset-react": "^6.0.15",
-    "babel-preset-stage-0": "^6.0.15",
-    "css-loader": "^0.23.1",
-    "eslint-plugin-react": "^3.6.2",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.5",
-    "json-loader": "^0.5.4",
-    "postcss-loader": "^0.8.0",
-    "postcss-modules-extract-imports": "^1.0.0",
-    "postcss-modules-local-by-default": "^1.0.1",
-    "postcss-modules-scope": "^1.0.0",
-    "postcss-modules-values": "^1.1.1",
-    "react-hot-loader": "^1.3.0",
-    "style-loader": "^0.13.0",
-    "stylus": "^0.53.0",
-    "stylus-loader": "^1.4.3",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.1"
-  },
   "dependencies": {
-    "css-modules-require-hook": "^2.1.0",
-    "i18n": "^0.5.0",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0"
-  }
+      "butter-component-show-info": "*"
+  },
+    "devDependencies": {
+        "butter-component-builder": "*"
+    }
 }

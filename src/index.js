@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 //import i18n from './language';
 
+import moment from 'moment';
+
 import Stars from './Stars';
 import CloseButton from './CloseButton';
-import ShowInfo from './ShowInfo';
+import ShowInfo from 'butter-component-show-info';
 
 import style from './styl/show_detail.styl';
 
