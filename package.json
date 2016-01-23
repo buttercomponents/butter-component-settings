@@ -1,15 +1,17 @@
 {
-  "name": "butter-component-show-detail",
-  "version": "0.0.2",
-  "description": "A Butter Component to show Seasons and Episode Lists, as well as Episode Info",
-    "scripts": {
-        "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
-        "start": "node node_modules/butter-component-builder/server.js",
-        "lint": "eslint src"
+  "name": "butter-component-show-header",
+  "version": "0.0.3",
+  "description": "A Butter Component to show Header with IMDB info",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
+    "start": "node node_modules/butter-component-builder/server.js",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/buttercomponents/butter-component-show-detail.git"
+    "url": "https://github.com/buttercomponents/butter-component-show-header.git"
   },
   "keywords": [
     "react",
@@ -25,13 +27,13 @@
   "author": "Niv Sardi <x@btn.sh>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/buttercomponents/butter-component-show-detail/issues"
+    "url": "https://github.com/buttercomponents/butter-component-show-header/issues"
   },
-  "homepage": "https://github.com/buttercomponents/butter-component-show-detail",
+  "homepage": "https://github.com/buttercomponents/butter-component-show-header",
+  "devDependencies": {
+    "butter-component-builder": "*"
+  },
   "dependencies": {
-      "butter-component-show-info": "*"
-  },
-    "devDependencies": {
-        "butter-component-builder": "*"
-    }
+    "butter-component-stars": "*"
+  }
 }

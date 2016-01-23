@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 
 //import i18n from './language';
 
-import moment from 'moment';
-
-import Stars from './Stars';
-import CloseButton from './CloseButton';
-import ShowInfo from 'butter-component-show-info';
+import Stars from 'butter-component-stars';
 
 import style from './styl/show_detail.styl';
 
@@ -52,14 +48,4 @@ let ShowHeader = (props) => (
     </div>
 );
 
-let ShowDetail = (props) => (
-    <div style={{backgroundColor: 'black'}}>
-        <div className={style['container']}>
-            <CloseButton />
-            <ShowHeader {...props}/>
-            <ShowInfo {...props}/>
-        </div>
-    </div>
-)
-
-export default ShowDetail;
+export default ShowHeader;
