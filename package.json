@@ -1,6 +1,6 @@
 {
   "name": "butter-component-show-header",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A Butter Component to show Header with IMDB info",
   "main": "dist/bundle.js",
   "scripts": {
