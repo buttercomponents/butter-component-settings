@@ -67,23 +67,33 @@ let HeaderMetadata = (props) => (
 
 class LoadImage extends React.Component {
     static defaultProps = {
+        fallbackSrc: './images/posterholder.png',
         transition: 'opacity .3s ease-in',
         opacity: 1
     };
 
     state = {
-        loaded: this.props.loaded || false
+        loaded: this.props.loaded || false,
+        error:  this.props.error  || false
     };
 
     render() {
         let props = this.props;
+        let loaded = this.state.loaded || this.state.error;
         let backgroundImage =  `url(${this.props.src})`;
 
         let style = Object.assign(props.style || {}, {
             backgroundImage: backgroundImage
-        })
+        });
 
-        this.state.loaded && Object.assign(style, {
+        if (this.state.error) {
+            let fallback = require (this.props.fallbackSrc);
+            Object.assign(style, {
+                backgroundImage: `url(${fallback})`
+            })
+        }
+
+        loaded && Object.assign(style, {
             transition: props.transition,
             opacity: props.opacity
         });
@@ -91,6 +101,7 @@ class LoadImage extends React.Component {
         return (
             <div {...props} style={style}>
                 <img style={{display: 'none'}} src={props.src}
+                     onError={e => this.setState({error: true})}
                      onLoad={e => this.setState({loaded: true})}/>
                 {props.children}
             </div>
@@ -101,15 +112,17 @@ class LoadImage extends React.Component {
 let BackgroundCover = (props)=> (
     <div className={style['sh-background']}>
         <LoadImage className={style['shc-img']}
-                   src={props.fanart}>
-        </LoadImage>
+                   src={props.fanart}
+                   fallbackSrc='./images/bg-header.jpg'/>
         {props.children}
     </div>
 );
 
 let ShowPoster = (props)=> (
     <div className={style['sh-poster']}>
-        <LoadImage className={style['shp-img']} src={props.poster} />
+        <LoadImage className={style['shp-img']}
+                   src={props.poster}
+                   fallbackSrc='./images/posterholder.png'/>
     </div>
 );
 
