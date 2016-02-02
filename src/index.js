@@ -4,48 +4,129 @@ import React, { Component } from 'react';
 
 import Stars from 'butter-component-stars';
 
-import style from './styl/show_detail.styl';
+import style from './styl/theme.styl';
 
-class debug extends Component {
+class Rating extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            stars: true
+        }
+    }
+
+    toggleStars = () => {
+        this.setState ({
+            stars: !!!this.state.stars
+        })
+    };
+
     render() {
+        let props = this.props;
         return (
-            <h1>debug</h1>
+            <div className={style['shmi-rating']} onClick={this.toggleStars}>
+                {this.state.stars?
+                 <Stars percentage={Math.round(props.percentage) / 20} />
+                 :<div className="number-container-tv hidden">{Math.round(props.percentage) / 10} <em>/10</em></div>
+                }
+            </div>
         )
     }
 }
 
-let HeaderInfo = (props) => (<div className={style['header-info']}>
-    <div className={style['tv-meta-data']}>
-        <div className={style['tv-title']}>{props.title}</div>
-        <div className={style['tv-year']}>{props.year}</div>
-        <div className={style['tv-dot']}></div>
-        <div className={style['tv-runtime']}>{props.runtime + 'min'}</div>
-        <div className={style['tv-dot']}></div>
-
-        <div className={style['tv-status']}>{props.status?i18n.__(props.status) : i18n.__('N/A')}</div>
-        <div className={style['tv-dot']}></div>
-        <div className={style['tv-genre']}>{i18n.__(props.genres[0])}</div>
-        <div className={style['tv-dot']}></div>
-        <div data-toggle="tooltip" data-placement="top" title={i18n.__('Open IMDb page')} className="show-imdb-link"></div>
-        <div className={style['tv-dot']}></div>
-        <div className={style['rating-container-tv']}>
-            <Stars percentage={Math.round(props.rating.percentage) / 20} />
-            <div className="number-container-tv hidden">{Math.round(props.rating.percentage) / 10} <em>/10</em></div>
-        </div>
-        <div className={style['tv-overview']}>{props.synopsis}</div>
-        <div className="favourites-toggle">{i18n.__('Add to bookmarks')}</div>
-        <div className="show-watched-toggle">{i18n.__('Mark as Seen')}</div>
+let HeaderInfos = (props) => (
+    <div className={style['shm-infos']}>
+        <div className={style['shmi-year']}>{props.year}</div>
+        <span className={style['dot']}></span>
+        <div className={style['shmi-runtime']}>{props.runtime} + 'min'</div>
+        <span className={style['dot']}></span>
+        <div className={style['shmi-status']}>{props.status?i18n.__(props.status) : i18n.__('N/A')}</div>
+        <span className={style['dot']}></span>
+        <div className={style['shmi-genre']}>{i18n.__(props.genres[0])}</div>
+        <span className={style['dot']}></span>
+        <div className={style['shmi-imdb']}  data-toggle="tooltip" data-placement="top" title={i18n.__('Open IMDb page')}></div>
+        <span className={style['dot']}></span>
+        <Rating {...props.rating}/>
     </div>
-</div>);
+)
+
+let HeaderActions= (props) => (
+    <div className={style['sh-actions']}>
+        <div className={style['sha-bookmark']}>{i18n.__('Add to bookmarks') }</div>
+        <div className={style['sha-watched']}>{i18n.__('Mark as Seen') }</div>
+    </div>
+)
+
+let HeaderMetadata = (props) => (
+    <div className={style['sh-metadata']}>
+        <div className={style['shm-title']}>{props.title}</div>
+        <HeaderInfos {...props}/>
+        <div className={style['shm-synopsis']}>{props.synopsis}</div>
+    </div>
+);
+
+class LoadImage extends React.Component {
+    static defaultProps = {
+        transition: 'opacity .3s ease-in',
+        opacity: 1
+    };
+
+    state = {
+        loaded: this.props.loaded || false
+    };
+
+    render() {
+        let props = this.props;
+        let backgroundImage =  `url(${this.props.src})`;
+
+        let style = Object.assign(props.style || {}, {
+            backgroundImage: backgroundImage
+        })
+
+        this.state.loaded && Object.assign(style, {
+            transition: props.transition,
+            opacity: props.opacity
+        });
+
+        return (
+            <div {...props} style={style}>
+                <img style={{display: 'none'}} src={props.src}
+                     onLoad={e => this.setState({loaded: true})}/>
+                {props.children}
+            </div>
+        )
+    }
+}
+
+let BackgroundCover = (props)=> (
+    <div className={style['sh-background']}>
+        <LoadImage className={style['shc-img']}
+                   src={props.fanart}>
+        </LoadImage>
+        {props.children}
+    </div>
+);
+
+let ShowPoster = (props)=> (
+    <div className={style['sh-poster']}>
+        <LoadImage className={style['shp-img']} src={props.poster} />
+    </div>
+);
+
+let HeaderInfo = (props) => (
+    <div className={style['sh-info']}>
+        <HeaderMetadata {...props}/>
+        <HeaderActions />
+    </div>
+)
 
 let ShowHeader = (props) => (
-    <div className={style['header']}>
-        <div data-bgr={ props.images.fanart } className={style['tv-poster-background']}><div className={style['tv-poster-overlay']}></div></div>
-        <div className={style['header-image']}>
-            <div data-bgr={ props.images.poster } className={style['tv-cover']}></div>
-        </div>
-        <HeaderInfo {...props}/>
-    </div>
+    <section className={style['show-header']}>
+        <BackgroundCover {...props.images}>
+            <ShowPoster {...props.images}/>
+            <HeaderInfo {...props}/>
+        </BackgroundCover>
+    </section>
 );
 
 export default ShowHeader;
