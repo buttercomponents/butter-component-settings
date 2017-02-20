@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
+import Switch from './switch';
+
 let GoBackButton = (props) => (
     <div className={style['go-back']}>
         <i className={style['material-icons']}>arrow_back</i>
@@ -47,25 +49,31 @@ let NavTabs = (props) => (
         </ul>
     </div>
 )
+
 class Settings extends Component {
     render() {
         let {state, props} = this;
         return (
-            <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
+            <div>
+                <Switch/>
+                <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
-                <div className={style['settings-container']}>
-                    <SuccessAlert {...props}/>
-                    <ActionBar {...props}/>
-                    <NavTabs {...props}/>
-                    <div className={style['tab-content-wrapper']}></div>
-                    <div className={style['btns']}>
-                        <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
-                        <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>
-                        <div className={style['btn', 'flush-databases']}>{props.t('Flush all databases')}</div>
-                        <div className={style['btn', 'default-settings']}>{props.t('Reset to Default Settings')}</div>
+                    <div className={style['settings-container']}>
+                        <SuccessAlert {...props}/>
+                        <ActionBar {...props}/>
+                        <NavTabs {...props}/>
+                        <div className={style['tab-content-wrapper']}></div>
+                        <div className={style['btns']}>
+                            <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
+                            <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>
+                            <div className={style['btn', 'flush-databases']}>{props.t('Flush all databases')}</div>
+                            <div className={style['btn', 'default-settings']}>{props.t('Reset to Default Settings')}</div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
         );
     }
 }
