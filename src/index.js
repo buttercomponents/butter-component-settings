@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
+import Row from './row';
 import Switch from './switch';
 
 let GoBackButton = (props) => (
@@ -55,7 +56,7 @@ class Settings extends Component {
         let {state, props} = this;
         return (
             <div>
-                <Switch/>
+                <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
                     <div className={style['settings-container']}>
@@ -73,7 +74,6 @@ class Settings extends Component {
 
                 </div>
             </div>
-
         );
     }
 }
