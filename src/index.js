@@ -1,145 +1,73 @@
 import React, { Component } from 'react';
-
-//import i18n from './language';
-
-import Stars from 'butter-component-stars';
-
+import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
-class Rating extends Component {
-    constructor() {
-        super();
+let GoBackButton = (props) => (
+    <div className={style['go-back']}>
+        <i className={style['material-icons']}>arrow_back</i>
+        <span>{props.t("Settings")}</span>
+    </div>
+)
 
-        this.state = {
-            stars: true
-        }
-    }
+let ActionBar = (props) => (
+    <div id="action-bar">
+        <div className={style['actions-bar']}>
+            <GoBackButton {...props}/>
+            <ul className={style['toolbar']}>
+                <li>
+                    <i data-toggle="tooltip" data-placement="left" title={props.t('Keyboard Shortcuts')} className={style['material-icons']}>keyboard</i>
+                </li>
+                <li>
+                    <i data-toogle="tooltip" data-placement="left" title={props.t('Help Section')} className={style['material-icons magnet-link']}>help_outline</i>
+                </li>
+                <div className={style['toolbar-settings']}></div>
+            </ul>
+        </div>
+    </div>
+)
 
-    toggleStars = () => {
-        this.setState ({
-            stars: !!!this.state.stars
-        })
-    };
+let SuccessAlert = (props) => (
+    <div className={style['success_alert']} style={{display:'none'}}>
+        {props.t('Saved')}
+        <i className={style['material-icons']}>check</i>
+    </div>
+                               )
 
+let CloseButton = (props) => (props)
+
+let NavTabs = (props) => (
+    <div className={style['navbar-s']}>
+        <ul id="myTabs" className={style['nav', 'nav-tabs']} role="tablist">
+            {props.tabs.map((t, i) => (
+                 <li className={style['source', i===0?'active':'']} key={i}
+                     href={t.id} aria-controls={t.id} role="tab" data-toggle="tab">
+                     {props.t(t.title)}
+                 </li>
+             ))}
+        </ul>
+    </div>
+)
+class Settings extends Component {
     render() {
-        let props = this.props;
+        let {state, props} = this;
         return (
-            <div className={style['shmi-rating']} onClick={this.toggleStars}>
-                {this.state.stars?
-                 <Stars percentage={Math.round(props.percentage) / 20} />
-                 :<div className="number-container-tv hidden">{Math.round(props.percentage) / 10} <em>/10</em></div>
-                }
+            <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
+
+                <div className={style['settings-container']}>
+                    <SuccessAlert {...props}/>
+                    <ActionBar {...props}/>
+                    <NavTabs {...props}/>
+                    <div className={style['tab-content-wrapper']}></div>
+                    <div className={style['btns']}>
+                        <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
+                        <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>
+                        <div className={style['btn', 'flush-databases']}>{props.t('Flush all databases')}</div>
+                        <div className={style['btn', 'default-settings']}>{props.t('Reset to Default Settings')}</div>
+                    </div>
+                </div>
             </div>
-        )
+        );
     }
 }
 
-let HeaderInfos = (props) => (
-    <div className={style['shm-infos']}>
-        <div className={style['shmi-year']}>{props.year}</div>
-        <span className={style['dot']}></span>
-        <div className={style['shmi-runtime']}>{props.runtime} + 'min'</div>
-        <span className={style['dot']}></span>
-        <div className={style['shmi-status']}>{props.status?i18n.__(props.status) : i18n.__('N/A')}</div>
-        <span className={style['dot']}></span>
-        <div className={style['shmi-genre']}>{i18n.__(props.genres[0])}</div>
-        <span className={style['dot']}></span>
-        <div className={style['shmi-imdb']}  data-toggle="tooltip" data-placement="top" title={i18n.__('Open IMDb page')}></div>
-        <span className={style['dot']}></span>
-        <Rating {...props.rating}/>
-    </div>
-)
-
-let HeaderActions= (props) => (
-    <div className={style['sh-actions']}>
-        <div className={style['sha-bookmark']}>{i18n.__('Add to bookmarks') }</div>
-        <div className={style['sha-watched']}>{i18n.__('Mark as Seen') }</div>
-    </div>
-)
-
-let HeaderMetadata = (props) => (
-    <div className={style['sh-metadata']}>
-        <div className={style['shm-title']}>{props.title}</div>
-        <HeaderInfos {...props}/>
-        <div className={style['shm-synopsis']}>{props.synopsis}</div>
-    </div>
-);
-
-class LoadImage extends React.Component {
-    static defaultProps = {
-        fallbackSrc: './images/posterholder.png',
-        transition: 'opacity .3s ease-in',
-        opacity: 1
-    };
-
-    state = {
-        loaded: this.props.loaded || false,
-        error:  this.props.error  || false
-    };
-
-    render() {
-        let props = this.props;
-        let loaded = this.state.loaded || this.state.error;
-        let backgroundImage =  `url(${this.props.src})`;
-
-        let style = Object.assign(props.style || {}, {
-            backgroundImage: backgroundImage
-        });
-
-        if (this.state.error) {
-            let fallback = require (this.props.fallbackSrc);
-            Object.assign(style, {
-                backgroundImage: `url(${fallback})`
-            })
-        }
-
-        loaded && Object.assign(style, {
-            transition: props.transition,
-            opacity: props.opacity
-        });
-
-        return (
-            <div {...props} style={style}>
-                <img style={{display: 'none'}} src={props.src}
-                     onError={e => this.setState({error: true})}
-                     onLoad={e => this.setState({loaded: true})}/>
-                {props.children}
-            </div>
-        )
-    }
-}
-
-let BackgroundCover = (props)=> (
-    <div className={style['sh-background']}>
-        <LoadImage className={style['shc-img']}
-                   src={props.fanart}
-                   fallbackSrc='./images/bg-header.jpg'/>
-        {props.children}
-    </div>
-);
-
-let ShowPoster = (props)=> (
-    <div className={style['sh-poster']}>
-        <LoadImage className={style['shp-img']}
-                   src={props.poster}
-                   fallbackSrc='./images/posterholder.png'/>
-    </div>
-);
-
-let HeaderInfo = (props) => (
-    <div className={style['sh-info']}>
-        <HeaderMetadata {...props}/>
-        <HeaderActions />
-    </div>
-)
-
-let ShowHeader = (props) => (
-    <section className={style['show-header']}>
-        <BackgroundCover {...props.images}>
-            <ShowPoster {...props.images}/>
-            <HeaderInfo {...props}/>
-        </BackgroundCover>
-    </section>
-);
-
-export default ShowHeader;
+export default translate(['settings'])(Settings);

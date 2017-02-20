@@ -1,151 +1,258 @@
-// OFFICIAL POPCORN-THEME: BLACK AND YELLOW
+.settings
+    z-index 1
+    background-color $BackColor_dark
+    height 100%
+    width 100%
+    position fixed
+    padding-top: $TitleHeight + 10px
+    #qrcode-modal
+            height: 100vh
+            width: 100vw
+            background: $BackColor_dark
+            position: absolute
+            left: 0
+            top: 0
+            z-index: 200
+            text-align: center
+            canvas
+                background: #FFF
+                padding: 34px
+                border-radius: 15px
+                margin-top: 140px
+            i
+                position absolute
+                top: 30px
+                right: 30px
+                color: #FFF
+                font-size: 48px
 
-//Color variables: black & yellow
-    Black = #070707
-    YellowL = #f3cc16
-    YellowM = #ffe035
-    YellowD = #ffcc00
-    YellowD2 = #e3bd0c
+    .success_alert
+        background: #33AA65
+        padding: 10px 30px
+        border-radius: 30px
+        i
+            font-size 14px
 
-//Fonts
-    $Font = 'Open Sans'
-    $MainFont = 'Open Sans Semibold'
-    $MainFontBold = 'Open Sans Bold'
-    $AlternateFont = sans-serif
-    $ButtonFont = 'Open Sans Semibold'
+    .settings-container
+        z-index 1
+        width 100%
+        height 100%
+        position absolute
+        background-color $BackColor_dark
+        -webkit-user-select none
+        padding-bottom 20px
+        top: 0
+        &.show-advanced
+            .settings-row
+                &.advanced
+                    padding 35px 20px !important
+                    height: auto !important
+                    opacity: 1 !important
+                    overflow: visible !important
+                    transform: scale(1) !important
 
-//Main app
-    $BgColor1 = Black
-    $BgColor2 = lighten(Black,5%)
+        .navbar-s
+            width: 100%
+            margin: 0 auto
+            text-align: center
 
-    $Text1 = #fff 
-    $Text2 = #C9C9C9
-    $Text3 = #939597
-    $Text4 = #fff
-    $TextError = #797979
+        .nav-tabs
+            width auto
+            background: transparent
+            margin 0 auto
+            font-size: 0.9em
+            border-bottom: none 0
+            display: block
+            width 100%
+            position absolute
+            padding-top 10px
+            box-shadow: none
+            li
+                float: none
+                display: inline-block
+                a
+                    margin 0
+                    line-height 1
+                    border-radius 0
+                    padding 0
+                    color #FFF
+                &:hover, &.active
+                    a
+                        background transparent
+                        border 0 none
 
-    $CloseButton = #fff
-    $CloseButtonHover = YellowL
+        .tab-content
+            scrollable()
+            display: block
+            width: 100%
+            position: absolute
+            top: 160px
+            bottom: 0px
+            .tab-pane
+                .title
+                    font-family: $TitleFont
+                    color: #FFF
+                    font-weight: 900
+                    padding: 20px
+                    text-align: center
+                    opacity: .4
+                section
+                    display block
+                    .content
+                        max-width: 780px
+                        margin: 0 auto
+                    .settings-row
+                        color: #FFF
+                        margin: 0
+                        display: block
+                        margin: 0 20px
+                        border-bottom 1px solid rgba(225,225,225,0.15)
+                        padding 35px 20px
+                        transition: all 0.3s ease
+                        transition-property: transform, opacity;
+                        &.advanced
+                            overflow: hidden
+                            padding: 0
+                            opacity: 0
+                            height: 0
+                            transform: scale(0.75)
+                        &:last-child
+                            margin-bottom: 50px
+                        &:hover
+                            background: rgba(200,200,200, 0.15)
+                        .text, i, .action-item
+                            display: inline-block
+                            vertical-align: middle
+                        .text
+                            font-family: $TitleFont
+                            font-size: 18px
+                            font-weight: bold
+                            line-height: 1em
+                            max-width: 52%
+                            .helper
+                                margin-top: 2px
+                                font-family: $MainFont
+                                font-weight: normal
+                                opacity: 0.4
+                                font-size 13px
+                        i
+                            font-size: 24px
+                            margin: 0 20px
+                            color: #FFF
+                            display: inline-block
+                            width: 24px
 
-    $SpinnerColor1 = YellowD2
-    $SpinnerColor2 = YellowD
+                        .action-item
+                            color: #000
+                            float right
+                            padding-top 5px
+                            select
+                            width 130px
+                            margin-right 15
+                            input[type=text],
+                            input[type=number],
+                            input[type=password]
+                                padding: 5px 10px
+                                border-radius 5px
+                                color #FFF
+                                outline 0
+                                border 0
+                                font-size  0.95em
+                                font-weight normal
+                                line-height 0.70em
+                                width 140px
+                                background $InputBg
+                                -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
+                                transition background .2s ease
 
-    $ScrollBarBg = #30333c
-    $ScrollBarThumb = YellowD2
-    $ScrollBarThumbHover = YellowD
 
-//Top Bar
-    $TitleBarBg = Black  
-    $TitleBarText = #fff
-    $FullScreenButton = #999
-    $FullScreenButtonHover = YellowL
+                            input[type=text]
+                                &.dir-path
+                                    width: 225px
 
-    $FilterBarBg = Black  
-    $FilterBarText = #e9e9e9
-    $FilterBarTextHover = #fff
-    $FilterBarActive = YellowL
+                           .switch
+                                position: relative
+                                display: inline-block
+                                width: 36px
+                                height: 20px
 
-    $SearchBoxBg = #191818
+                                input
+                                    display:none
 
-    $DropDownBg = rgba(Black,0.9)
-    $DropDownBgHover = rgba(YellowL,0.15)
-    $DropDownTextHover = #fff
-    $DropDownText = #d9d9d9
-    $DropDownOpacity = 0.97
+                                .slider
+                                    position: absolute
+                                    cursor: pointer
+                                    top: 0
+                                    left: 0
+                                    right: 0
+                                    bottom: 0
+                                    border-radius: 34px
+                                    background-color: rgba(250,250,250, 0.25)
+                                    -webkit-transition: .3s
 
-    $FilterBarIcon = $Text1
-    $FilterBarIconHover = YellowD
-    $FilterBarIcon-PosterWidth = #bababa
-    
-    $TopBarShadow = 0px 6px 8px -4px rgba(0, 0, 0, .9);
-    
-//Buttons
-    $ButtonBg = YellowL
-    $ButtonBgHover = YellowM
-    $ButtonBgActive = YellowD
-    
-    $ButtonBgDisabled = #737577
+                                .slider:before
+                                    position: absolute
+                                    content: ""
+                                    height: 16px
+                                    width: 16px
+                                    left: 2px
+                                    bottom: 2px
+                                    background-color: white
+                                    border-radius: 50%
+                                    -webkit-transition: .3s
 
-    $ButtonBgOk = #27AE60
-    $ButtonBgWarning = #F15153
-    
-    $ButtonText = #000
-    $ButtonTextHover = #000
-    
-    $ButtonRadius = 3px
+                                input:checked + .slider
+                                    background-color: $MainColor
 
-//Checkbox
-    $CheckboxBg = #232324
-    $CheckboxCheck = YellowD
+                                input:focus + .slider
+                                    box-shadow: 0 0 1px rgba(0,0,0,0.5)
 
-//Posters
-    $PosterRadius = 4px
-    $PosterHoverBorder = $ButtonBgActive
-    $PosterHoverOverlay = rgba(23, 24, 27, 0.6)
-    $PosterShadow = 0px 0px 10px
-    
-//TV Series
-    $ShowBgColor1 = $BgColor1
-    $ShowBgColor2 = $BgColor2
+                                input:checked + .slider:before
+                                    -webkit-transform: translateX(16px)
 
-    $EpisodeDetailsBg = $BgColor1
-    
-    $ShowText1 = $Text1
-    $ShowText2 = $Text2
+                            .btn
+                                font-family: $TitleFont
+                                background: $MainColor
+                                color: $Pure_White
+                                text-transform: uppercase
+                                i
+                                    margin: 0 5px 0 0
+                                    font-size: 18px
 
-    $SaisonListText = $Text1
-    $EpisodeListText = $Text2
+    .success_alert
+        z-index: 999
+        position fixed
+        bottom 25px
+        right 50px
+        color $Text1
+        font-family $MainFont, $AlternateFont
+        font-size 16px
 
-    $EpisodeSelectorBg = darken(YellowD2,2%)
-    $EpisodeSelectorHover = #26272d
-    $EpisodeSelectorText = $ButtonText
+        #checkmark-notify
+            display inline-block
+            width 20px
+            height 20px
+            transform rotate(45deg)
 
-    $ShowWatchedIcon_false = rgba(#fff,0.2)
-    $ShowWatchedIcon_hover = rgba(#fff,0.4)
-    $ShowWatchedIcon_true = #fff
+        #stem-notify
+            position absolute
+            width 3px
+            height 12px
+            background-color $Text1
+            left 11px
+            top 6px
 
-    $QualitySelector = $ButtonBg
+        #kick-notify
+            position absolute
+            width 6px
+            height 3px
+            background-color $Text1
+            left 6px
+            top 15px
 
-//File selector
-    $FileSelectorText = #eee
-    $FileSelectorBg = rgba(255, 255, 255, 0.05)
-    $FileSelectorShadow = rgba(0, 0, 0, 0.67)
 
-//Settings
-    $SettingsCategoriesText = YellowD
-    $SettingsSeparator = #333
-    
-    $InputBoxBg = #232324
-    $InputBoxText = $Text2
-
-    $SettingsText1 = $Text2
-    $SettingsText2 = $Text3
-
-    $SettingsButtonText = $ButtonText
-    $SettingsButtonTextHover = $ButtonText
-
-// Notifications
-    $NotificationText = #fff
-    $NotificationInfo = #3498DB
-    $NotificationSuccess = #27AE60
-    $NotificationWarning = #dbb756
-    $NotificationOrange = #f07f53
-    $NotificationError = #f15153
-    $NotificationBorderColor = #000
-
-    $NotificationBtn = #000
-    $NotificationBtnText = #fff
-
-    $NotifAlertBg = #000
-    $NotifAlertText = #fff
-
-//Misc
-    $FavoriteColor = #df2d37
-    $WarningColor = #FFA500
-    $PngLogo = brightness(1.0)
-    $PngLogo_BgColo1 = brightness(1.0)
-
-//Player
-    $PlayerColor = YellowL
-
-@import 'show_header.styl'
+.settings-container-contain
+    section
+        display none
+        &#title
+            display: block
