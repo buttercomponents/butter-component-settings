@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
-import Row from './row';
-import Switch from './switch';
+import Row from './components/row';
+import Switch from './components/switch';
 
 let GoBackButton = (props) => (
     <div className={style['go-back']}>

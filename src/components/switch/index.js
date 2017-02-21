@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './styl/theme.styl';
+import style from './theme.styl';
 
 export default (props) => (
     <label className={style.switch}>
