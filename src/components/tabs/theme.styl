@@ -1,0 +1,33 @@
+.nav-tabs
+    margin 0 auto
+    font-size: 0.9em
+    border-bottom: none 0
+    display: inline-block
+    padding-top 10px
+    box-shadow: none
+    background-color: $BgColor1
+    list-style none
+
+    li
+        display inline-block
+        color #FFF !important
+        box-sizing: content-box
+        color: $FilterBarText
+        text-align: center
+        cursor: pointer
+        vertical-align: middle
+        padding: 15px 0
+        font-family: $TitleFont
+        font-weight: normal
+        font-size: 1.35em
+        text-transform: uppercase
+        border-bottom: 3px solid transparent
+        opacity: 0.4
+        margin: 0 10px
+        &:hover
+            opacity: 0.9
+            border-bottom: 3px solid rgba(255,255,255,0.2)
+        &[class=active],
+        &[aria-expanded*="true"]
+            border-bottom: 3px solid $FilterBarActive
+            opacity: 1
