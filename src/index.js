@@ -3,6 +3,7 @@ import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
 import Row from './components/row';
+import Alert from './components/alert';
 import Button from './components/button';
 import Switch from './components/switch';
 
@@ -30,13 +31,6 @@ let ActionBar = (props) => (
     </div>
 )
 
-let SuccessAlert = (props) => (
-    <div className={style['success_alert']} style={{display:'none'}}>
-        {props.t('Saved')}
-        <i className={style['material-icons']}>check</i>
-    </div>
-                               )
-
 let CloseButton = (props) => (props)
 
 let NavTabs = (props) => (
@@ -63,7 +57,7 @@ class Settings extends Component {
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
                     <div className={style['settings-container']}>
-                        <SuccessAlert {...props}/>
+                        <Alert message="Saved"/>
                         <ActionBar {...props}/>
                         <NavTabs {...props}/>
                         <div className={style['tab-content-wrapper']}></div>
