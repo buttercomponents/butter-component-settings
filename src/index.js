@@ -53,6 +53,7 @@ class Settings extends Component {
             <div>
                 <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
                 <Row icon="folder" title="Cache Directory" helper="Open the Directory where Butter keep it's cache" action={<Button text="Open"/>}/>
+                <Row icon="location_on" title="IP Adress" helper="Set this machine's IP Adress" action={<input type="text"/>}/>
 
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
