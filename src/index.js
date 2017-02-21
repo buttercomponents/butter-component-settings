@@ -58,7 +58,7 @@ class Settings extends Component {
         return (
             <div>
                 <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
-                <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Button text="Open"/>}/>
+                <Row icon="folder" title="Cache Directory" helper="Open the Directory where Butter keep it's cache" action={<Button text="Open"/>}/>
 
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
