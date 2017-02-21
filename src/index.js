@@ -3,6 +3,7 @@ import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
 import Row from './components/row';
+import Button from './components/button';
 import Switch from './components/switch';
 
 let GoBackButton = (props) => (
@@ -57,6 +58,8 @@ class Settings extends Component {
         return (
             <div>
                 <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
+                <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Button text="Open"/>}/>
+
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
                     <div className={style['settings-container']}>
