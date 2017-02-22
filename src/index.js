@@ -40,19 +40,21 @@ class Settings extends Component {
         let {state, props} = this;
         return (
             <div>
-
-
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
 
                     <div className={style['settings-container']}>
-                    <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
-                    <Row icon="folder" title="Cache Directory" helper="Open the Directory where Butter keep it's cache" action={<Button text={props.t('Open')}/>}/>
-                    <Row icon="location_on" title="IP Adress" helper="Set this machine's IP Adress" action={<input type="text"/>}/>
-                    <Row icon="format_paint" title="Theme" helper="Select a different Look&Feel for the App" action={<Dropdown {...props} selected="item 1"/>}/>
+
                         <Alert message={props.t('Saved')}/>
                         <ActionBar {...props}/>
                         <Tabs {...props}/>
+
+                        <Row icon="collections_bookmark" title="Torrent Collection" helper="Display a view with your Torrent Collection" action={<Switch/>}/>
+                        <Row icon="folder" title="Cache Directory" helper="Open the Directory where Butter keep it's cache" action={<Button text={props.t('Open')}/>}/>
+                        <Row icon="location_on" title="IP Adress" helper="Set this machine's IP Adress" action={<input type="text"/>}/>
+                        <Row icon="format_paint" title="Theme" helper="Select a different Look&Feel for the App" action={<Dropdown {...props} selected="item 1"/>}/>
+
                         <div className={style['tab-content-wrapper']}></div>
+
                         <div className={style['btns']}>
                             <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
                             <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>

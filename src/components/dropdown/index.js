@@ -11,9 +11,9 @@ export default (props) => (
             </div>
         </div>
         <ul className={style["dropdown-menu"]}  role="menu">
-                <li className="filter-item" data-value="key">item</li>
-                <li className="filter-item"  data-value="key">item</li>
-                <li className="filter-item" data-value="key">item</li>
+                <li data-value="key">item</li>
+                <li data-value="key">item</li>
+                <li data-value="key">item</li>
         </ul>
     </div>
 )
