@@ -40,12 +40,12 @@ class Settings extends Component {
 
 
                         <div className={style['tab-content-wrapper']}></div>
-
+                        
                         <div className={style['btns']}>
-                            <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
-                            <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>
-                            <div className={style['btn', 'flush-databases']}>{props.t('Flush all databases')}</div>
-                            <div className={style['btn', 'default-settings']}>{props.t('Reset to Default Settings')}</div>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
+                            <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
                         </div>
                     </div>
 
