@@ -3,6 +3,7 @@ import { translate } from 'react-i18next';
 import style from './styl/theme.styl';
 
 import Row from './components/row';
+import Tabs from './components/tabs';
 import Alert from './components/alert';
 import Button from './components/button';
 import Switch from './components/switch';
@@ -33,19 +34,6 @@ let ActionBar = (props) => (
 
 let CloseButton = (props) => (props)
 
-let NavTabs = (props) => (
-    <div className={style['navbar-s']}>
-        <ul id="myTabs" className={style['nav', 'nav-tabs']} role="tablist">
-            {props.tabs.map((t, i) => (
-                 <li className={style['source', i===0?'active':'']} key={i}
-                     href={t.id} aria-controls={t.id} role="tab" data-toggle="tab">
-                     {props.t(t.title)}
-                 </li>
-             ))}
-        </ul>
-    </div>
-)
-
 class Settings extends Component {
     render() {
         let {state, props} = this;
@@ -60,7 +48,7 @@ class Settings extends Component {
                     <div className={style['settings-container']}>
                         <Alert message={props.t('Saved')}/>
                         <ActionBar {...props}/>
-                        <NavTabs {...props}/>
+                        <Tabs {...props}/>
                         <div className={style['tab-content-wrapper']}></div>
                         <div className={style['btns']}>
                             <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
