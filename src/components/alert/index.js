@@ -4,7 +4,7 @@ import style from './theme.styl';
 
 export default (props) => (
     <div className={style['success']}>
-        {props.message}
+        <span>{props.message}</span>
         <i className="material-icons">check</i>
     </div>
 )
