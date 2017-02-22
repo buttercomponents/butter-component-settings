@@ -1,0 +1,125 @@
+.drop-selector
+    position: relative
+    z-index: 1
+    font-family: $MainFont
+    font-smoothing: antialiased
+    color #FFF
+    border-radius:  5px
+    border: 0
+    display: inline-block
+    font-size  0.95em
+
+    .dropdown-backdrop
+        display: none
+
+    .select-item
+        width: auto
+        display: inline-block
+        cursor: pointer
+        span
+            text-align: left
+            min-width: 125px
+            display: inline-block
+            margin: 0
+            padding: 0
+            font-size: 0.9em
+            line-height: 0.75em
+            min-width: 150px
+            text-transform: capitalize
+        i
+            margin:0!important
+            opacity 0.65
+            font-size 1em
+            margin-left 10px
+            &:after
+                content: "arrow_drop_down"
+
+    .dropdown-toggle
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position relative
+        z-index: 99
+        padding: 0px 5px
+        align-items: center
+        cursor: pointer
+        font-family: $MainFontBold
+        font-smoothing: antialiased
+        text-align: center
+        font-size: 16px
+        padding: 5px 10px
+        border-radius 5px
+        color #FFF
+        font-weight normal
+        line-height 0.70em
+        display: inline-block
+        width: auto
+        background $InputBg
+        -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
+        i
+            margin-right: 10px
+            font-size 14px
+        i, div
+            display: inline-block
+            vertical-align middle
+
+.dropdown-menu
+    z-index: 1
+    padding: 5px 0 0 0
+    opacity: 0
+    overflow-x: hidden
+    overflow-y: auto
+    width: 100%
+    height:0
+    max-height: 215px
+    margin: 0
+    border: 0
+    border-radius: 0 0 5px 5px
+    box-shadow: none
+    display inline-block
+    vertical-align top
+    list-style: none
+    transform: translate(0, -30px)!important
+    -webkit-transition: transform 0.4s cubic-bezier(0.42, 0, 0, 1.4)
+
+    li
+        cursor: pointer
+        opacity: 0.75
+        padding: 8px 0px 8px 10px
+        &:hover
+            background: #EEE
+            opacity: 1
+
+    &::-webkit-scrollbar
+        width 5px
+
+    &::-webkit-scrollbar-track
+        background-color #DDD
+        border-radius 2px
+
+    &::-webkit-scrollbar-thumb
+        background-color $ScrollBarThumb
+        border-radius 2px
+        &:hover
+            background-color: $ScrollBarThumbHover
+
+.open
+    z-index: 99
+    background: #FFF
+    color: #252525
+    border-radius: 5px 5px 0 0
+
+    .dropdown-toggle
+        color: #252525
+        background: transparent
+        -webkit-box-shadow: none
+
+        i:after
+            content "arrow_drop_up"
+            color: rgba(0, 0, 0, 0.65)
+
+    .dropdown-menu
+        background: #FFF
+        height: auto
+        opacity: 1
+        transform: translate(0, -7px)!important
