@@ -8,28 +8,13 @@ import Alert from './components/alert';
 import Button from './components/button';
 import Switch from './components/switch';
 import Dropdown from './components/dropdown';
+import ActionBar from './components/action-bar';
+
 
 let GoBackButton = (props) => (
     <div className={style['go-back']}>
         <i className={style['material-icons']}>arrow_back</i>
         <span>{props.t("Settings")}</span>
-    </div>
-)
-
-let ActionBar = (props) => (
-    <div id="action-bar">
-        <div className={style['actions-bar']}>
-            <GoBackButton {...props}/>
-            <ul className={style['toolbar']}>
-                <li>
-                    <i data-toggle="tooltip" data-placement="left" title={props.t('Keyboard Shortcuts')} className={style['material-icons']}>keyboard</i>
-                </li>
-                <li>
-                    <i data-toogle="tooltip" data-placement="left" title={props.t('Help Section')} className={style['material-icons magnet-link']}>help_outline</i>
-                </li>
-                <div className={style['toolbar-settings']}></div>
-            </ul>
-        </div>
     </div>
 )
 

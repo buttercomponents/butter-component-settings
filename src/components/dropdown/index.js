@@ -18,6 +18,8 @@ export default (props) => (
             <li>item 6</li>
             <li>item 7</li>
             <li>item 8</li>
+            <li>item 9</li>
+            <li>item 10</li>
         </ul>
 
     </div>
