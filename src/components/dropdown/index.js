@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './theme.styl';
+import style from './style.styl';
 
 export default (props) => (
-    <div className={style["drop-selector"]}>
-        <div className={style["dropdown-toggle"]} data-toggle="dropdown" aria-expanded="false">
-            <div className={style["select-item"]}>
-                <span>{props.t(props.selected)}</span>
-                <i className="material-icons"></i>
-            </div>
+    <div className={ "boostrap-dropdown " + style.dropdown }>
+        <div className={ "dropdown-toggle " +  style.toggle } data-toggle="dropdown">
+            <span>item 1</span>
+            <i className="material-icons"></i>
         </div>
-        <ul className={style["dropdown-menu"]}  role="menu">
-                <li data-value="key">item</li>
-                <li data-value="key">item</li>
-                <li data-value="key">item</li>
+        
+        <ul className={"boostrap-dropdown-menu " + style.menu }>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+            <li>item 9</li>
+            <li>item 10</li>
         </ul>
+
     </div>
 )

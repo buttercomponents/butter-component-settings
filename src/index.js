@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './styl/theme.styl';
+import style from './styl/style.styl';
 
 import Row from './components/row';
 import Tabs from './components/tabs';
@@ -8,28 +8,13 @@ import Alert from './components/alert';
 import Button from './components/button';
 import Switch from './components/switch';
 import Dropdown from './components/dropdown';
+import ActionBar from './components/action-bar';
+
 
 let GoBackButton = (props) => (
     <div className={style['go-back']}>
         <i className={style['material-icons']}>arrow_back</i>
         <span>{props.t("Settings")}</span>
-    </div>
-)
-
-let ActionBar = (props) => (
-    <div id="action-bar">
-        <div className={style['actions-bar']}>
-            <GoBackButton {...props}/>
-            <ul className={style['toolbar']}>
-                <li>
-                    <i data-toggle="tooltip" data-placement="left" title={props.t('Keyboard Shortcuts')} className={style['material-icons']}>keyboard</i>
-                </li>
-                <li>
-                    <i data-toogle="tooltip" data-placement="left" title={props.t('Help Section')} className={style['material-icons magnet-link']}>help_outline</i>
-                </li>
-                <div className={style['toolbar-settings']}></div>
-            </ul>
-        </div>
     </div>
 )
 
@@ -57,10 +42,10 @@ class Settings extends Component {
                         <div className={style['tab-content-wrapper']}></div>
 
                         <div className={style['btns']}>
-                            <div className={style['btn', 'flush-bookmarks', 'advanced']}>{props.t('Flush bookmarks database')}</div>
-                            <div className={style['btn', 'flush-subtitles', 'advanced']}>{props.t('Flush subtitles cache')}</div>
-                            <div className={style['btn', 'flush-databases']}>{props.t('Flush all databases')}</div>
-                            <div className={style['btn', 'default-settings']}>{props.t('Reset to Default Settings')}</div>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
+                            <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
+                            <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
                         </div>
                     </div>
 

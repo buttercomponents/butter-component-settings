@@ -1,4 +1,4 @@
-.nav-tabs
+.tabs
     margin 0 auto
     font-size: 0.9em
     border-bottom: none 0
@@ -6,7 +6,6 @@
     padding-top 10px
     box-shadow: none
     background-color: $BgColor1
-    list-style none
 
     li
         display inline-block
@@ -27,7 +26,7 @@
         &:hover
             opacity: 0.9
             border-bottom: 3px solid rgba(255,255,255,0.2)
-        &[class=active],
+        &[class*=active],
         &[aria-expanded*="true"]
             border-bottom: 3px solid $FilterBarActive
             opacity: 1
