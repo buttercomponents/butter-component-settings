@@ -10,7 +10,8 @@ import ActionBar from '../action-bar';
 
 let Action = (props) => (
     (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
-    (props.type === 'TEXT')  ?(<input type="text"/>):
+    (props.type === 'TEXT')?(<input type="text"/>):
+    (props.type === 'PASSWORD')?(<input type="password"/>):
     (props.type === 'DROPDOWN')?(<Dropdown {...props}/>):
     (props.type === 'SWITCH')?(<Switch/>):
     (<b>Couldn't find an apropiate action type {console.log(props)}</b>)
