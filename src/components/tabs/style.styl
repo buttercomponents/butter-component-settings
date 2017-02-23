@@ -30,3 +30,31 @@
         &[aria-expanded*="true"]
             border-bottom: 3px solid $FilterBarActive
             opacity: 1
+
+.tab-content-wrapper
+    scrollable() // needs fix
+    overflow: auto
+    display: block
+    width: 100%
+    position: absolute
+    top: 160px
+    bottom: 0px
+
+.tab-panel
+    display: none
+    .title
+        font-family: $TitleFont
+        color: #FFF
+        font-weight: 900
+        padding: 20px
+        text-align: center
+        opacity: .4
+
+     section
+        display block
+        .content
+            max-width: 780px
+            margin: 0 auto
+
+    &[class*=active]
+        display: block

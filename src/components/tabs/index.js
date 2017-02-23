@@ -16,7 +16,7 @@ let Action = (props) => (
 )
 
 let TabPanel = (props) => (
-    <div role="tabpanel" className="tab-pane" id={props.id}>
+    <div role="tabpanel" className={style["tab-panel"]} id={props.id}>
         <section id={props.id}>
             {props.items.map((e, i) => {
                  let {action, ...rest} = e
@@ -57,5 +57,3 @@ export default class Tabs extends Component {
         )
     }
 }
-
-
