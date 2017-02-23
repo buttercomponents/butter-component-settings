@@ -40,6 +40,7 @@ export default class Tabs extends Component {
     render () {
         let {props, state} = this
         return (
+            <div>
             <div className="navbar-s">
                 <ul id="myTabs" className={style.tabs} role="tablist">
                     {props.tabs.map((t, i) => (
@@ -48,11 +49,12 @@ export default class Tabs extends Component {
                          </li>
                      ))}
                 </ul>
-                <div id="tabPanels" className={style['tab-content-wrapper']}>
-                    {props.tabs.map((t, i) => (
-                         <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
-                     ))}
-                </div>
+            </div>
+            <div id="tabPanels" className={style['tab-content-wrapper']}>
+                {props.tabs.map((t, i) => (
+                     <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
+                 ))}
+            </div>
             </div>
         )
     }
