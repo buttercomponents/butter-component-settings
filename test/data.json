@@ -1,9 +1,85 @@
 {
-    "tabs": [{"title": "General"},
-             {"title": "Interface"},
-             {"title": "Subtitles"},
-             {"title": "Extensions"},
-             {"title": "Providers"}],
+    "tabs": [{
+        "title": "General",
+        "id": "general",
+        "items": [{
+            "icon": "collections_bookmark",
+            "title": "Torrent Collection",
+            "helper": "Display a view with your Torrent Collection",
+            "action": {
+                "type": "SWITCH"
+            }
+        }, {
+            "icon": "folder",
+            "title": "Cache Directory",
+            "helper": "Open the Directory where Butter keep it's cache",
+            "action": {
+                "type": "BUTTON",
+                "text": "Open"
+            }
+        }, {
+            "icon": "format_paint",
+            "title": "Theme",
+            "helper": "Select a different Look&Feel for the App",
+            "action": {
+                "type": "DROPDOWN",
+                "options": ["item 1", "item 2", "item 3"]
+            }
+        }, {
+            "icon": "location_on",
+            "title": "IP Adress",
+            "helper": "Set this machine's IP Adress",
+            "action": {
+                "type": "TEXT"
+            }
+        }]
+    }, {
+        "title": "Interface",
+        "id": "interface",
+        "items": [{
+            "icon": "collections_bookmark",
+            "title": "Torrent Collection",
+            "helper": "Display a view with your Torrent Collection",
+            "action": {
+                "type": "SWITCH"
+            }
+        }, {
+            "icon": "folder",
+            "title": "Cache Directory",
+            "helper": "Open the Directory where Butter keep it's cache",
+            "action": {
+                "type": "BUTTON",
+                "text": "Open"
+            }
+        }, {
+            "icon": "format_paint",
+            "title": "Theme",
+            "helper": "Select a different Look&Feel for the App",
+            "action": {
+                "type": "DROPDOWN",
+                "options": ["item 1", "item 2", "item 3"]
+            }
+        }, {
+            "icon": "location_on",
+            "title": "IP Adress",
+            "helper": "Set this machine's IP Adress",
+            "action": {
+                "type": "TEXT"
+            }
+        }]
+    }, {
+        "title": "Subtitles",
+        "id": "subtitles",
+        "items": []
+    }, {
+        "title": "Extensions",
+        "id": "extensions",
+        "items": []
+    }, {
+        "title": "Providers",
+        "id": "providers",
+        "items": []
+    }],
   "settings": {
     "projectName": "Butter",
     "projectUrl": "http://butterproject.org",
