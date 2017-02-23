@@ -20,7 +20,7 @@ class RowChooser extends Component {
                 actionElement = <input type="text"/>
                 break
             case 'DROPDOWN':
-                actionElement = <Dropdown {...props}/>
+                actionElement = <Dropdown {...action}/>
                 break
             case 'SWICH':
             default:
