@@ -7,38 +7,24 @@ import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
 
-class RowChooser extends Component {
-    render() {
-        let {props} = this
-        let action = props.action
-        let actionElement
-        switch (action.type) {
-            case 'BUTTON':
-                actionElement = <Button text={props.t(action.text)}/>
-                break
-            case 'TEXT':
-                actionElement = <input type="text"/>
-                break
-            case 'DROPDOWN':
-                actionElement = <Dropdown {...action}/>
-                break
-            case 'SWICH':
-            default:
-                actionElement = <Switch/>
-                break
-        }
-        return (
-            <Row icon={props.icon} title={props.t(props.title)} helper={props.t(props.helper)} action={actionElement}/>
-        )
-    }
-}
+let Action = (props) => (
+    (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
+    (props.type === 'TEXT')  ?(<input type="text"/>):
+    (props.type === 'DROPDOWN')?(<Dropdown {...props}/>):
+    (props.type === 'SWITCH')?(<Switch/>):
+    (<b>Couldn't find an apropiate action type {console.log(props)}</b>)
+)
 
 let TabPanel = (props) => (
     <div role="tabpanel" className="tab-pane" id={props.id}>
         <section id={props.id}>
-            {props.items.map((e, i) => (
-                 <RowChooser key={i} t={props.t} {...e}/>
-             ))}
+            {props.items.map((e, i) => {
+                 let {action, ...rest} = e
+                 let actionElement = (<Action t={props.t} {...action}/>)
+                 return (
+                     <Row key={i} action={actionElement} {...rest}/>
+                 )
+             })}
         </section>
     </div>
 )
