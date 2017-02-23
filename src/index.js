@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './styl/theme.styl';
+import style from './style.styl';
 
 import Row from './components/row';
 import Tabs from './components/tabs';
@@ -40,7 +40,7 @@ class Settings extends Component {
 
 
                         <div className={style['tab-content-wrapper']}></div>
-                        
+
                         <div className={style['btns']}>
                             <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
                             <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>

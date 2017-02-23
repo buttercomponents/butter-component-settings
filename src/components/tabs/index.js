@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './theme.styl';
+import style from './style.styl';
 
 export default (props) => (
     <ul id="myTabs" className={style.tabs} role="tablist">
