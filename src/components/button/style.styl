@@ -2,9 +2,8 @@
   border-radius: $ButtonRadius
   background-clip: padding-box
   background-color: $ButtonBg
-  transition: background-color 0.5s
-  font-size: 1em
   color: $ButtonText
+  font-size: 1em
   font-family: $TitleFont
   font-smoothing: antialiased
   text-align: center
@@ -13,6 +12,7 @@
   padding: 5px 10px
   margin: 5px
   cursor: pointer
+  transition: background-color 0.5s
 
   &:hover
     background: $ButtonBgHover
@@ -22,13 +22,11 @@
     box-shadow: inset 0 1px 4px rgba(0,0,0,0.6)
     background: $ButtonBgActive
 
-
-
-    span, i
-        display: inline-block
-        vertical-align: middle
-    i
-        margin-left: 10px
+  span, i
+    display: inline-block
+    vertical-align: middle
+  i
+    margin-left: 10px
 
 .normal
     composes: button
