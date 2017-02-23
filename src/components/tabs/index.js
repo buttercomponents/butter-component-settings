@@ -52,11 +52,11 @@ export default class Tabs extends Component {
                 </ul>
                 <ActionBar {...props}/>
             </div>
-            <div id="tabPanels" className={style['tab-content-wrapper']}>
+            <div id="tabPanels" className={style['tabs-content']}>
                 {props.tabs.map((t, i) => (
                      <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
                  ))}
-                 <div className={style['btns']}>
+                 <div className={style['buttons-content']}>
                      <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
                      <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
                      <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
