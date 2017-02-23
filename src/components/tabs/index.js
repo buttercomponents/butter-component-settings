@@ -56,6 +56,12 @@ export default class Tabs extends Component {
                 {props.tabs.map((t, i) => (
                      <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
                  ))}
+                 <div className={style['btns']}>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
+                     <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
+                 </div>
             </div>
             </div>
         )

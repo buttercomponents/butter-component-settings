@@ -4,8 +4,7 @@ import style from './styl/style.styl';
 
 import Tabs from './components/tabs';
 import Alert from './components/alert';
-import ActionBar from './components/action-bar';
-import Button from './components/button';
+
 
 let GoBackButton = (props) => (
     <div className={style['go-back']}>
@@ -27,12 +26,6 @@ class Settings extends Component {
 
                         <Alert message={props.t('Saved')}/>
                         <Tabs {...props}/>
-                        <div className={style['btns']}>
-                            <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
-                            <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
-                            <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
-                            <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
-                        </div>
                     </div>
 
                 </div>
