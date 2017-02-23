@@ -28,7 +28,6 @@ class Settings extends Component {
                         <Alert message={props.t('Saved')}/>
                         <ActionBar {...props}/>
                         <Tabs {...props}/>
-                        <div className={style['tab-content-wrapper']}></div>
 
                         <div className={style['btns']}>
                             <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>

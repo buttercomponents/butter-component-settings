@@ -62,7 +62,7 @@ export default class Tabs extends Component {
                          </li>
                      ))}
                 </ul>
-                <div id="tabPanels">
+                <div id="tabPanels" className={style['tab-content-wrapper']}>
                     {props.tabs.map((t, i) => (
                          <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
                      ))}
