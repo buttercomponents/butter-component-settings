@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './style.styl';
+import style from './styl/style.styl';
 
 import Row from './components/row';
 import Tabs from './components/tabs';

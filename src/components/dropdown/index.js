@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
-import style from './theme.styl';
+import style from './style.styl';
 
 export default (props) => (
     <div className={ "boostrap-dropdown " + style.dropdown }>
@@ -8,7 +8,7 @@ export default (props) => (
             <span>item 1</span>
             <i className="material-icons"></i>
         </div>
-
+        
         <ul className={"boostrap-dropdown-menu " + style.menu }>
             <li>item 1</li>
             <li>item 2</li>
