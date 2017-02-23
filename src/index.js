@@ -26,9 +26,7 @@ class Settings extends Component {
                     <div className={style['settings-container']}>
 
                         <Alert message={props.t('Saved')}/>
-                        <ActionBar {...props}/>
                         <Tabs {...props}/>
-
                         <div className={style['btns']}>
                             <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
                             <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>

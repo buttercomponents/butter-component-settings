@@ -6,6 +6,7 @@ import Row from '../row';
 import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
+import ActionBar from '../action-bar';
 
 let Action = (props) => (
     (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
@@ -49,6 +50,7 @@ export default class Tabs extends Component {
                          </li>
                      ))}
                 </ul>
+                <ActionBar {...props}/>
             </div>
             <div id="tabPanels" className={style['tab-content-wrapper']}>
                 {props.tabs.map((t, i) => (
