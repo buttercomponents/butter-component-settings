@@ -7,6 +7,7 @@ import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
 import ActionBar from '../action-bar';
+import GoBackButton from '../go-back-button';
 
 let Action = (props) => (
     (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
@@ -44,6 +45,7 @@ export default class Tabs extends Component {
         return (
             <div>
             <div className="navbar-s">
+                <GoBackButton {...props} title="Settings"/>
                 <ul id="myTabs" className={style.tabs} role="tablist">
                     {props.tabs.map((t, i) => (
                          <li className={'source ' + (i === state.selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
