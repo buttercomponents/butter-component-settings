@@ -6,6 +6,7 @@
     padding-top 10px
     box-shadow: none
     background-color: $BgColor1
+    text-align center
 
     li
         display inline-block
@@ -31,17 +32,22 @@
             border-bottom: 3px solid $FilterBarActive
             opacity: 1
 
-.tab-content-wrapper
-    scrollable() // needs fix
-    overflow: auto
+.buttons-content
+    margin: 25px auto
+    text-align: center
+
+.tabs-content
+    scrollable()
     display: block
     width: 100%
     position: absolute
-    top: 160px
-    bottom: 0px
+    top: 62px
+    bottom: 0
 
 .tab-panel
     display: none
+    max-width: 980px
+    margin: auto
     .title
         font-family: $TitleFont
         color: #FFF

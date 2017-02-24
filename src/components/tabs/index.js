@@ -6,10 +6,13 @@ import Row from '../row';
 import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
+import ActionBar from '../action-bar';
+import GoBackButton from '../go-back-button';
 
 let Action = (props) => (
     (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
-    (props.type === 'TEXT')  ?(<input type="text"/>):
+    (props.type === 'TEXT')?(<input type="text"/>):
+    (props.type === 'PASSWORD')?(<input type="password"/>):
     (props.type === 'DROPDOWN')?(<Dropdown {...props}/>):
     (props.type === 'SWITCH')?(<Switch/>):
     (<b>Couldn't find an apropiate action type {console.log(props)}</b>)
@@ -40,7 +43,9 @@ export default class Tabs extends Component {
     render () {
         let {props, state} = this
         return (
+            <div>
             <div className="navbar-s">
+                <GoBackButton {...props} title="Settings"/>
                 <ul id="myTabs" className={style.tabs} role="tablist">
                     {props.tabs.map((t, i) => (
                          <li className={'source ' + (i === state.selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
@@ -48,11 +53,19 @@ export default class Tabs extends Component {
                          </li>
                      ))}
                 </ul>
-                <div id="tabPanels" className={style['tab-content-wrapper']}>
-                    {props.tabs.map((t, i) => (
-                         <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
-                     ))}
-                </div>
+                <ActionBar {...props}/>
+            </div>
+            <div id="tabPanels" className={style['tabs-content']}>
+                {props.tabs.map((t, i) => (
+                     <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
+                 ))}
+                 <div className={style['buttons-content']}>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
+                     <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
+                     <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
+                 </div>
+            </div>
             </div>
         )
     }
