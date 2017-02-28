@@ -1,8 +1,9 @@
 @import './global.styl'
 
+
 .settings
     z-index 1
-    background-color $BackColor_dark
+    background-color var(--Bg-color)
     height 100%
     width 100%
     position fixed
@@ -10,7 +11,7 @@
     #qrcode-modal
             height: 100vh
             width: 100vw
-            background: $BackColor_dark
+            background:  var(--Bg-color)
             position: absolute
             left: 0
             top: 0
@@ -33,7 +34,7 @@
         width 100%
         height 100%
         position absolute
-        background-color $BackColor_dark
+        background-color var(--Bg-color)
         -webkit-user-select none
         padding-bottom 20px
         top: 0

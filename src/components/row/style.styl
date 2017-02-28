@@ -7,7 +7,6 @@
     padding 35px 20px
     transition: all 0.3s ease
     transition-property: background, transform, opacity;
-    background-color: $BgColor1
     &.advanced
         overflow: hidden
         padding: 0
@@ -22,17 +21,17 @@
         display: inline-block
         vertical-align: middle
     .text
-        font-family: $TitleFont
+        font-family: var(--Font-title)
         font-size: 18px
         font-weight: bold
         line-height: 1em
         max-width: 52%
-        .helper
-            margin-top: 2px
-            font-family: $MainFont
-            font-weight: normal
-            opacity: 0.4
-            font-size 13px
+    .helper
+        margin-top: 2px
+        font-family var(--Font-normal)
+        font-weight: normal
+        opacity: 0.4
+        font-size 13px
     i
         font-size: 24px
         margin: 0 20px

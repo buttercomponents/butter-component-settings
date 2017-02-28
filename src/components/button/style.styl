@@ -4,7 +4,7 @@
   background-color: $ButtonBg
   color: $ButtonText
   font-size: 1em
-  font-family: $TitleFont
+  font-family: var(--Font-title)
   font-smoothing: antialiased
   text-align: center
   text-transform: uppercase
@@ -12,15 +12,15 @@
   padding: 5px 10px
   margin: 5px
   cursor: pointer
-  transition: background-color 0.5s
+  transition: background-color 0.25s
 
   &:hover
-    background: $ButtonBgHover
+    background: var(--Button-hover)
     text-decoration: none
 
   &:active
     box-shadow: inset 0 1px 4px rgba(0,0,0,0.6)
-    background: $ButtonBgActive
+    background: var(--Button-active)
 
   span, i
     display: inline-block
@@ -30,6 +30,7 @@
 
 .normal
     composes: button
+    background: var(--Main-color)
 
 .secondary
     composes: button

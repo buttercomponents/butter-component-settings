@@ -9,6 +9,12 @@ import Dropdown from '../dropdown';
 import ActionBar from '../action-bar';
 import GoBackButton from '../go-back-button';
 
+//Test themes
+function toggle(){
+    const root = document.getElementById('root');
+    root.className = (root.className === 'theme-dark') ? 'theme-pink' : 'theme-dark';
+}
+
 let Action = (props) => (
     (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
     (props.type === 'TEXT')?(<input type="text"/>):
@@ -60,9 +66,8 @@ export default class Tabs extends Component {
                      <TabPanel key={i} t={props.t} selected={state.selected === i} {...t}/>
                  ))}
                  <div className={style['buttons-content']}>
-                     <Button type="secondary" icon="delete_forever" text={props.t('Flush bookmarks database')}/>
-                     <Button type="secondary" icon="delete_forever" text={props.t('Flush subtitles cache')}/>
                      <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
+                     <Button type="secondary" icon="format_paint" text={props.t('Toggle theme')} handler={toggle}/>
                      <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
                  </div>
             </div>
