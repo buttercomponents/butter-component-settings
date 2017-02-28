@@ -4,7 +4,7 @@
   background-color: $ButtonBg
   color: $ButtonText
   font-size: 1em
-  font-family: $TitleFont
+  font-family: var(--Font-title)
   font-smoothing: antialiased
   text-align: center
   text-transform: uppercase
@@ -30,6 +30,7 @@
 
 .normal
     composes: button
+    background: var(--Main-color)
 
 .secondary
     composes: button

@@ -1,9 +1,7 @@
 .dropdown
         position: relative
         z-index: 1
-        font-family: $MainFont
-        font-smoothing: antialiased
-        color #FFF
+        color:  #FFF
         border-radius:  5px
         border: 0
         display: inline-block
@@ -34,18 +32,17 @@
     z-index: 99
     align-items: center
     cursor: pointer
-    font-family: $MainFontBold
-    font-smoothing: antialiased
+    font-family: var(--Font-title)
     text-align: center
     font-size: 16px
-    padding: 5px 10px
+    padding: 8px 10px
     border-radius 5px
     color #FFF
     font-weight normal
     line-height 0.70em
     display: inline-block
     width: auto
-    background $InputBg
+    background: var(--Input-bg-color)
     -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
 
     &[aria-expanded*=true]
@@ -94,6 +91,7 @@
     position: absolute
     left 0
     top 0
+    font-family: var(--Font-normal)
     transform: translate(0, -5px)!important
     -webkit-transition: transform 0.4s cubic-bezier(0.42, 0, 0, 1.4)
 

@@ -1,9 +1,9 @@
 :global
     ul
         list-style: none
+        
     .hide
         display: none
-
 
     input
         &[type=text],
@@ -18,18 +18,16 @@
             font-weight normal
             line-height 0.70em
             width 140px
-            background $InputBg
+            background var(--Input-bg-color)
             -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
             transition background .2s ease
-
-
 
     .navbar-s
         z-index: 10
         width: 100%
         padding: 0 40px
         opacity: 1
-        background-color: $FilterBarBg
+        background-color: var(--Nav-color)
         position: absolute
         display: flex
         align-items: center
