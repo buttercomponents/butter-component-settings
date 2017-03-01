@@ -8,11 +8,16 @@ export default class Dropdown extends Component {
         this.state = {
             selected: props.selected || props.options[0]
         }
+        this.apply = props.apply || function () {}
+    }
+
+    onSelect (o, e) {
+        this.setState({selected: o})
+        this.apply(o)
     }
 
     render() {
         let {props, state} = this
-        let handler = props.handler || function () {}
 
         return (
             <div className={"boostrap-dropdown " + style.dropdown}>
@@ -22,7 +27,7 @@ export default class Dropdown extends Component {
                 </div>
                 <ul className={"dropdown-menu " + style.menu }>{
                     props.options.map((o, i) => (
-                        <li key={i} onClick={handler.bind(this, o)}>{o}</li>
+                        <li key={i} onClick={this.onSelect.bind(this, o)}>{o}</li>
                     ))}
                 </ul>
             </div>
