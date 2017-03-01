@@ -1,164 +1,166 @@
-{
+export default {
     "tabs": [{
-        "title": "General",
-        "id": "general",
-        "items": [{
-            "id": "activateTorrentCollection",
-            "icon": "collections_bookmark",
-            "title": "Torrent Collection",
-            "helper": "Display a view with your Torrent Collection",
-            "action": {
-                "type": "SWITCH"
+        title: "General",
+        id: "general",
+        items: [{
+            id: "activateTorrentCollection",
+            icon: "collections_bookmark",
+            title: "Torrent Collection",
+            helper: "Display a view with your Torrent Collection",
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "activateWatchlist",
-            "icon": "remove_red_eye",
-            "title": "Watchlist",
-            "helper": "Display a view with your Watchlist",
-            "action": {
-                "type": "SWITCH"
+            id: "activateWatchlist",
+            icon: "remove_red_eye",
+            title: "Watchlist",
+            helper: "Display a view with your Watchlist",
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "activateRandomize",
-            "icon": "shuffle",
-            "title": "Randomize Button",
-            "helper": "Display a button to select a Random Movie in the Current View",
-            "advanced": true,
-            "action": {
-                "type": "SWITCH"
+            id: "activateRandomize",
+            icon: "shuffle",
+            title: "Randomize Button",
+            helper: "Display a button to select a Random Movie in the Current View",
+            advanced: true,
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "movies_quality",
-            "icon": "sort",
-            "title": "Content Quality",
-            "helper": "Only show content in this quality",
-            "advanced": true,
-            "action": {
-                "type": "DROPDOWN",
-                "options": ["All", "1080p", "720p"]
+            id: "movies_quality",
+            icon: "sort",
+            title: "Content Quality",
+            helper: "Only show content in this quality",
+            advanced: true,
+            action: {
+                type: "DROPDOWN",
+                options: ["All", "1080p", "720p"]
             }
         }, {
-            "id": "moviesShowQuality",
-            "icon": "high_quality",
-            "title": "Show Quality",
-            "helper": "Display Content Quality in List view",
-            "advanced": true,
-            "action": {
-                "type": "SWITCH"
+            id: "moviesShowQuality",
+            icon: "high_quality",
+            title: "Show Quality",
+            helper: "Display Content Quality in List view",
+            advanced: true,
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "alwaysFullscreen",
-            "icon": "fullscreen",
-            "title": "Fullscreen",
-            "helper": "Always start playback in FullScreen mode",
-            "advanced": true,
-            "action": {
-                "type": "SWITCH"
+            id: "alwaysFullscreen",
+            icon: "fullscreen",
+            title: "Fullscreen",
+            helper: "Always start playback in FullScreen mode",
+            advanced: true,
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "playNextEpisodeAuto",
-            "icon": "queue_play_next",
-            "title": "Play Next",
-            "helper": "Automatically play next Episode",
-            "advanced": true,
-            "action": {
-                "type": "SWITCH"
+            id: "playNextEpisodeAuto",
+            icon: "queue_play_next",
+            title: "Play Next",
+            helper: "Automatically play next Episode",
+            advanced: true,
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "id": "connectionLimit",
-            "icon": "settings_applications",
-            "title": "Connection Limit",
-            "helper": "Limit the amount of Outbound Connection Butter will open",
-            "advanced": true,
-            "action": {
-                "type": "TEXT"
+            id: "connectionLimit",
+            icon: "settings_applications",
+            title: "Connection Limit",
+            helper: "Limit the amount of Outbound Connection Butter will open",
+            advanced: true,
+            action: {
+                type: "TEXT"
             }
         }, {
-            "id": "streamPort",
-            "icon": "settings_applications",
-            "title": "Stream Port",
-            "helper": "Port to stream on, randomlly choosen if 0",
-            "advanced": true,
-            "action": {
-                "type": "TEXT"
+            id: "streamPort",
+            icon: "settings_applications",
+            title: "Stream Port",
+            helper: "Port to stream on, randomlly choosen if 0",
+            advanced: true,
+            action: {
+                type: "TEXT"
             }
         }, {
-            "id": "overallRatio",
-            "icon": "settings_applications",
-            "title": "Overall Ratio",
-            "helper": "Downloaded so far:",
-            "advanced": true,
-            "action": {
-                "type": "TEXT"
+            id: "overallRatio",
+            icon: "settings_applications",
+            title: "Overall Ratio",
+            helper: "Downloaded so far:",
+            advanced: true,
+            action: {
+                type: "TEXT"
             }
         }, {
-            "id": "cache-directory",
-            "icon": "folder",
-            "title": "Cache Directory",
-            "helper": "Open the Directory where Butter keeps it's Cache",
-            "advanced": true,
-            "action": {
-                "type": "BUTTON",
-                "text":"Open"
+            id: "cache-directory",
+            icon: "folder",
+            title: "Cache Directory",
+            helper: "Open the Directory where Butter keeps it's Cache",
+            advanced: true,
+            action: {
+                type: "BUTTON",
+                text:"Open"
             }
         }, {
-            "id": "deleteTmpOnClose",
-            "icon": "delete",
-            "title": "Clear Cache",
-            "helper": "Delete temp folder after closing the App",
-            "advanced": true,
-            "action": {
-                "type":"SWITCH"
+            id: "deleteTmpOnClose",
+            icon: "delete",
+            title: "Clear Cache",
+            helper: "Delete temp folder after closing the App",
+            advanced: true,
+            action: {
+                type:"SWITCH"
             }
         }]
     }, {
-        "title": "Interface",
-        "id": "interface",
-        "items": [{
-            "icon": "collections_bookmark",
-            "title": "Torrent Collection",
-            "helper": "Display a view with your Torrent Collection",
-            "action": {
-                "type": "SWITCH"
+        title: "Interface",
+        id: "interface",
+        items: [{
+            icon: "collections_bookmark",
+            title: "Torrent Collection",
+            helper: "Display a view with your Torrent Collection",
+            action: {
+                type: "SWITCH"
             }
         }, {
-            "icon": "folder",
-            "title": "Cache Directory",
-            "helper": "Open the Directory where Butter keep it's cache",
-            "action": {
-                "type": "BUTTON",
-                "text": "Open"
+            icon: "folder",
+            title: "Cache Directory",
+            helper: "Open the Directory where Butter keep it's cache",
+            action: {
+                type: "BUTTON",
+                text: "Open"
             }
         }, {
-            "icon": "format_paint",
-            "title": "Theme",
-            "helper": "Select a different Look&Feel for the App",
-            "action": {
-                "type": "DROPDOWN",
-                "options": ["dark", "pink"]
+            icon: "format_paint",
+            title: "Theme",
+            helper: "Select a different Look&Feel for the App",
+            action: {
+                type: "DROPDOWN",
+                options: ["dark", "pink"],
+                apply: (theme) =>
+                    (document.getElementById('root').className = `theme-${theme}`)
             }
         }, {
-            "icon": "location_on",
-            "title": "IP Adress",
-            "helper": "Set this machine's IP Adress",
-            "action": {
-                "type": "TEXT"
+            icon: "location_on",
+            title: "IP Adress",
+            helper: "Set this machine's IP Adress",
+            action: {
+                type: "TEXT"
             }
         }]
     }, {
-        "title": "Subtitles",
-        "id": "subtitles",
-        "items": []
+        title: "Subtitles",
+        id: "subtitles",
+        items: []
     }, {
-        "title": "Extensions",
-        "id": "extensions",
-        "items": []
+        title: "Extensions",
+        id: "extensions",
+        items: []
     }, {
-        "title": "Providers",
-        "id": "providers",
-        "items": []
+        title: "Providers",
+        id: "providers",
+        items: []
     }],
-  "settings": {
+                "settings": {
     "projectName": "Butter",
     "projectUrl": "http://butterproject.org",
     "projectTwitter": "butterproject",
@@ -347,5 +349,6 @@
     "opensubtitles-password": "blah",
     "lastWatchedTime": -3.167977,
     "disclaimerAccepted": 1
-  }
-}
+  }}
+
+
