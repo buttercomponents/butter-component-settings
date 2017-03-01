@@ -10,6 +10,7 @@ let CloseButton = (props) => (props)
 class Settings extends Component {
     render() {
         let {state, props} = this;
+
         return (
             <div>
                 <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>

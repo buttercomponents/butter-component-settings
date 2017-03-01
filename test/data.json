@@ -135,7 +135,7 @@
             "helper": "Select a different Look&Feel for the App",
             "action": {
                 "type": "DROPDOWN",
-                "options": ["item 1", "item 2", "item 3"]
+                "options": ["dark", "pink"]
             }
         }, {
             "icon": "location_on",
