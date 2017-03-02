@@ -11,7 +11,11 @@ export default (props) => (
                 <i data-toggle="tooltip" data-placement="left" title={props.t('Keyboard Shortcuts')} className="material-icons">keyboard</i>
             </li>
             <li>
-                <i data-toogle="tooltip" data-placement="left" title={props.t('Help Section')} className="material-icons magnet-link">help_outline</i>
+                <i data-toogle="tooltip" data-placement="left" title={props.t('Help Section')} className="material-icons">help_outline</i>
+            </li>
+            <li>
+                <i data-toggle="tooltip" data-placement="left" title={props.t('Show Advanced Settings')} className="material-icons">filter_list</i>
+                <input type="checkbox" onChange={props.action.toggleAdvanced}/>
             </li>
         </div>
     </div>
