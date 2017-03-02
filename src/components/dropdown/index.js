@@ -11,7 +11,7 @@ export default class Dropdown extends Component {
         this.apply = props.apply || function () {}
     }
 
-    onSelect (o, e) {
+    onSelect (o) {
         this.setState({selected: o})
         this.apply(o)
     }
