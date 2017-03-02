@@ -13,8 +13,8 @@ function toggle(){
     root.className = (root.className === 'theme-dark') ? 'theme-pink' : 'theme-dark';
 }
 
-let TabPanel = ({t, id, items, settings, showAdvanced}) => (
-    <div role="tabpanel" className={style["tab-panel"]} id={id}>
+let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
+    <div role="tabpanel" className={active?'active ':'' + style["tab-panel"]} id={id}>
         <section id={id}>
             {items.map((e, i) => {
                  let {action, advanced, ...rest} = e
@@ -62,7 +62,7 @@ export default class Tabs extends Component {
                 <div id="tabPanels" className={style['tabs-content']}>
                     {props.tabs.map((t, i) => (
                          <TabPanel key={i} t={props.t}
-                                   selected={state.selected === i}
+                                   active={state.selected === i}
                                    showAdvanced={state.showAdvanced}
                                    settings={props.settings}
                                    {...t} />
