@@ -7,7 +7,6 @@ import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
 import ActionBar from '../action-bar';
-import GoBackButton from '../go-back-button';
 
 //Test themes
 function toggle(){
@@ -51,7 +50,8 @@ export default class Tabs extends Component {
         return (
             <div>
             <div className="navbar-s">
-                <GoBackButton {...props} title="Settings"/>
+                <ActionBar {...props}/>
+                <br/>
                 <ul id="myTabs" className={style.tabs} role="tablist">
                     {props.tabs.map((t, i) => (
                          <li className={'source ' + (i === state.selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
@@ -59,7 +59,6 @@ export default class Tabs extends Component {
                          </li>
                      ))}
                 </ul>
-                <ActionBar {...props}/>
             </div>
             <div id="tabPanels" className={style['tabs-content']}>
                 {props.tabs.map((t, i) => (
