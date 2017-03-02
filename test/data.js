@@ -160,20 +160,21 @@ export default {
         id: "providers",
         items: []
     }],
-                "settings": {
-    "projectName": "Butter",
-    "projectUrl": "http://butterproject.org",
-    "projectTwitter": "butterproject",
-    "projectFacebook": "ButterProjectOrg",
-    "projectGooglePlus": "ButterProject",
-    "projectBlog": "http://blog.butterproject.org/",
-    "projectForum": "https://www.reddit.com/r/ButterProject",
-    "statusUrl": "https://status.butterproject.org",
-    "changelogUrl": "https://github.com/butterproject/butter-desktop/commits/master",
-    "issuesUrl": "https://github.com/butterproject/butter-desktop/issues",
-    "sourceUrl": "https://github.com/butterproject/butter-desktop/",
-    "commitUrl": "https://github.com/butterproject/butter-desktop/commit",
-    "updateKey": "-----BEGIN PUBLIC KEY-----\nMIIBtjCCASsGByqGSM44BAEwggEeAoGBAPNM5SX+yR8MJNrX9uCQIiy0t3IsyNHs\nHWA180wDDd3S+DzQgIzDXBqlYVmcovclX+1wafshVDw3xFTJGuKuva7JS3yKnjds\nNXbvM9CrJ2Jngfd0yQPmSh41qmJXHHSwZfPZBxQnspKjbcC5qypM5DqX9oDSJm2l\nfM/weiUGnIf7AhUAgokTdF7G0USfpkUUOaBOmzx2RRkCgYAyy5WJDESLoU8vHbQc\nrAMnPZrImUwjFD6Pa3CxhkZrulsAOUb/gmc7B0K9I6p+UlJoAvVPXOBMVG/MYeBJ\n19/BH5UNeI1sGT5/Kg2k2rHVpuqzcvlS/qctIENgCNMo49l3LrkHbJPXKJ6bf+T2\n8lFWRP2kVlrx/cHdqSi6aHoGTAOBhAACgYBTNeXBHbWDOxzSJcD6q4UDGTnHaHHP\nJgeCrPkH6GBa9azUsZ+3MA98b46yhWO2QuRwmFQwPiME+Brim3tHlSuXbL1e5qKf\nGOm3OxA3zKXG4cjy6TyEKajYlT45Q+tgt1L1HuGAJjWFRSA0PP9ctC6nH+2N3HmW\nRTcms0CPio56gg==\n-----END PUBLIC KEY-----\n",
+    settings: new Object({
+        set: function () {console.log(arguments)},
+        "projectName": "Butter",
+        "projectUrl": "http://butterproject.org",
+        "projectTwitter": "butterproject",
+        "projectFacebook": "ButterProjectOrg",
+        "projectGooglePlus": "ButterProject",
+        "projectBlog": "http://blog.butterproject.org/",
+        "projectForum": "https://www.reddit.com/r/ButterProject",
+        "statusUrl": "https://status.butterproject.org",
+        "changelogUrl": "https://github.com/butterproject/butter-desktop/commits/master",
+        "issuesUrl": "https://github.com/butterproject/butter-desktop/issues",
+        "sourceUrl": "https://github.com/butterproject/butter-desktop/",
+        "commitUrl": "https://github.com/butterproject/butter-desktop/commit",
+        "updateKey": "-----BEGIN PUBLIC KEY-----\nMIIBtjCCASsGByqGSM44BAEwggEeAoGBAPNM5SX+yR8MJNrX9uCQIiy0t3IsyNHs\nHWA180wDDd3S+DzQgIzDXBqlYVmcovclX+1wafshVDw3xFTJGuKuva7JS3yKnjds\nNXbvM9CrJ2Jngfd0yQPmSh41qmJXHHSwZfPZBxQnspKjbcC5qypM5DqX9oDSJm2l\nfM/weiUGnIf7AhUAgokTdF7G0USfpkUUOaBOmzx2RRkCgYAyy5WJDESLoU8vHbQc\nrAMnPZrImUwjFD6Pa3CxhkZrulsAOUb/gmc7B0K9I6p+UlJoAvVPXOBMVG/MYeBJ\n19/BH5UNeI1sGT5/Kg2k2rHVpuqzcvlS/qctIENgCNMo49l3LrkHbJPXKJ6bf+T2\n8lFWRP2kVlrx/cHdqSi6aHoGTAOBhAACgYBTNeXBHbWDOxzSJcD6q4UDGTnHaHHP\nJgeCrPkH6GBa9azUsZ+3MA98b46yhWO2QuRwmFQwPiME+Brim3tHlSuXbL1e5qKf\nGOm3OxA3zKXG4cjy6TyEKajYlT45Q+tgt1L1HuGAJjWFRSA0PP9ctC6nH+2N3HmW\nRTcms0CPio56gg==\n-----END PUBLIC KEY-----\n",
     "opensubtitles": {
       "useragent": "Butter"
     },
@@ -349,6 +350,7 @@ export default {
     "opensubtitles-password": "blah",
     "lastWatchedTime": -3.167977,
     "disclaimerAccepted": 1
-  }}
+  })
+}
 
 

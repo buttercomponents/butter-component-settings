@@ -14,16 +14,28 @@ function toggle(){
     root.className = (root.className === 'theme-dark') ? 'theme-pink' : 'theme-dark';
 }
 
-let Action = (props) => (
-    (props.type === 'BUTTON')?(<Button text={props.t(props.text)}/>):
-    (props.type === 'TEXT')?(<input type="text"/>):
-    (props.type === 'PASSWORD')?(<input type="password"/>):
-    (props.type === 'DROPDOWN')?(<Dropdown {...props}/>):
-    (props.type === 'SWITCH')?(<Switch/>):
-    (<b>Couldn't find an apropiate action type {console.log(props)}</b>)
-)
+class Action extends Component {
+    constructor (props) {
+        super()
+        let {id, settings} = props
+        this.apply = (value) => settings.set(id, value)
+    }
 
-let TabPanel = ({t, id, items, showAdvanced}) => (
+    render() {
+        let {type, settings, id, t, ...props} = this.props
+        let value = settings[id]
+        return (
+            (type === 'BUTTON')?(<Button text={t(props.text)}/>):
+            (type === 'TEXT')?(<input type="text" value={value}/>):
+            (type === 'PASSWORD')?(<input type="password"/>):
+            (type === 'DROPDOWN')?(<Dropdown apply={this.apply} selected={value} {...props}/>):
+            (type === 'SWITCH')?(<Switch apply={this.apply} selected={value}/>):
+            (<b>Couldn't find an apropiate action type {console.log(type, props)}</b>)
+        )
+    }
+}
+
+let TabPanel = ({t, id, items, settings, showAdvanced}) => (
     <div role="tabpanel" className={style["tab-panel"]} id={id}>
         <section id={id}>
             {items.map((e, i) => {
@@ -32,7 +44,7 @@ let TabPanel = ({t, id, items, showAdvanced}) => (
                      return
                  }
 
-                 let actionElement = (<Action t={t} {...action}/>)
+                 let actionElement = (<Action t={t} id={e.id} settings={settings} {...action}/>)
                  return (
                      <Row key={i} action={actionElement} {...rest}/>
                  )
@@ -74,9 +86,10 @@ export default class Tabs extends Component {
                          <TabPanel key={i} t={props.t}
                                    selected={state.selected === i}
                                    showAdvanced={state.showAdvanced}
+                                   settings={props.settings}
                                    {...t} />
                      ))}
-                    <div className={style['buttons-content']}>
+                <div className={style['buttons-content']}>
                         <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
                         <Button type="secondary" icon="format_paint" text={props.t('Toggle theme')} handler={toggle}/>
                         <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
