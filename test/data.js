@@ -35,7 +35,7 @@ export default {
             advanced: true,
             action: {
                 type: "DROPDOWN",
-                options: ["All", "1080p", "720p"]
+                options: ["all", "1080p", "720p"]
             }
         }, {
             id: "moviesShowQuality",

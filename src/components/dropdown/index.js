@@ -27,7 +27,8 @@ export default class Dropdown extends Component {
                 </div>
                 <ul className={"dropdown-menu " + style.menu }>{
                     props.options.map((o, i) => (
-                        state.selected === o?null:<li key={i} onClick={this.onSelect.bind(this, o)}>{o}</li>
+                        state.selected === o ? null:
+                        <li key={i} onClick={this.onSelect.bind(this, o)}>{o}</li>
                     ))}
                 </ul>
             </div>
