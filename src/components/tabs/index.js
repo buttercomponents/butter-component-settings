@@ -14,7 +14,7 @@ function toggle(){
 }
 
 let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
-    <div role="tabpanel" className={active?'active ':'' + style["tab-panel"]} id={id}>
+    <div role="tab-panel" className={active?'active ':'' + style["tab-panel"]} id={id}>
         <section id={id}>
             {items.map((e, i) => {
                  let {action, advanced, ...rest} = e
