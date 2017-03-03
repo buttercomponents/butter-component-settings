@@ -1,0 +1,74 @@
+.modal
+    height: 0
+    overflow: hidden
+    width: 100vw
+    margin: auto
+    position: absolute
+    top:0
+    left:0
+    z-index: 999
+
+    &[data-show=true]
+        height: 100vh
+        .widget
+            transform: translate(0, 0px)
+            opacity:1
+        .overlay
+            opacity: 0.85
+
+    .widget
+        position: absolute
+        z-index:999
+        background: #FFF
+        padding: 25px
+        display: block
+        margin: auto
+        border-radius: 5px;
+        max-width: 480px
+        max-height: 320px
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        text-align: center
+        opacity:0.75
+        transform: translate(0, 250px)
+        transition: all 0.3s ease;
+
+        /* Remove this */
+        img
+            margin: auto
+            height:250px;
+            border: 1px #ccc;
+            border-radius: 5px;
+
+    &[data-position=top]
+        .widget
+            top: 40px
+
+    &[data-position=right]
+        .widget
+            right: 40px
+
+    &[data-position=left]
+        .widget
+            left: 40px
+
+    &[data-position=bottom]
+        .widget
+            bottom: 40px
+
+    &[data-position=center]
+        .widget
+            top: 40px
+            left: 0
+            right: 0
+            bottom: 40px
+
+.overlay
+
+    position: absolute
+    background: var(--Bg-color)
+    opacity:0
+    height: 100%
+    width: 100%
+    z-index:0
+    display: block
+    transition: all 0.2s ease;

@@ -6,6 +6,7 @@ import Action from '../action';
 import Button from '../button';
 import Row from '../row';
 import ActionBar from '../action-bar';
+import Modal from '../modal';
 
 //Test themes
 function toggle(){
@@ -14,7 +15,7 @@ function toggle(){
 }
 
 let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
-    <div role="tabpanel" className={active?'active ':'' + style["tab-panel"]} id={id}>
+    <div role="tab-panel" className={active?'active ':'' + style["tab-panel"]} id={id}>
         <section id={id}>
             {items.map((e, i) => {
                  let {action, advanced, ...rest} = e
@@ -36,7 +37,8 @@ export default class Tabs extends Component {
         super()
         this.state = {
             selected: props.selected || 0,
-            showAdvanced: props.showAdvanced || false
+            showAdvanced: props.showAdvanced || false,
+            showModal: false
         }
     }
 
@@ -44,10 +46,15 @@ export default class Tabs extends Component {
         this.setState({showAdvanced: !this.state.showAdvanced})
     }
 
+    toggleModal () {
+        this.setState({showModal: !this.state.showModal})
+    }
+
     render () {
         let {props, state} = this
         return (
             <div>
+            <Modal {...props} position="center" visible={this.state.showModal} handler={{toggleModal:this.toggleModal.bind(this)}}/>
                 <div className="navbar-s">
                     <ActionBar {...props} action={{toggleAdvanced: this.toggleAdvanced.bind(this)}}/>
                     <br/>
@@ -59,6 +66,7 @@ export default class Tabs extends Component {
                          ))}
                     </ul>
                 </div>
+
                 <div id="tabPanels" className={style['tabs-content']}>
                     {props.tabs.map((t, i) => (
                          <TabPanel key={i} t={props.t}
@@ -70,6 +78,7 @@ export default class Tabs extends Component {
                 <div className={style['buttons-content']}>
                         <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
                         <Button type="secondary" icon="format_paint" text={props.t('Toggle theme')} apply={toggle}/>
+                        <Button type="secondary" icon="restore" text={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
                         <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
                     </div>
                 </div>

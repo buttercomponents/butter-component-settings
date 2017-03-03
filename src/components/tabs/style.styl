@@ -18,7 +18,7 @@
         vertical-align: middle
         padding-bottom: 15px
         font-family: var(--Font-title)
-        font-weight: normal
+        font-weight: bold
         font-size: 1.35em
         text-transform: uppercase
         border-bottom: 3px solid transparent
@@ -44,23 +44,24 @@
     top: 98px
     bottom: 0
 
-.tab-panel
-    display: none
-    max-width: 980px
-    margin: auto
-    .title
-        font-family: var(--Font-title)
-        color: #FFF
-        font-weight: 900
-        padding: 20px
-        text-align: center
-        opacity: .4
+    & [role="tab-panel"]
+        display: none
+        max-width: 980px
+        margin: auto
 
-     section
-        display block
-        .content
-            max-width: 780px
-            margin: 0 auto
+        .title
+            font-family: var(--Font-title)
+            color: #FFF
+            font-weight: 900
+            padding: 20px
+            text-align: center
+            opacity: .4
 
-    &[class*=active]
-        display: block
+        section
+            display block
+            .content
+                max-width: 780px
+                margin: 0 auto
+
+        &[class*=active]
+            display: block
