@@ -12,7 +12,9 @@ export default class Modal extends Component {
         let {props} = this;
         return (
             <div className={style.modal} data-position={props.position} data-show={props.visible}>
-                <div className={style.widget}></div>
+                <div className={style.widget}>
+                    <img src={"https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"} />
+                </div>
                 <div className={style.overlay} onClick={this.toggleModal.bind(this)}></div>
             </div>
         )
