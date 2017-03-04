@@ -54,7 +54,7 @@ export default class Tabs extends Component {
         let {props, state} = this
         return (
             <div>
-            <Modal {...props} position="center" visible={this.state.showModal} handler={{toggleModal:this.toggleModal.bind(this)}}/>
+                {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
                 <div className="navbar-s">
                     <ActionBar {...props} action={{toggleAdvanced: this.toggleAdvanced.bind(this)}}/>
                     <br/>
@@ -70,7 +70,7 @@ export default class Tabs extends Component {
                 <div id="tabPanels" className={style['tabs-content']}>
                     {props.tabs.map((t, i) => (
                          <TabPanel key={i} t={props.t}
-                                   active={state.selected === i}
+                                  active={state.selected === i}
                                    showAdvanced={state.showAdvanced}
                                    settings={props.settings}
                                    {...t} />
