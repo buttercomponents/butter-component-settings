@@ -28,9 +28,8 @@
         max-height: 320px
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         text-align: center
-        opacity:0.75
-        transform: translate(0, 250px)
-        transition: all 0.3s ease;
+        transition: all 0.3s ease
+
 
         /* Remove this */
         img
@@ -71,3 +70,15 @@
     z-index:0
     display: block
     transition: all 0.2s ease;
+
+.modal-enter
+    opacity: 0.01;
+    &.modal-enter-active
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+
+.modal-leave
+    opacity: 1;
+    &.modal-leave-active
+      opacity: 0.01;
+      transition: opacity 300ms ease-in;
