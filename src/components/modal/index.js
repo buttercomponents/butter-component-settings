@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
