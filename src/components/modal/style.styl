@@ -71,13 +71,13 @@
     display: block
     transition: all 0.2s ease;
 
-.modal-enter
+:global(.modal-enter)
     opacity: 0.01;
     &.modal-enter-active
         opacity: 1;
         transition: opacity 500ms ease-in;
 
-.modal-leave
+:global(.modal-leave)
     opacity: 1;
     &.modal-leave-active
       opacity: 0.01;
