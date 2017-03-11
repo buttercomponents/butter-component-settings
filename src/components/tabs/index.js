@@ -21,7 +21,9 @@ let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
             <ReactCSSTransitionGroup
                 transitionName="fade"
                 transitionAppear={true}
-                transitionAppearTimeout={500}>
+                transitionAppearTimeout={5000}
+                transitionEnterTimeout={1000}
+                transitionLeaveTimeout={1000}>
                 {items.map((e, i) => {
                      let {action, advanced, ...rest} = e
                      if (advanced && ! showAdvanced) {
