@@ -8,13 +8,10 @@
     left:0
     z-index: 999
 
-    &[data-show=true]
-        height: 100vh
+    &[class*=fade-enter-active]
         .widget
             transform: translate(0, 0px)
             opacity:1
-        .overlay
-            opacity: 0.85
 
     .widget
         position: absolute
@@ -28,8 +25,9 @@
         max-height: 320px
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         text-align: center
+        transform: translate(0, 200px);
+        opacity: 0;
         transition: all 0.3s ease
-
 
         /* Remove this */
         img
@@ -64,21 +62,10 @@
 .overlay
     position: absolute
     background: var(--Bg-color)
-    opacity:0.85
+    opacity: 0.85
     height: 100%
     width: 100%
-    z-index:0
+    z-index: 0
     display: block
-    transition: all 0.2s ease;
-
-:global(.modal-enter)
-    opacity: 0.01;
-    &.modal-enter-active
-        opacity: 1;
-        transition: opacity 500ms ease-in;
-
-:global(.modal-leave)
-    opacity: 1;
-    &.modal-leave-active
-      opacity: 0.01;
-      transition: opacity 300ms ease-in;
+    opacity: 0.75
+    transition: all 0.2s ease

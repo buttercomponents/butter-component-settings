@@ -7,5 +7,6 @@ export default ({position, action}) => (
         <div className={style.widget}>
             <img src={"https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"} />
         </div>
+        <div className={style.overlay}></div>
     </div>
 )
