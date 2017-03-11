@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
@@ -17,17 +18,22 @@ function toggle(){
 let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
     <div role="tab-panel" className={active?'active ':'' + style["tab-panel"]} id={id}>
         <section id={id}>
-            {items.map((e, i) => {
-                 let {action, advanced, ...rest} = e
-                 if (advanced && ! showAdvanced) {
-                     return
-                 }
+            <ReactCSSTransitionGroup
+                transitionName="fade"
+                transitionAppear={true}
+                transitionAppearTimeout={500}>
+                {items.map((e, i) => {
+                     let {action, advanced, ...rest} = e
+                     if (advanced && ! showAdvanced) {
+                         return
+                     }
 
-                 let actionElement = (<Action t={t} id={e.id} settings={settings} {...action}/>)
-                 return (
-                     <Row key={i} action={actionElement} {...rest}/>
-                 )
-             })}
+                     let actionElement = (<Action t={t} id={e.id} settings={settings} {...action}/>)
+                     return (
+                         <Row key={i} action={actionElement} {...rest}/>
+                     )
+                 })}
+            </ReactCSSTransitionGroup>
         </section>
     </div>
 )
@@ -54,7 +60,14 @@ export default class Tabs extends Component {
         let {props, state} = this
         return (
             <div>
-                {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
+                <ReactCSSTransitionGroup
+                    transitionName="fade"
+                    transitionAppear={true}
+                    transitionAppearTimeout={5000}
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}>
+                    {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
+                </ReactCSSTransitionGroup>
                 <div className="navbar-s">
                     <ActionBar {...props} action={{toggleAdvanced: this.toggleAdvanced.bind(this)}}/>
                     <br/>
