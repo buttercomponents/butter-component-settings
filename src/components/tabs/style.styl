@@ -1,3 +1,15 @@
+.navbar
+    z-index: 10
+    width: 100%
+    padding: 0 40px
+    opacity: 1
+    background-color: var(--Nav-color)
+    position: absolute
+    box-shadow: $TopBarShadow
+    -webkit-user-select: none
+    & *
+        vertical-align: middle
+
 .tabs
     margin 0 auto
     font-size: 0.9em
@@ -65,16 +77,3 @@
 
         &[class*=active]
             display: block
-
-:global
-  .fade-enter
-    opacity: 0.01;
-    &.fade-enter-active
-        opacity: 1;
-        transition: opacity 500ms ease-in;
-
-  .fade-leave
-    opacity: 1;
-    &.fade-leave-active
-      opacity: 0.01;
-      transition: opacity 300ms ease-in;

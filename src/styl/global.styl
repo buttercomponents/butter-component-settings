@@ -2,8 +2,17 @@
     ul
         list-style: none
 
-    .hide
-        display: none
+    .fade-enter
+        opacity: 0.01
+        &.fade-enter-active
+            opacity: 1
+            transition: opacity 300ms ease-in
+
+    .fade-leave
+        opacity: 1
+        &.fade-leave-active
+            opacity: 0.01
+            transition: opacity 300ms ease-out
 
     input
         &[type=text],
@@ -21,15 +30,3 @@
             background var(--Input-bg-color)
             -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
             transition background .2s ease
-
-    .navbar-s
-        z-index: 10
-        width: 100%
-        padding: 0 40px
-        opacity: 1
-        background-color: var(--Nav-color)
-        position: absolute
-        box-shadow: $TopBarShadow
-        -webkit-user-select: none
-        & *
-            vertical-align: middle

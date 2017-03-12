@@ -21,7 +21,9 @@ let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
             <ReactCSSTransitionGroup
                 transitionName="fade"
                 transitionAppear={true}
-                transitionAppearTimeout={500}>
+                transitionAppearTimeout={5000}
+                transitionEnterTimeout={1000}
+                transitionLeaveTimeout={1000}>
                 {items.map((e, i) => {
                      let {action, advanced, ...rest} = e
                      if (advanced && ! showAdvanced) {
@@ -68,7 +70,7 @@ export default class Tabs extends Component {
                     transitionLeaveTimeout={1000}>
                     {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
                 </ReactCSSTransitionGroup>
-                <div className="navbar-s">
+                <div className={style.navbar}>
                     <ActionBar {...props} action={{toggleAdvanced: this.toggleAdvanced.bind(this)}}/>
                     <br/>
                     <ul id="myTabs" className={style.tabs} role="tablist">
