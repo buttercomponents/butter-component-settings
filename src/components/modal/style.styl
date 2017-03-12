@@ -8,10 +8,26 @@
     left:0
     z-index: 999
 
+    &[class*=fade-enter]
+        .widget
+            transform: translate(0, 100vh)
+            opacity:0
+
     &[class*=fade-enter-active]
         .widget
             transform: translate(0, 0px)
             opacity:1
+
+    &[class*=fade-leave]
+        .widget
+            transform: translate(0, 0px)
+            opacity:1
+
+    &[class*=fade-leave-active]
+        .widget
+            transform: translate(0, 100vh)
+            opacity:0
+
 
     .widget
         position: absolute
@@ -25,8 +41,7 @@
         max-height: 320px
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         text-align: center
-        transform: translate(0, 200px);
-        opacity: 0;
+        transform: translate(0, 0px);
         transition: all 0.3s ease
 
         /* Remove this */
