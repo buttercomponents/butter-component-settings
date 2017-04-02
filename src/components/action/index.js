@@ -17,7 +17,7 @@ export default class Action extends Component {
         let {type, settings, id, t, ...props} = this.props
         let value = settings[id]
         return (
-            (type === ActionTypes.BUTTON)?(<Button text={t(props.text)}/>):
+            (type === ActionTypes.BUTTON)?(<Button title={t(props.title)}/>):
             (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
             (type === ActionTypes.PASSWORD)?(<input type="password"/>):
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):

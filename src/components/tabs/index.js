@@ -108,10 +108,10 @@ export default class Tabs extends Component {
                                           {...t} />
                      })}
                 <div className={style['buttons-content']}>
-                        <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
-                        <Button type="secondary" icon="format_paint" text={props.t('Toggle theme')} apply={toggle}/>
-                        <Button type="secondary" icon="restore" text={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
-                        <Button type="secondary" icon="restore" text={props.t('Reset to Default Settings')}/>
+                        <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
+                        <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
+                        <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                        <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                     </div>
                 </div>
             </div>

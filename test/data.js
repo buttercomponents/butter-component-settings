@@ -108,7 +108,7 @@ export default {
             advanced: true,
             action: {
                 type: ActionTypes.BUTTON,
-                title:"Open"
+                title: "Open"
             }
         }, {
             id: "deleteTmpOnClose",
@@ -117,7 +117,7 @@ export default {
             helper: "Delete temp folder after closing the App",
             advanced: true,
             action: {
-                type:"SWITCH"
+                type: ActionTypes.SWITCH
             }
         }]
     }, {
