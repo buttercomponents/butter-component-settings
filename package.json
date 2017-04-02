@@ -1,6 +1,6 @@
 {
   "name": "butter-component-settings",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "A Butter Component to show and set the settings ",
   "main": "dist/bundle.js",
   "scripts": {
