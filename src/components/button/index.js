@@ -12,7 +12,7 @@ export default class Button extends Component {
         let {props} = this
         return (
             <div className={props.type ? style[props.type] : style.normal} onClick={this.apply.bind(this)}>
-                <span>{props.text}</span>
+                <span>{props.title}</span>
                 {props.icon ? <i className="material-icons">{props.icon}</i> : ''}
             </div>
         )

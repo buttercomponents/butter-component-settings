@@ -101,7 +101,7 @@ export default {
             advanced: true,
             action: {
                 type: ActionTypes.BUTTON,
-                text:"Open"
+                title:"Open"
             }
         }, {
             id: "deleteTmpOnClose",
@@ -129,7 +129,7 @@ export default {
             helper: "Open the Directory where Butter keep it's cache",
             action: {
                 type: ActionTypes.BUTTON,
-                text: "Open"
+                title: "Open"
             }
         }, {
             icon: "format_paint",
