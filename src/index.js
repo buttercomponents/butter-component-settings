@@ -13,7 +13,7 @@ class Settings extends Component {
 
         return (
             <div>
-                <div className={[style['settings'], props.settings.showAdvancedsettings?'show-advanced':''].join(' ')}>
+                <div className={[style['settings'], props.settings.get('showAdvancedsettings')?'show-advanced':''].join(' ')}>
 
                     <div className={style['settings-container']}>
                         <Alert message={props.t('Saved')}/>

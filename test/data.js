@@ -164,6 +164,7 @@ export default {
     }],
     settings: new Object({
         set: function () {console.log(arguments)},
+        get: function () {return this[arguments[0]]},
         "projectName": "Butter",
         "projectUrl": "http://butterproject.org",
         "projectTwitter": "butterproject",

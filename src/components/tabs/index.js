@@ -15,28 +15,37 @@ function toggle(){
     root.className = (root.className === 'theme-dark') ? 'theme-pink' : 'theme-dark';
 }
 
-let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
-    <div role="tab-panel" className={active?'active ':'' + style["tab-panel"]} id={id}>
-        <section id={id}>
-            <ReactCSSTransitionGroup
-                transitionName="fade"
-                transitionAppear={true}
-                transitionAppearTimeout={5000}
-                transitionEnterTimeout={1000}
-                transitionLeaveTimeout={1000}>
-                {items.map((e, i) => {
-                     let {action, advanced, ...rest} = e
-                     if (advanced && ! showAdvanced) {
-                         return
-                     }
+let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
+    <section id={id}>
+        {title?<div className="title">{title}</div>:null}
+        {console.log(items)}
+        <ReactCSSTransitionGroup
+            transitionName="fade"
+            transitionAppear={true}
+            transitionAppearTimeout={5000}
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}>
+            {items.map((e, i) => {
+                 let {action, advanced, ...rest} = e
+                 if (advanced && ! showAdvanced) {
+                     return
+                 }
 
-                     let actionElement = (<Action t={t} id={e.id} settings={settings} {...action}/>)
-                     return (
-                         <Row key={i} action={actionElement} {...rest}/>
-                     )
-                 })}
-            </ReactCSSTransitionGroup>
-        </section>
+                 let actionElement = (<Action t={t} id={e.id} settings={settings} {...action}/>)
+                 return (
+                     <Row key={i} action={actionElement} {...rest}/>
+                 )
+             })}
+        </ReactCSSTransitionGroup>
+    </section>
+)
+
+let TabPanel = ({id, active, sections, ...props}) => (
+    <div role="tab-panel" className={active?'active ':'' + style["tab-panel"]} id={id}>
+        {console.log(sections, props)}
+        {sections.map((s, i) => (
+             <TabSection key={i} {...s} {...props}/>
+         ))}
     </div>
 )
 
@@ -83,13 +92,21 @@ export default class Tabs extends Component {
                 </div>
 
                 <div id="tabPanels" className={style['tabs-content']}>
-                    {props.tabs.map((t, i) => (
-                         <TabPanel key={i} t={props.t}
-                                  active={state.selected === i}
-                                   showAdvanced={state.showAdvanced}
-                                   settings={props.settings}
-                                   {...t} />
-                     ))}
+                    {props.tabs.map((t, i) => {
+                         t.sections = t.sections || []
+                         if (t.items) {
+                             t.sections.push({
+                                 id: 'default',
+                                 items: t.items
+                             })
+                             delete (t.items)
+                         }
+                         return <TabPanel key={i} t={props.t}
+                                          active={state.selected === i}
+                                          showAdvanced={state.showAdvanced}
+                                          settings={props.settings}
+                                          {...t} />
+                     })}
                 <div className={style['buttons-content']}>
                         <Button type="secondary" icon="delete_forever" text={props.t('Flush all databases')}/>
                         <Button type="secondary" icon="format_paint" text={props.t('Toggle theme')} apply={toggle}/>
