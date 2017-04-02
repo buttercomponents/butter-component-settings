@@ -7,6 +7,10 @@ function arrayToi18nHash(a) {
     }, {});
 }
 
+var i18n = {
+    __: (a) => (a)
+}
+
 export default {
     "tabs": [{
         title: "General",
@@ -161,9 +165,188 @@ export default {
         id: "subtitles",
         items: []
     }, {
-        title: "Extensions",
-        id: "extensions",
-        items: []
+        id: 'extensions',
+        title: i18n.__('Extensions'),
+        sections: [{
+            id: 'remote-control',
+            title: i18n.__('Remote Control'),
+            advanced: true,
+            items: [{
+                id: 'settingsIpAddress',
+                title: i18n.__('IP Address'),
+                helper: i18n.__('Set this machine\'s IP Address'),
+                icon: 'location_on',
+                action: {
+                    type: ActionTypes.TEXT,
+                }
+            }, {
+                id: 'httpApiPort',
+                title: i18n.__('%s Port', 'HTTP API'),
+                helper: i18n.__('Port to use for %s', 'HTTP API'),
+                icon: 'http',
+                action: {
+                    type: ActionTypes.NUMBER,
+                }
+            }, {
+                id: 'httpApiUsername',
+                title: i18n.__('%s Username', 'HTTP API'),
+                helper: i18n.__('Username To use for %s', 'HTTP API'),
+                icon: 'account_box',
+                action: {
+                    type: ActionTypes.TEXT,
+                }
+            }, {
+                id: 'httpApiUsername',
+                title: i18n.__('%s Username', 'HTTP API'),
+                helper: i18n.__('Username To use for %s', 'HTTP API'),
+                icon: 'account_box',
+                action: {
+                    type: ActionTypes.PASSWORD,
+                }
+            }, {
+                id: 'qrCodeGen',
+                title: i18n.__('QR Code'),
+                helper: i18n.__('Generate Pairing QR Code'),
+                icon: 'lock',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: i18n.__('Get Code')
+                }
+            }]
+        }, {
+            id: 'trakt-connected',
+            title: 'Trakt.tv',
+            showIf: (() => (App.Trakt.authenticated)),
+            items: [{
+                id: 'trakt-connected',
+                title: i18n.__('You are currently connected to %s', 'Trakt.tv'),
+                helper: i18n.__('%s connection state', 'Trakt.tv'),
+                icon: 'verified_user',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Disconnect Account'
+                }
+            }, {
+                id: 'traktSyncOnStart',
+                title: i18n.__('Sync on Start'),
+                helper: i18n.__('Automatically sync %s on App Start', 'Trakt.tv'),
+                icon: 'settings_applications',
+                action: {
+                    type: ActionTypes.SWITCH
+                },
+            }, {
+                id: 'traktPlayback',
+                title: i18n.__('Resume Playback'),
+                helper: i18n.__('Restart your %s tracked media from where you left them', 'Trakt.tv'),
+                icon: 'settings_applications',
+                action: {
+                    type: ActionTypes.SWITCH
+                },
+            }, {
+                id: 'traktSync',
+                title: i18n.__('Sync with %s', 'Trakt.tv'),
+                helper: i18n.__('%s sync master switch', 'Trakt.tv'),
+                icon: 'sync',
+                action: {
+                    type: ActionTypes.SWITCH
+                },
+            }]
+        }, {
+            id: 'trakt-not-connected',
+            title: 'Trakt.tv',
+            showIf: (() => (! App.Trakt.authenticated)),
+            items: [{
+                id: 'traktConnectTo',
+                title: i18n.__('Connect to %s', 'Trakt.tv'),
+                helper: i18n.__('Use OAuth to authenticate'),
+                icon: 'insert_link',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Connect'
+                }
+            }]
+        }, {
+            id: 'tvshowtime-connected',
+            title: 'TVShow Time',
+            showIf: (() => (App.TVShowTime.authenticated)),
+            items: [{
+                id: 'tvshowtime-connected',
+                title: i18n.__('You are currently connected to %s', 'TVShow Time'),
+                helper: i18n.__('%s connection state', 'TVShow Time'),
+                icon: 'verified_user',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Disconnect Account'
+                }
+            }]
+        }, {
+            id: 'tvshowtime-not-connected',
+            title: 'TVShow Time',
+            showIf: (() => (! App.TVShowTime.authenticated)),
+            items: [{
+                id: 'tvshowtime-connect',
+                title: i18n.__('Connect to %s', 'TVShow Time'),
+                helper: i18n.__('Use OAuth to authenticate'),
+                icon: 'insert_link',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Connect'
+                }
+            }]
+        }, {
+            id: 'opensubtitles-connected',
+            title: 'Open Subtitles',
+            showIf: (() => (Settings.opensubtitlesAuthenticated)),
+            items: [{
+                id: 'opensubtitles-connected',
+                title: i18n.__('You are currently connected to %s', 'OpenSubtitles'),
+                helper: i18n.__('%s connection state', 'OpenSubtitles'),
+                icon: 'verified_user',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Disconnect Account'
+                }
+            }, {
+                id: 'opensubtitlesAutoUpload',
+                title: i18n.__('Subtitle Upload'),
+                helper: i18n.__('Automatically upload user-selected subtitles to %s', 'OpenSubtitles'),
+                icon: 'verified_user',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Disconnect Account'
+                }
+            }]
+        }, {
+            id: 'opensubtitles-not-connected',
+            title: 'TVShow Time',
+            showIf: (() => (! Settings.opensubtitlesAuthenticated)),
+            items: [{
+                id: 'opensubtitles-username',
+                title: i18n.__('%s Username', 'OpenSubtitles'),
+                helper: i18n.__('Username you use to connect to %s', 'OpenSubtitles'),
+                icon: 'account_box',
+                action: {
+                    type: ActionTypes.TEXT,
+                }
+            }, {
+                id: 'opensubtitles-password',
+                title: i18n.__('%s Password', 'OpenSubtitles'),
+                helper: i18n.__('Password you use to connect to %s', 'OpenSubtitles'),
+                icon: 'lock',
+                action: {
+                    type: ActionTypes.PASSWORD,
+                }
+            }, {
+                id: 'opensubtitles-connect',
+                title: i18n.__('Connect to %s', 'OpenSubtitles'),
+                helper: i18n.__('%s stores an encrypted hash of your password in your local database', 'Butter'),
+                icon: 'link',
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: 'Connect'
+                }
+            }]
+        }]
     }, {
         title: "Providers",
         id: "providers",
