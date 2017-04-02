@@ -6,7 +6,7 @@ export default class Dropdown extends Component {
     constructor (props) {
         super()
         this.state = {
-            selected: props.selected || props.options[0]
+            selected: props.selected || Object.keys(props.options)[0]
         }
         this.apply = props.apply || function () {}
     }
@@ -25,11 +25,13 @@ export default class Dropdown extends Component {
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <ul className={"dropdown-menu " + style.menu }>{
-                    props.options.map((o, i) => (
-                        state.selected === o ? null:
-                        <li key={i} onClick={this.onSelect.bind(this, o)}>{o}</li>
-                    ))}
+                <ul className={"dropdown-menu " + style.menu }>
+                    {
+                        Object.keys(props.options).map((k, i) => (
+                            state.selected === k ? null:
+                            <li key={i} onClick={this.onSelect.bind(this, k)}>{props.options[k]}</li>
+                        ))
+                    }
                 </ul>
             </div>
         )

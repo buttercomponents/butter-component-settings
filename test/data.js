@@ -1,5 +1,12 @@
 var ActionTypes = require('butter-component-action-types')
 
+function arrayToi18nHash(a) {
+    return a.reduce((a, c) => {
+        a[c] = c;
+        return a;
+    }, {});
+}
+
 export default {
     "tabs": [{
         title: "General",
@@ -37,7 +44,7 @@ export default {
             advanced: true,
             action: {
                 type: ActionTypes.DROPDOWN,
-                options: ["all", "1080p", "720p"]
+                options: arrayToi18nHash(["all", "1080p", "720p"])
             }
         }, {
             id: "moviesShowQuality",
@@ -137,7 +144,7 @@ export default {
             helper: "Select a different Look&Feel for the App",
             action: {
                 type: ActionTypes.DROPDOWN,
-                options: ["dark", "pink"],
+                options: arrayToi18nHash(["dark", "pink"]),
                 apply: (theme) =>
                     (document.getElementById('root').className = `theme-${theme}`)
             }
