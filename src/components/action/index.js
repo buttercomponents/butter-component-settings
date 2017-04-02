@@ -21,6 +21,7 @@ export default class Action extends Component {
             (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
             (type === ActionTypes.PASSWORD)?(<input type="password"/>):
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
+            (type === ActionTypes.COLOR)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.SWITCH)?(<Switch apply={this.apply} selected={value}/>):
             (<b>Couldn't find an apropiate action type {console.log(type, props)}</b>)
         )
