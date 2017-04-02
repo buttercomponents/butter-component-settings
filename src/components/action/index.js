@@ -4,6 +4,8 @@ import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
 
+import ActionTypes from 'butter-component-action-types';
+
 export default class Action extends Component {
     constructor (props) {
         super()
@@ -15,11 +17,11 @@ export default class Action extends Component {
         let {type, settings, id, t, ...props} = this.props
         let value = settings[id]
         return (
-            (type === 'BUTTON')?(<Button text={t(props.text)}/>):
-            (type === 'TEXT')?(<input type="text" value={value} onChange={this.apply}/>):
-            (type === 'PASSWORD')?(<input type="password"/>):
-            (type === 'DROPDOWN')?(<Dropdown apply={this.apply} selected={value} {...props}/>):
-            (type === 'SWITCH')?(<Switch apply={this.apply} selected={value}/>):
+            (type === ActionTypes.BUTTON)?(<Button text={t(props.text)}/>):
+            (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
+            (type === ActionTypes.PASSWORD)?(<input type="password"/>):
+            (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
+            (type === ActionTypes.SWITCH)?(<Switch apply={this.apply} selected={value}/>):
             (<b>Couldn't find an apropiate action type {console.log(type, props)}</b>)
         )
     }

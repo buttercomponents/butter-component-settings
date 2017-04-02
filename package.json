@@ -34,6 +34,7 @@
     "butter-component-builder": "https://github.com/buttercomponents/butter-component-builder"
   },
   "dependencies": {
+    "butter-component-action-types": "git+https://github.com/buttercomponents/butter-component-action-types.git",
     "react-addons-css-transition-group": "^15.4.2",
     "react-i18next": "^2.1.0"
   }

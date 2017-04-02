@@ -1,3 +1,5 @@
+var ActionTypes = require('butter-component-action-types')
+
 export default {
     "tabs": [{
         title: "General",
@@ -8,7 +10,7 @@ export default {
             title: "Torrent Collection",
             helper: "Display a view with your Torrent Collection",
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "activateWatchlist",
@@ -16,7 +18,7 @@ export default {
             title: "Watchlist",
             helper: "Display a view with your Watchlist",
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "activateRandomize",
@@ -25,7 +27,7 @@ export default {
             helper: "Display a button to select a Random Movie in the Current View",
             advanced: true,
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "movies_quality",
@@ -34,7 +36,7 @@ export default {
             helper: "Only show content in this quality",
             advanced: true,
             action: {
-                type: "DROPDOWN",
+                type: ActionTypes.DROPDOWN,
                 options: ["all", "1080p", "720p"]
             }
         }, {
@@ -44,7 +46,7 @@ export default {
             helper: "Display Content Quality in List view",
             advanced: true,
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "alwaysFullscreen",
@@ -53,7 +55,7 @@ export default {
             helper: "Always start playback in FullScreen mode",
             advanced: true,
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "playNextEpisodeAuto",
@@ -62,7 +64,7 @@ export default {
             helper: "Automatically play next Episode",
             advanced: true,
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             id: "connectionLimit",
@@ -71,7 +73,7 @@ export default {
             helper: "Limit the amount of Outbound Connection Butter will open",
             advanced: true,
             action: {
-                type: "TEXT"
+                type: ActionTypes.TEXT
             }
         }, {
             id: "streamPort",
@@ -80,7 +82,7 @@ export default {
             helper: "Port to stream on, randomlly choosen if 0",
             advanced: true,
             action: {
-                type: "TEXT"
+                type: ActionTypes.TEXT
             }
         }, {
             id: "overallRatio",
@@ -89,7 +91,7 @@ export default {
             helper: "Downloaded so far:",
             advanced: true,
             action: {
-                type: "TEXT"
+                type: ActionTypes.TEXT
             }
         }, {
             id: "cache-directory",
@@ -98,7 +100,7 @@ export default {
             helper: "Open the Directory where Butter keeps it's Cache",
             advanced: true,
             action: {
-                type: "BUTTON",
+                type: ActionTypes.BUTTON,
                 text:"Open"
             }
         }, {
@@ -119,14 +121,14 @@ export default {
             title: "Torrent Collection",
             helper: "Display a view with your Torrent Collection",
             action: {
-                type: "SWITCH"
+                type: ActionTypes.SWITCH
             }
         }, {
             icon: "folder",
             title: "Cache Directory",
             helper: "Open the Directory where Butter keep it's cache",
             action: {
-                type: "BUTTON",
+                type: ActionTypes.BUTTON,
                 text: "Open"
             }
         }, {
@@ -134,7 +136,7 @@ export default {
             title: "Theme",
             helper: "Select a different Look&Feel for the App",
             action: {
-                type: "DROPDOWN",
+                type: ActionTypes.DROPDOWN,
                 options: ["dark", "pink"],
                 apply: (theme) =>
                     (document.getElementById('root').className = `theme-${theme}`)
@@ -144,7 +146,7 @@ export default {
             title: "IP Adress",
             helper: "Set this machine's IP Adress",
             action: {
-                type: "TEXT"
+                type: ActionTypes.TEXT
             }
         }]
     }, {
