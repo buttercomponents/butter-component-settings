@@ -23,7 +23,7 @@ let TabPanel = ({t, id, active, items, settings, showAdvanced}) => (
                 transitionAppear={true}
                 transitionAppearTimeout={5000}
                 transitionEnterTimeout={1000}
-                transitionLeaveTimeout={1000}>
+                transitionLeaveTimeout={300}>
                 {items.map((e, i) => {
                      let {action, advanced, ...rest} = e
                      if (advanced && ! showAdvanced) {
