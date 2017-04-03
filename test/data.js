@@ -171,7 +171,7 @@ export default {
             advanced: true,
             action: {
                 type: ActionTypes.COLOR,
-                options: arrayToi18nHash(["#FFFFFF", "#FFFF00", "#FF0000"])
+                options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
             }
         }]
     }, {
