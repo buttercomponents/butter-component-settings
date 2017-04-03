@@ -16,8 +16,8 @@ function toggle(){
 }
 
 let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
-    <section id={id}>
-        {title?<div className="title">{title}</div>:null}
+    <section className={style["tab-section"]} id={id}>
+        {title?<div className={style.title}>{title}</div>:null}
         {console.log(items)}
         <ReactCSSTransitionGroup
             transitionName="fade"
