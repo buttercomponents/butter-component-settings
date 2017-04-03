@@ -104,36 +104,21 @@
     transform: translate(0, -2px)!important
     -webkit-transition: transform 0.4s cubic-bezier(0.42, 0, 0, 1.4)
 
-    li
+    .button,
+    .colors
         cursor: pointer
-        opacity: 0.75
         padding: 8px 0px 8px 10px
 
-        div
+    .button
+        &:hover
+            background: #EEE
+
+    .colors
+        li
             background-color: #EEE
             border: 2px solid rgba(0,0,0,0.5)
-            border-radius: 5px
+            border-radius: 25px
             display: inline-block
             height: 25px
             margin: 0 5px
             width: 25px
-
-        &.colors
-            opacity: 1
-        &:hover
-            background: #EEE
-            opacity: 1
-
-
-    &::-webkit-scrollbar
-        width 5px
-
-    &::-webkit-scrollbar-track
-        background-color #DDD
-        border-radius 2px
-
-    &::-webkit-scrollbar-thumb
-        background-color $ScrollBarThumb
-        border-radius 2px
-        &:hover
-            background-color: $ScrollBarThumbHover

@@ -1,24 +1,12 @@
 import React, { Component } from 'react';
+import Dropdown from '../dropdown';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
-export default class Dropdown extends Component {
-    constructor (props) {
-        super()
-        this.state = {
-            selected: props.selected || Object.keys(props.options)[0]
-        }
-        this.apply = props.apply || function () {}
-    }
-
-    onSelect (o) {
-        this.setState({selected: o})
-        this.apply(o)
-    }
+export default class ColorPicker extends Dropdown {
 
     render() {
         let {props, state} = this
-
         return (
             <div className={"boostrap-dropdown " + style.dropdown}>
                 <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
@@ -26,17 +14,17 @@ export default class Dropdown extends Component {
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <ul className={"dropdown-menu " + style.menu }>
-                    <li className={style.colors}>
+                <div className={"dropdown-menu " + style.menu }>
+                    <ul className={style.colors}>
                     {
                         Object.keys(props.options).map((k, i) => (
                             state.selected === k ? null:
-                            <div key={i} onClick={this.onSelect.bind(this, k)} style={{backgroundColor: props.options[k]}}></div>
+                            <li key={i} onClick={this.onSelect.bind(this, k)} style={{backgroundColor: props.options[k]}}></li>
                         ))
                     }
-                    </li>
-                    <li>More colors...</li>
-                </ul>
+                    </ul>
+                    <div className={style.button}>More colors...</div>
+                </div>
             </div>
         )
     }
