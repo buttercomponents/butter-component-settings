@@ -1,15 +1,13 @@
 :global
     ul
         list-style: none
+
     .error
         background: #e74c3c
-        color: #FFF
-        padding: 5px 10px
         border-radius: 5px
-        font-family: monospace
-        font-weight: bolder
         color: #151515
-
+        font-family: monospace
+        padding: 5px 10px
 
     .fade-enter
         opacity: 0.01
@@ -27,15 +25,15 @@
         &[type=text],
         &[type=number],
         &input[type=password]
-            padding: 7px 10px
+            background var(--Input-bg-color)
+            border 0
             border-radius 5px
             color #FFF
-            outline 0
-            border 0
             font-size  0.95em
             font-weight normal
             line-height 0.70em
+            outline 0
+            padding: 7px 10px
             width 140px
-            background var(--Input-bg-color)
-            -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
+            box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
             transition background .2s ease
