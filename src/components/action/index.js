@@ -23,7 +23,7 @@ export default class Action extends Component {
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.COLOR)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.SWITCH)?(<Switch apply={this.apply} selected={value}/>):
-            (<b>Couldn't find an apropiate action type {console.log('Could not find action', type, props)}</b>)
+            (<b className="error">Couldn't find an apropiate action type {console.log('Could not find action', type, props)}</b>)
         )
     }
 }
