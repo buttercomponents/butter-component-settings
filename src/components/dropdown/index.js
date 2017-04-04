@@ -39,7 +39,8 @@ export default class Dropdown extends Component {
                 <ul className="dropdown-menu">
                     {
                         // (props.type === type) ? getItems() :
-                        (props.type === "color") ? <li className={style.menu}>{getItems()}<li onClick={null}>More colors...</li></li> : getItems() }
+                        (props.type === "color") ? <li className={style.menu}>{getItems()}<li onClick={null}>More colors...</li></li> : getItems()
+                    }
                 </ul>
             </div>
         )
