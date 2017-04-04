@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import Button from '../button';
 import Switch from '../switch';
 import Dropdown from '../dropdown';
-import ColorPicker from '../color-picker';
-
 import ActionTypes from 'butter-component-action-types';
 
 export default class Action extends Component {
