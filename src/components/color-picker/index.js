@@ -8,13 +8,13 @@ export default class ColorPicker extends Dropdown {
     render() {
         let {props, state} = this
         return (
-            <div className={"boostrap-dropdown " + style.dropdown}>
+            <div className={"boostrap-dropdown " + style["color-dropdown"]}>
                 <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
                     <div className={style.selected} style={{backgroundColor: state.selected}}></div>
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <div className={"dropdown-menu " + style.menu }>
+                <div className="dropdown-menu">
                     <ul className={style.colors}>
                     {
                         Object.keys(props.options).map((k, i) => (

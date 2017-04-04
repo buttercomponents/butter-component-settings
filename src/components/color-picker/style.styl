@@ -1,26 +1,24 @@
-.dropdown
-        position: relative
-        z-index: 1
-        color:  #FFF
-        border-radius:  5px
-        border: 0
-        display: inline-block
-        font-size  0.95em
+.color-dropdown
+    composes: dropdown from "../dropdown/modular.css";
 
-        & div[class*=dropdown-backdrop]
-            display none
-
-        &[class*=open]
-            z-index: 99
-            background: #FFF
-            color: #252525
-            border-radius: 5px 5px 0 0
-
-            .menu
-                background: #FFF
-                height: auto
+    *[class*="dropdown-menu"]
+        .button,
+        .colors
+            cursor: pointer
+            padding: 8px 0px 8px 10px
+        .button
+            &:hover
+                background: #EEE
+        .colors
+            li
+                background-color: #EEE
+                border: 2px solid rgba(0,0,0,0.5)
+                border-radius: 5px
+                display: inline-block
+                height: 25px
+                margin: 0 5px
                 opacity: 1
-                transform: translate(0, 29px)!important
+                width: 25px
 
 .toggle
     display: flex
@@ -80,45 +78,3 @@
         margin-left 10px
         &:after
             content: "arrow_drop_down"
-
-.menu
-    z-index: 1
-    opacity: 0
-    overflow-x: hidden
-    overflow-y: auto
-    width: 100%
-    height:0
-    max-height: 215px
-    margin: 0
-    padding: 2px 0 0 0
-    border: 0
-    border-radius: 0 0 5px 5px
-    box-shadow: none
-    display: inline-block
-    vertical-align top
-    color #252525
-    position: absolute
-    left 0
-    top 0
-    font-family: var(--Font-normal)
-    transform: translate(0, -2px)!important
-    -webkit-transition: transform 0.4s cubic-bezier(0.42, 0, 0, 1.4)
-
-    .button,
-    .colors
-        cursor: pointer
-        padding: 8px 0px 8px 10px
-
-    .button
-        &:hover
-            background: #EEE
-
-    .colors
-        li
-            background-color: #EEE
-            border: 2px solid rgba(0,0,0,0.5)
-            border-radius: 25px
-            display: inline-block
-            height: 25px
-            margin: 0 5px
-            width: 25px

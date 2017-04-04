@@ -20,12 +20,12 @@ export default class Dropdown extends Component {
         let {props, state} = this
 
         return (
-            <div className={"boostrap-dropdown " + style.dropdown}>
+            <div className={"boostrap-dropdown " + style["settings-dropdown"]}>
                 <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <ul className={"dropdown-menu " + style.menu }>
+                <ul className="dropdown-menu">
                     {
                         Object.keys(props.options).map((k, i) => (
                             state.selected === k ? null:
@@ -37,4 +37,3 @@ export default class Dropdown extends Component {
         )
     }
 }
-
