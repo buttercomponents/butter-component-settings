@@ -21,7 +21,7 @@ export default class Dropdown extends Component {
 
         return (
             <div className={"boostrap-dropdown " + style["settings-dropdown"]}>
-                <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
+                <div className="dropdown-toggle" data-toggle="dropdown">
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>

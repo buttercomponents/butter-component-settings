@@ -9,7 +9,7 @@ export default class ColorPicker extends Dropdown {
         let {props, state} = this
         return (
             <div className={"boostrap-dropdown " + style["color-dropdown"]}>
-                <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
+                <div className="dropdown-toggle" data-toggle="dropdown">
                     <div className={style.selected} style={{backgroundColor: state.selected}}></div>
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>

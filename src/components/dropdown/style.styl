@@ -1,53 +1,5 @@
 .settings-dropdown
-    composes: dropdown from "../dropdown/modular.css";
-
-.toggle
-    display: flex
-    justify-content: space-between
-    align-items: center
-    position relative
-    z-index: 99
-    align-items: center
-    cursor: pointer
-    font-family: var(--Font-title)
-    text-align: center
-    font-size: 16px
-    padding: 4px 10px
-    border-radius 5px
-    color #FFF
-    font-weight normal
-    line-height 0.70em
-    display: inline-block
-    width: auto
-    background: var(--Input-bg-color)
-    -webkit-box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
-
-    &[aria-expanded*=true]
-        color: #252525
-        background: transparent
-        -webkit-box-shadow: none
-
-        i:after
-            content "arrow_drop_up"
-            color: rgba(0, 0, 0, 0.65)
-
-    span
-        text-align: left
-        min-width: 125px
-        display: inline-block
-        margin: 0
-        padding: 0
-        font-size: 0.9em
-        line-height: 0.75em
-        min-width: 150px
-        text-transform: capitalize
-    i
-        margin:0!important
-        opacity 0.65
-        font-size 1em
-        margin-left 10px
-        &:after
-            content: "arrow_drop_down"
+    composes: dropdown from "../dropdown/module.css";
 
 .menu
     &::-webkit-scrollbar
