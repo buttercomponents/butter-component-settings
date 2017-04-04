@@ -1,5 +1,31 @@
-.settings-dropdown
+.text-dropdown
     composes: dropdown from "../dropdown/module.css";
+
+.color-dropdown
+    composes: dropdown from "../dropdown/module.css";
+    .colorSelected
+        background-color: #EEE;
+        border: 2px solid rgba(0,0,0,0.5);
+        border-radius: 50px;
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin:  0 15px 0 5px;
+        vertical-align: middle;
+
+    .menu
+        opacity: 1!important
+        &:hover
+            background: #FFF!important
+        div
+            background-color: #EEE
+            border: 2px solid rgba(0,0,0,0.5)
+            border-radius: 5px
+            display: inline-block
+            height: 25px
+            margin: 0 5px
+            opacity: 1
+            width: 25px
 
 .menu
     &::-webkit-scrollbar
