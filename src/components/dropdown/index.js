@@ -20,11 +20,11 @@ export default class Dropdown extends Component {
         let {props, state} = this
 
         const items = {
-            text: (a,b) => <li key={a} onClick={this.onSelect.bind(this, b)}>{props.options[b]}</li>,
-            color: (a,b) => <div key={a} onClick={this.onSelect.bind(this, b)} style={{backgroundColor: props.options[b]}}></div>
+            text: (a,b) => <li key={a} onClick={this.onSelect.bind(this, b)} className={style.item}>{props.options[b]}</li>,
+            color: (a,b) => <li key={a} onClick={this.onSelect.bind(this, b)} className={style.color} style={{backgroundColor: props.options[b]}}></li>
         }
 
-        const getItems = () =>
+        const getItems = (a) =>
             Object.keys(props.options).map((k, i) => (
                 state.selected === k ? null: items[props.type](i,k)
             ))
@@ -36,12 +36,10 @@ export default class Dropdown extends Component {
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <ul className="dropdown-menu">
-                    {
-                        // (props.type === type) ? getItems() :
-                        (props.type === "color") ? <li className={style.menu}>{getItems()}<li onClick={null}>More colors...</li></li> : getItems()
-                    }
-                </ul>
+                <div className="dropdown-menu">
+                    <ul className={style.items}>{getItems()}</ul>
+                    { props.type === "color" ? <div onClick={null} className={style.action}>More colors...</div> : null }
+                </div>
             </div>
         )
     }
