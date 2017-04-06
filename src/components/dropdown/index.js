@@ -67,7 +67,6 @@ Dropdown.defaultProps = {
     }
 }
 
-
 const colorOpts = {
     type: "color",
     showText: false,
