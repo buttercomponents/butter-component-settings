@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
+
+
 class Dropdown extends Component {
     constructor (props) {
         super()
@@ -35,19 +37,9 @@ class Dropdown extends Component {
             <div className={style.label} style={{backgroundColor: state.selected}}/>
         )
 
-        // Action template
-        const Action = (props) => (
-            <div className={style.action}>{props.value}</div>
-        )
-
         // Get items
-        const getItems = () => Object.keys(props.options).map((k, i) => (
+        const getItems = (props) => Object.keys(props.options).map((k, i) => (
             state.selected === k ? null : <Item  key={i} value={props.options[k]} {...props}/>
-        ))
-
-        // Get Actions
-        const getActions = () => Object.keys(props.config.actions).map((k, i) => (
-            <Action key={i} value={props.config.actions[i]}/>
         ))
 
         return  (
@@ -58,10 +50,8 @@ class Dropdown extends Component {
                     <i className="material-icons"></i>
                 </div>
                 <div className="dropdown-menu">
-                    <ul className={style.items}>{getItems()}</ul>
-                    {   //Load dropdown actions (Extra special stuff!)
-                        getActions()
-                    }
+                    <ul className={style.items}>{getItems(props)}</ul>
+                    {props.children}
                 </div>
             </div>
         )
@@ -75,25 +65,30 @@ Dropdown.defaultProps = {
         //Display item text
         showText: true,
         //Display selected item label
-        showLabel: false,
-        //Dropdown actions
-        actions: []
+        showLabel: false
     }
 }
 
 // Config for Dropdown color
-const opts = {
+const colorOpts = {
     //Dropdon Type
     type: "color",
     //Display item text
     showText: false,
     //Display selected item label
-    showLabel: true,
-    //Dropdown actions
-    actions: ["More colors..."]
+    showLabel: true
 }
 
-let DropdownColor =  (props) => (<Dropdown config={opts}  {...props}/>)
+// Action template
+let DropdownItem = (props) => (
+    <div className={style.action}>{props.value}</div>
+)
+
+let DropdownColor =  (props) => (
+    <Dropdown config={colorOpts}  {...props}>
+        <DropdownItem value="More colors..."/>
+    </Dropdown>
+)
 
 module.exports = {
     Dropdown,
