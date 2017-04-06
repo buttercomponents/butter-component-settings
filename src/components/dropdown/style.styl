@@ -105,27 +105,27 @@
 .action
     composes: item
 
+.label
+    background-color: #EEE
+    border: 2px solid rgba(0,0,0,0.5)
+    border-radius: 50px
+    display: inline-block
+    height: 15px
+    margin:  0 15px 0 5px
+    vertical-align: middle
+    width: 15px
+
 //Types...
 
-.text-dropdown
-    composes: dropdown;
+.dropdown-text
+    composes: dropdown
 
-.color-dropdown
-    composes: dropdown;
-
-    .colorSelected
-        background-color: #EEE;
-        border: 2px solid rgba(0,0,0,0.5);
-        border-radius: 50px;
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        margin:  0 15px 0 5px;
-        vertical-align: middle;
+.dropdown-color
+    composes: dropdown
 
     .items
         padding: 0 8px;
-        .color
+        .item
             background-color: #EEE
             border: 2px solid rgba(0,0,0,0.5)
             border-radius: 5px

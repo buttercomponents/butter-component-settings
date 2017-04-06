@@ -17,30 +17,50 @@ export default class Dropdown extends Component {
     }
 
     render() {
+
         let {props, state} = this
 
-        const items = {
-            text: (a,b) => <li key={a} onClick={this.onSelect.bind(this, b)} className={style.item}>{props.options[b]}</li>,
-            color: (a,b) => <li key={a} onClick={this.onSelect.bind(this, b)} className={style.color} style={{backgroundColor: props.options[b]}}></li>
-        }
+        //Item template
+        const Item = (props) => (
+            <li {...props}
+                className={style.item}
+                style={{backgroundColor: props.config.type === 'color' ? props.value : null}}
+                onClick={this.onSelect.bind(this, props.value)}>
+                    {props.config.showText ? props.value : null}
+            </li>
+        )
 
-        const getItems = () =>
-            Object.keys(props.options).map((k, i) => (
-                state.selected === k ? null: items[props.type](i,k)
-            ))
+        //Label template
+        const Label = (props) => (
+            <div className={style.label} style={{backgroundColor: state.selected}}/>
+        )
 
-        return (
-            <div className={"boostrap-dropdown " + style[props.type + "-dropdown"] }>
+        // Action template
+        const Action = (props) => (
+            <div className={style.action}>{props.value}</div>
+        )
+
+        // Get items
+        const getItems = () => Object.keys(props.options).map((k, i) => (
+            state.selected === k ? null : <Item  key={i} value={props.options[k]} {...props}/>
+        ))
+
+        // Get Actions
+        const getActions = () => Object.keys(props.config.actions).map((k, i) => (
+            <Action key={i} value={props.config.actions[i]}/>
+        ))
+
+        return  (
+            <div className={"boostrap-dropdown " + style[ "dropdown-" + props.config.type] }>
                 <div className="dropdown-toggle" data-toggle="dropdown">
-                    {props.type === "color" ? <div className={style.colorSelected} style={{backgroundColor: state.selected}}></div> : null}
+                     {props.config.showLabel === true ? <Label />  : null}
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
                 <div className="dropdown-menu">
                     <ul className={style.items}>{getItems()}</ul>
-                    {
-                        //Make this do something...
-                        props.type === "color" ? <div onClick={null} className={style.action}>More colors...</div> : null
+                    {   //Load dropdown actions (Extra special stuff!)
+                        getActions()
                     }
                 </div>
             </div>
