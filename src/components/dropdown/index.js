@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
+//Item template
+let DropdownItem = (props) => (
+    <li className={style.action} {...props}>{props.value}</li>
+)
+
 class Dropdown extends Component {
     constructor (props) {
         super()
@@ -20,16 +25,6 @@ class Dropdown extends Component {
 
         let {props, state} = this
 
-        //Item template
-        const Item = (props) => (
-            <li {...props}
-                className={style.item}
-                style={{backgroundColor: props.config.type === 'color' ? props.value : null}}
-                onClick={this.onSelect.bind(this, props.value)}>
-                    {props.config.showText ? props.value : null}
-            </li>
-        )
-
         //Label template
         const Label = (props) => (
             <div className={style.label} style={{backgroundColor: state.selected}}/>
@@ -37,7 +32,12 @@ class Dropdown extends Component {
 
         // Get items
         const getItems = (props) => Object.keys(props.options).map((k, i) => (
-            state.selected === k ? null : <Item  key={i} value={props.options[k]} {...props}/>
+            state.selected === k ? null :
+            <DropdownItem  key={i}
+                   style={{backgroundColor: props.config.type === 'color' ? k : null}}
+                   onClick={this.onSelect.bind(this, k)}
+                   value={props.config.showText ? props.options[k] : null}
+            />
         ))
 
         return  (
@@ -72,10 +72,6 @@ const colorOpts = {
     showText: false,
     showLabel: true
 }
-
-let DropdownItem = (props) => (
-    <div className={style.action}>{props.value}</div>
-)
 
 let DropdownColor =  (props) => (
     <Dropdown config={colorOpts}  {...props}>
