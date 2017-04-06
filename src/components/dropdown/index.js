@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
-
-
 class Dropdown extends Component {
     constructor (props) {
         super()
@@ -69,17 +67,13 @@ Dropdown.defaultProps = {
     }
 }
 
-// Config for Dropdown color
+
 const colorOpts = {
-    //Dropdon Type
     type: "color",
-    //Display item text
     showText: false,
-    //Display selected item label
     showLabel: true
 }
 
-// Action template
 let DropdownItem = (props) => (
     <div className={style.action}>{props.value}</div>
 )
