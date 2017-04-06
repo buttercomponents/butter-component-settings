@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
-export default class Dropdown extends Component {
+class Dropdown extends Component {
     constructor (props) {
         super()
         this.state = {
@@ -66,4 +66,36 @@ export default class Dropdown extends Component {
             </div>
         )
     }
+}
+
+Dropdown.defaultProps = {
+    config : {
+        //Dropdon Type
+        type: "text",
+        //Display item text
+        showText: true,
+        //Display selected item label
+        showLabel: false,
+        //Dropdown actions
+        actions: []
+    }
+}
+
+// Config for Dropdown color
+const opts = {
+    //Dropdon Type
+    type: "color",
+    //Display item text
+    showText: false,
+    //Display selected item label
+    showLabel: true,
+    //Dropdown actions
+    actions: ["More colors..."]
+}
+
+let DropdownColor =  (props) => (<Dropdown config={opts}  {...props}/>)
+
+module.exports = {
+    Dropdown,
+    DropdownColor
 }
