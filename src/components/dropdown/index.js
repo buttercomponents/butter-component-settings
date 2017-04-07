@@ -3,6 +3,7 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 
 //Dropdown Item component
+
 let DropdownItem = (props) => (
     <li className={style.action} {...props}>
         {props.value}
@@ -80,7 +81,4 @@ let DropdownColor =  (props) => (
     </Dropdown>
 )
 
-module.exports = {
-    Dropdown,
-    DropdownColor
-}
+export { Dropdown, DropdownColor }
