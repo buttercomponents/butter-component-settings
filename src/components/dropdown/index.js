@@ -81,4 +81,4 @@ let DropdownColor =  (props) => (
     </Dropdown>
 )
 
-export { Dropdown, DropdownColor }
+export { Dropdown as default, DropdownColor }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '../button';
 import Switch from '../switch';
-import { Dropdown, DropdownColor} from '../dropdown';
+import Dropdown, { DropdownColor } from '../dropdown';
 import ActionTypes from 'butter-component-action-types';
 
 export default class Action extends Component {
@@ -10,7 +10,7 @@ export default class Action extends Component {
         let {id, settings} = props
         this.apply = (value) => settings.set(id, value)
     }
-    
+
     render() {
         let {type, settings, id, t, ...props} = this.props
         let value = settings[id]
