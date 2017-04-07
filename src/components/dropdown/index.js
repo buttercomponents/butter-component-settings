@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
-export default class Dropdown extends Component {
+//Dropdown Item component
+
+let DropdownItem = (props) => (
+    <li className={style.action} {...props}>
+        {props.value}
+    </li>
+)
+
+class Dropdown extends Component {
     constructor (props) {
         super()
         this.state = {
@@ -19,22 +27,58 @@ export default class Dropdown extends Component {
     render() {
         let {props, state} = this
 
-        return (
-            <div className={"boostrap-dropdown " + style.dropdown}>
-                <div className={"dropdown-toggle " + style.toggle} data-toggle="dropdown">
+        //Label template
+        const Label = (props) => (
+            <div className={style.label} style={{backgroundColor: state.selected}}/>
+        )
+
+        // Get items
+        const getItems = (props) => Object.keys(props.options).map((k, i) => (
+            state.selected === k ? null :
+            <DropdownItem
+                key={i}
+                style={{backgroundColor: props.config.type === 'color' ? k : null}}
+                onClick={this.onSelect.bind(this, k)}
+                value={props.config.showText ? props.options[k] : null} />
+        ))
+
+        return  (
+            <div className={"boostrap-dropdown " + style[ "dropdown-" + props.config.type] }>
+                <div className="dropdown-toggle" data-toggle="dropdown">
+                    {props.config.showLabel === true ? <Label />  : null}
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
                 </div>
-                <ul className={"dropdown-menu " + style.menu }>
-                    {
-                        Object.keys(props.options).map((k, i) => (
-                            state.selected === k ? null:
-                            <li key={i} onClick={this.onSelect.bind(this, k)}>{props.options[k]}</li>
-                        ))
-                    }
-                </ul>
+                <div className="dropdown-menu">
+                    <ul className={style.items}>{getItems(props)}</ul>
+                    {props.children}
+                </div>
             </div>
         )
     }
 }
 
+Dropdown.defaultProps = {
+    config : {
+        //Dropdon Type
+        type: "text",
+        //Display item text
+        showText: true,
+        //Display selected item label
+        showLabel: false
+    }
+}
+
+const colorOpts = {
+    type: "color",
+    showText: false,
+    showLabel: true
+}
+
+let DropdownColor =  (props) => (
+    <Dropdown config={colorOpts}  {...props}>
+        <DropdownItem value="More colors..."/>
+    </Dropdown>
+)
+
+export { Dropdown as default, DropdownColor }

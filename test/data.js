@@ -163,7 +163,17 @@ export default {
     }, {
         title: "Subtitles",
         id: "subtitles",
-        items: []
+        items: [{
+            id: "color_test",
+            icon: "color_lens",
+            title: "Color",
+            helper: "Color component test",
+            advanced: true,
+            action: {
+                type: ActionTypes.COLOR,
+                options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
+            }
+        }]
     }, {
         id: 'extensions',
         title: i18n.__('Extensions'),
@@ -545,5 +555,3 @@ export default {
     "disclaimerAccepted": 1
   })
 }
-
-

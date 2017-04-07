@@ -1,48 +1,28 @@
 @import './global.styl'
 
-
 .settings
-    z-index 1
     background-color var(--Bg-color)
     height 100%
-    width 100%
-    position fixed
     padding-top: $TitleHeight + 10px
-    #qrcode-modal
-            height: 100vh
-            width: 100vw
-            background:  var(--Bg-color)
-            position: absolute
-            left: 0
-            top: 0
-            z-index: 200
-            text-align: center
-            canvas
-                background: #FFF
-                padding: 34px
-                border-radius: 15px
-                margin-top: 140px
-            i
-                position absolute
-                top: 30px
-                right: 30px
-                color: #FFF
-                font-size: 48px
-
+    position fixed
+    width 100%
+    z-index 1
+    
     .settings-container
-        z-index 1
-        width 100%
+        background-color: var(--Bg-color)
         height 100%
+        padding-bottom: 20px
         position absolute
-        background-color var(--Bg-color)
-        -webkit-user-select none
-        padding-bottom 20px
         top: 0
+        user-select: none
+        width 100%
+        z-index 1
+
         &.show-advanced
             .settings-row
                 &.advanced
-                    padding 35px 20px !important
                     height: auto !important
                     opacity: 1 !important
                     overflow: visible !important
+                    padding: 35px 20px !important
                     transform: scale(1) !important
