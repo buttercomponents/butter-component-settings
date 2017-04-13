@@ -26,4 +26,4 @@ class Settings extends Component {
     }
 }
 
-export default translate(['settings'])(Settings);
+export default translate(['settings'], {wait: true, withRef: true})(Settings);
