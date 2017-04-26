@@ -41,7 +41,7 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
 )
 
 let TabPanel = ({id, active, sections, ...props}) => (
-    <div role="tab-panel" className={active?'active ':''} id={id}>
+    <div role="tab-panel" className={active?'active':''} id={id}>
         {console.log(sections, props)}
         {sections.map((s, i) => (
              <TabSection key={i} {...s} {...props}/>
