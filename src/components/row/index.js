@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import style from './style.styl';
 
 export default (props) => (
-        <div className={style.row} key={props.key}>
+        <div className={style.row}>
             <i className="material-icons">{props.icon}</i>
             <div className={style.text}>
                 <div className="item-title">{props.title}</div>

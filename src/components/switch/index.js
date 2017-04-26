@@ -20,7 +20,7 @@ export default class Switch extends Component {
         let {props, state} = this
         return (
             <label className={style.switch}>
-                <input className={style['settings-checkbox']} active={state.selected} type="checkbox" onChange={this.onChange.bind(this)}/>
+                <input className={style['settings-checkbox']} checked={state.selected} type="checkbox" onChange={this.onChange.bind(this)}/>
                 <div className={style.slider}></div>
             </label>
         )
