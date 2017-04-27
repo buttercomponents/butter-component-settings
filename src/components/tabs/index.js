@@ -49,6 +49,20 @@ let TabPanel = ({id, active, sections, ...props}) => (
     </div>
 )
 
+let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
+    <div className={style.navbar}>
+        <ActionBar {...props} />
+        <br/>
+        <ul id="myTabs" className={style.tabs} role="tablist">
+            {tabs.map((t, i) => (
+                 <li className={'source ' + (i === selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
+                     {props.t(t.title)}
+                 </li>
+             ))}
+        </ul>
+    </div>
+)
+
 export default class Tabs extends Component {
     constructor (props) {
         super()
@@ -79,18 +93,10 @@ export default class Tabs extends Component {
                     transitionLeaveTimeout={1000}>
                     {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
                 </ReactCSSTransitionGroup>
-                <div className={style.navbar}>
-                    <ActionBar {...props} action={{toggleAdvanced: this.toggleAdvanced.bind(this)}}/>
-                    <br/>
-                    <ul id="myTabs" className={style.tabs} role="tablist">
-                        {props.tabs.map((t, i) => (
-                             <li className={'source ' + (i === state.selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
-                                 {props.t(t.title)}
-                             </li>
-                         ))}
-                    </ul>
-                </div>
-
+                <NavBar {...props} selected={state.selected} action={{
+                    toggleAdvanced: this.toggleAdvanced.bind(this),
+                    goBack: props.action.goBack
+                }}/>
                 <div id="tabPanels" className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
