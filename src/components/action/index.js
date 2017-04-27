@@ -18,7 +18,7 @@ export default class Action extends Component {
             (type === ActionTypes.BUTTON)?(<Button title={t(props.title)}/>):
             (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
             (type === ActionTypes.NUMBER)?(<input type="text" value={value} onChange={this.apply}/>):
-            (type === ActionTypes.LABEL)?(<span onChange={this.apply}>{value}</span>):
+            (type === ActionTypes.LABEL)?(<span>{t(props.title)}</span>):
             (type === ActionTypes.PASSWORD)?(<input type="password"/>):
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.COLOR)?(<DropdownColor apply={this.apply} selected={value} {...props}/>):
