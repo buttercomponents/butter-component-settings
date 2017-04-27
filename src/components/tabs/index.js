@@ -85,14 +85,14 @@ export default class Tabs extends Component {
         let {props, state} = this
         return (
             <div>
-                <ReactCSSTransitionGroup
+                <CSSTransitionGroup
                     transitionName="fade"
                     transitionAppear={true}
                     transitionAppearTimeout={5000}
                     transitionEnterTimeout={1000}
                     transitionLeaveTimeout={1000}>
                     {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
-                </ReactCSSTransitionGroup>
+                </CSSTransitionGroup>
                 <NavBar {...props} selected={state.selected} action={{
                     toggleAdvanced: this.toggleAdvanced.bind(this),
                     goBack: props.action.goBack
