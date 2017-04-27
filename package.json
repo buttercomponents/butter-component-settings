@@ -1,41 +1,41 @@
 {
-    "name": "butter-component-settings",
-    "version": "0.2.0",
-    "description": "A Butter Component to show and set the settings ",
-    "main": "dist/bundle.js",
-    "scripts": {
-        "prepublish": "npm run build",
-        "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
-        "start": "node node_modules/butter-component-builder/server.js",
-        "lint": "eslint src"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/buttercomponents/butter-component-settings.git"
-    },
-    "keywords": [
-        "react",
-        "reactjs",
-        "boilerplate",
-        "hot",
-        "reload",
-        "hmr",
-        "live",
-        "edit",
-        "webpack"
-    ],
-    "author": "Niv Sardi <x@btn.sh>",
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/buttercomponents/butter-component-settings/issues"
-    },
-    "homepage": "https://github.com/buttercomponents/butter-component-settings",
-    "devDependencies": {
-        "butter-component-builder": "https://github.com/buttercomponents/butter-component-builder"
+  "name": "butter-component-settings",
+  "version": "0.2.0",
+  "description": "A Butter Component to show and set the settings ",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
+    "start": "node node_modules/butter-component-builder/server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buttercomponents/butter-component-settings.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "Niv Sardi <x@btn.sh>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/buttercomponents/butter-component-settings/issues"
+  },
+  "homepage": "https://github.com/buttercomponents/butter-component-settings",
+  "devDependencies": {
+    "butter-component-builder": "https://github.com/buttercomponents/butter-component-builder"
   },
   "dependencies": {
     "butter-component-action-types": "git+https://github.com/buttercomponents/butter-component-action-types.git",
-    "react-addons-css-transition-group": "^15.5.2",
-    "react-i18next": "^3.1.0"
+    "react-i18next": "^3.1.0",
+    "react-transition-group": "^1.1.2"
   }
 }

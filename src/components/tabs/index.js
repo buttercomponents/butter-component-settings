@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import { translate } from 'react-i18next';
 import style from './style.styl';
 
@@ -19,7 +19,7 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
     <section className={style["tab-section"]} id={id}>
         {title?<div className={style.title}>{title}</div>:null}
         {console.log(items)}
-        <ReactCSSTransitionGroup
+        <CSSTransitionGroup
             transitionName="fade"
             transitionAppear={true}
             transitionAppearTimeout={5000}
@@ -36,7 +36,7 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
                      <Row key={i} action={actionElement} {...rest}/>
                  )
              })}
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
     </section>
 )
 
