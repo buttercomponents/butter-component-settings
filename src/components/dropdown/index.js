@@ -44,7 +44,6 @@ class Dropdown extends Component {
     }
 
     onSelect (o) {
-        console.error('--->', o)
         this.setState({selected: o})
         this.apply(o)
     }
