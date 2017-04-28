@@ -12,16 +12,10 @@ class Settings extends Component {
         let {state, props} = this;
 
         return (
-            <div>
                 <div className={[style['settings'], props.settings.get('showAdvancedsettings')?'show-advanced':''].join(' ')}>
-
-                    <div className={style['settings-container']}>
                         <Alert message={props.t('Saved')}/>
                         <Tabs {...props}/>
-                    </div>
-
                 </div>
-            </div>
         );
     }
 }

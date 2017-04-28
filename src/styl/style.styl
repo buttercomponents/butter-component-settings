@@ -1,28 +1,20 @@
 @import './global.styl'
 
 .settings
-    background-color var(--Bg-color)
-    height 100%
-    padding-top: $TitleHeight + 10px
-    position fixed
+    background-color: var(--Bg-color)
+    margin: auto
+    position absolute
+    top: 33px
+    bottom: 0px
+    user-select: none
     width 100%
     z-index 1
-    
-    .settings-container
-        background-color: var(--Bg-color)
-        height 100%
-        padding-bottom: 20px
-        position absolute
-        top: 0
-        user-select: none
-        width 100%
-        z-index 1
 
-        &.show-advanced
-            .settings-row
-                &.advanced
-                    height: auto !important
-                    opacity: 1 !important
-                    overflow: visible !important
-                    padding: 35px 20px !important
-                    transform: scale(1) !important
+    &.show-advanced
+        .settings-row
+            &.advanced
+                height: auto !important
+                opacity: 1 !important
+                overflow: visible !important
+                padding: 35px 20px !important
+                transform: scale(1) !important

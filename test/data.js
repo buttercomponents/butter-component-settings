@@ -164,19 +164,34 @@ export default {
             }
         }]
     }, {
-        title: "Subtitles",
-        id: "subtitles",
-        items: [{
-            id: "color_test",
-            icon: "color_lens",
-            title: "Color",
-            helper: "Color component test",
-            advanced: true,
-            action: {
-                type: ActionTypes.COLOR,
-                options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
-            }
-        }]
+        title: "Test",
+        id: "Test",
+        sections: [{
+            id: "dropdowns_test",
+            title: "Dropdowns",
+            advanced: false,
+            items: [{
+                id: "color_test",
+                icon: "color_lens",
+                title: "Color",
+                helper: "Color component test",
+                action: {
+                    type: ActionTypes.COLOR,
+                    options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
+                }
+            },
+            {
+                id: "dropdown_test",
+                icon: "arrow_drop_down",
+                title: "Dropdown",
+                helper: "Dropdown component test",
+                action: {
+                    type: ActionTypes.DROPDOWN,
+                    options: arrayToi18nHash(["item 1", "item 2", "item 3", "item 4", "item 5", "item 6",  "item 7", "item 8", "item 9", "item 10"])
+                }
+            }]
+
+            }]
     }, {
         id: 'extensions',
         title: i18n.__('Extensions'),
