@@ -13,13 +13,13 @@ export default class Action extends Component {
 
     render() {
         let {type, settings, id, t, ...props} = this.props
-        let value = settings[id]
+        let value = settings[id] || props.default
         return (
             (type === ActionTypes.BUTTON)?(<Button title={t(props.title)}/>):
             (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
             (type === ActionTypes.NUMBER)?(<input type="text" value={value} onChange={this.apply}/>):
             (type === ActionTypes.LABEL)?(<span>{t(props.title)}</span>):
-            (type === ActionTypes.PASSWORD)?(<input type="password"/>):
+            (type === ActionTypes.PASSWORD)?(<input type="password" value={value}/>):
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.COLOR)?(<DropdownColor apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.SWITCH)?(<Switch apply={this.apply} selected={value}/>):

@@ -180,21 +180,64 @@ export default {
                     options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
                 }
             },
-            {
-                id: "dropdown_test",
-                icon: "arrow_drop_down",
-                title: "Dropdown",
-                helper: "Dropdown component test",
-                action: {
-                    type: ActionTypes.DROPDOWN,
-                    options: [...Array(20)]
-                        .reduce((a, x, i) => (
-                            Object.assign({}, a, {[i]: 'Item ' + i})
-                        ) , {})
-                }
-            }]
+                    {
+                        id: "dropdown_test",
+                        icon: "arrow_drop_down",
+                        title: "Dropdown",
+                        helper: "Dropdown component test",
+                        action: {
+                            type: ActionTypes.DROPDOWN,
+                            options: [...Array(20)]
+                                .reduce((a, x, i) => (
+                                    Object.assign({}, a, {[i]: 'Item ' + i})
+                                ) , {})
+                        }
+                    }]
 
-            }]
+        },{
+            id: "entry_test",
+            title: "Entries",
+            advanced: false,
+            items: [{
+                id: "text_test",
+                icon: "account_box",
+                title: "TEXT",
+                helper: "TEXT component test",
+                action: {
+                    type: ActionTypes.TEXT,
+                    default: "default value",
+                }
+            }, {
+                id: "password_test",
+                icon: "account_box",
+                title: "PASSWORD",
+                helper: "PASSWORD component test",
+                action: {
+                    type: ActionTypes.PASSWORD,
+                    default: "default value",
+                }
+            }, {
+                id: "label_test",
+                icon: "account_box",
+                title: "LABEL",
+                helper: "LABEL component test",
+                action: {
+                    type: ActionTypes.LABEL,
+                    default: "default value",
+                }
+            }, {
+                id: "number_test",
+                icon: "account_box",
+                title: "NUMBER",
+                helper: "NUMBER component test",
+                action: {
+                    type: ActionTypes.NUMBER,
+                    default: 1024,
+                }
+            }
+            ]
+
+        }]
     }, {
         id: 'extensions',
         title: i18n.__('Extensions'),
