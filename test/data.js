@@ -187,7 +187,10 @@ export default {
                 helper: "Dropdown component test",
                 action: {
                     type: ActionTypes.DROPDOWN,
-                    options: arrayToi18nHash(["item 1", "item 2", "item 3", "item 4", "item 5", "item 6",  "item 7", "item 8", "item 9", "item 10"])
+                    options: [...Array(20)]
+                        .reduce((a, x, i) => (
+                            Object.assign({}, a, {[i]: 'Item ' + i})
+                        ) , {})
                 }
             }]
 
