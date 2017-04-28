@@ -3,7 +3,7 @@
     width: 100%
     padding: 0 40px
     opacity: 1
-    background-color: var(--Nav-color)
+    background-color: var(--Nav-color, rgba(33,34,37,0.95))
     position: absolute
     box-shadow: $TopBarShadow
     -webkit-user-select: none
@@ -29,7 +29,7 @@
         cursor: pointer
         vertical-align: middle
         padding-bottom: 15px
-        font-family: var(--Font-title)
+        font-family: var(--Font-title, 'Arial', 'Helvetica', sans-serif)
         font-weight: bold
         font-size: 1.35em
         text-transform: uppercase
@@ -41,7 +41,7 @@
             border-bottom: 3px solid rgba(255,255,255,0.2)
         &[class*=active],
         &[aria-expanded*="true"]
-            border-bottom: 3px solid var(--Main-color)
+            border-bottom: 3px solid var(--Main-color, #2d72d9)
             opacity: 1
 
 .buttons-content
@@ -70,7 +70,7 @@
         max-width: 780px
         margin: 0 auto
     .title
-        font-family: var(--Font-title)
+        font-family: var(--Font-title, 'Arial', 'Helvetica', sans-serif)
         color: #FFF
         font-weight: 900
         padding: 20px
