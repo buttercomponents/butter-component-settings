@@ -35,12 +35,14 @@
           font-family: var(--Font-title)
           font-weight: bold
           font-size: 1.35em
+          text-decoration: none
           text-transform: uppercase
 
         &:hover
             opacity: 0.9
             border-bottom: 3px solid rgba(255,255,255,0.2)
-        &[class*=active],
+
+        &[class~=is-active]
             border-bottom: 3px solid var(--Main-color)
             opacity: 1
 
@@ -56,7 +58,7 @@
     top: 132px
     bottom: 0
 
-    & [role="tab-panel"]
+    & [class="role-panel"]
         display: none
         max-width: 980px
         margin: auto
