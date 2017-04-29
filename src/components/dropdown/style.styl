@@ -71,20 +71,20 @@
             &::after
                 content: "arrow_drop_down"
 
-        &[aria-expanded=true]
+    &[class*=open]
+    &:focus
+        background: #FFF
+        border-radius: 5px 5px 0 0
+        color: #252525
+        z-index: 99
+
+        div[class=dropdown-toggle]
             background: transparent
             box-shadow: none
             color: #252525
             i::after
                 color: rgba(0, 0, 0, 0.65);
                 content: "arrow_drop_up";
-
-
-    &[class*=open]
-        background: #FFF
-        border-radius: 5px 5px 0 0
-        color: #252525
-        z-index: 99
 
         div[class=dropdown-menu]
             background: #FFF;

@@ -10,10 +10,17 @@ let DropdownItem = (props) => (
     </li>
 )
 
+const hideAll = () => {
+//document.body.querySelectorAll('.dropdown .open').map((a) => a.classList.remove('open'))
+
+}
+
 class Dropdown extends Component {
+
     constructor (props) {
         super()
         this.state = {
+            active: false,
             selected: props.selected || Object.keys(props.options)[0]
         }
         this.apply = props.apply || function () {}
@@ -21,7 +28,16 @@ class Dropdown extends Component {
 
     onSelect (o) {
         this.setState({selected: o})
+        this.Toggle()
         this.apply(o)
+    }
+
+    Toggle() {
+        this.setState({ active: !this.state.active})
+    }
+
+    Hide () {
+        this.setState({ active: false});
     }
 
     render() {
@@ -43,8 +59,8 @@ class Dropdown extends Component {
         ))
 
         return  (
-            <div className={"boostrap-dropdown " + style[ "dropdown-" + props.config.type] }>
-                <div className="dropdown-toggle" data-toggle="dropdown">
+            <div className={style["dropdown-" + props.config.type] + (this.state.active ? ' open' : '')} tabIndex="0" onBlur={this.Hide.bind(this)}>
+                <div className="dropdown-toggle" onClick={this.Toggle.bind(this)}>
                     {props.config.showLabel === true ? <Label />  : null}
                     <span>{state.selected}</span>
                     <i className="material-icons"></i>
