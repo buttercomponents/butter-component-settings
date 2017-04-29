@@ -72,7 +72,7 @@ class Dropdown extends Component {
                     <Label value={selected} />
                 </DropdownToggle>
                 <div className="dropdown-menu">
-                    <ul className={style.items}>
+                    <div className={style.items}>
                         {
                             Object.keys(props.options).map((k, i) => (
                                 state.selected === k ? null :
@@ -82,7 +82,7 @@ class Dropdown extends Component {
                                     value={props.options[k]} />
                             ))
                         }
-                    </ul>
+                    </div>
                     {props.children}
                 </div>
             </div>
