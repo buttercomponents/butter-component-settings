@@ -44,13 +44,11 @@ class Dropdown extends Component {
     }
 
     Toggle() {
-        this.setState({ active: !this.state.active})
-        //Test
-        console.log(this.state)
+        this.setState({active: !this.state.active})
     }
 
     Hide () {
-        this.setState({ active: false})
+        this.setState({active: false})
     }
 
     render() {
