@@ -27,13 +27,6 @@ const ColorLabelItem = (props) => (
     </div>
 )
 
-const DropdownToggle = (props) => (
-    <div className="dropdown-toggle" onClick={props.onToggle}>
-        {props.children}
-        <i className="material-icons"></i>
-    </div>
-)
-
 class Dropdown extends Component {
 
     constructor (props) {
@@ -46,16 +39,18 @@ class Dropdown extends Component {
     }
 
     onSelect (o) {
-        this.setState({selected: o, active: false})
+        this.setState({selected: o})
         this.apply(o)
     }
 
     Toggle() {
         this.setState({ active: !this.state.active})
+        //Test
+        console.log(this.state)
     }
 
     Hide () {
-        this.setState({ active: false});
+        this.setState({ active: false})
     }
 
     render() {
@@ -63,12 +58,12 @@ class Dropdown extends Component {
         const Item = props.config.item
         const Label = props.config.label
         const selected = props.options[state.selected]
-
         return  (
-            <div className={style["dropdown-" + props.config.type] + (this.state.active ? ' open' : '')} tabIndex="0" onBlur={this.Hide.bind(this, state)}>
-                <DropdownToggle onToggle={this.Toggle.bind(this)} {...props}>
+            <div className={style["dropdown-" + props.config.type] + (this.state.active ? ' open' : '')} tabIndex="0" onBlur={this.Hide.bind(this)}>
+                <div className="dropdown-toggle" onClick={this.Toggle.bind(this)}>
                     <Label value={selected} />
-                </DropdownToggle>
+                    <i className="material-icons"></i>
+                </div>
                 <div className="dropdown-menu">
                     <ul className={style.items}>
                         {
