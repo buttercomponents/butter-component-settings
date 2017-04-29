@@ -43,9 +43,12 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
 
 let TabPanel = ({id, active, sections, ...props}) => (
     <div id={id}>
-        {sections.map((s, i) => (
-             <TabSection key={i} {...props} {...s} />
-         ))}
+        {sections.map((s, i) => {
+             let show = s.showIf?s.showIf():true
+             console.error(s.title, show)
+             if (!show) return null
+             return <TabSection key={i} {...props} {...s} />
+         })}
     </div>
 )
 
