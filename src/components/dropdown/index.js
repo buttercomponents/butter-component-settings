@@ -67,12 +67,12 @@ class Dropdown extends Component {
         let activeStyle = state.open ? 'open':''
 
         return  (
-            <div className={`boostrap-dropdown ${dropdownStyle}  ${activeStyle}`}>
+            <div className={`${dropdownStyle}  ${activeStyle}`} tabIndex="0" onBlur={this.close.bind(this)}>
                 <DropdownToggle {...props} onClick={this.toggle.bind(this)}>
                     <Label value={selected} />
                 </DropdownToggle>
                 <div className="dropdown-menu">
-                    <div className={style.items}>
+                    <ul className={style.items}>
                         {
                             Object.keys(props.options).map((k, i) => (
                                 state.selected === k ? null :
@@ -82,7 +82,7 @@ class Dropdown extends Component {
                                     value={props.options[k]} />
                             ))
                         }
-                    </div>
+                    </ul>
                     {props.children}
                 </div>
             </div>
