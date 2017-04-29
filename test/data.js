@@ -177,22 +177,24 @@ export default {
                 helper: "Color component test",
                 action: {
                     type: ActionTypes.COLOR,
-                    options: arrayToi18nHash(["#FFFFFF", "#f1c40f", "#e74c3c", "#2ecc71", "#9b59b6", "#3498db"])
+                    options: arrayToi18nHash([
+                        "#FFFFFF", "#f1c40f", "#e74c3c",
+                        "#2ecc71", "#9b59b6", "#3498db"
+                    ])
                 }
-            },
-                    {
-                        id: "dropdown_test",
-                        icon: "arrow_drop_down",
-                        title: "Dropdown",
-                        helper: "Dropdown component test",
-                        action: {
-                            type: ActionTypes.DROPDOWN,
-                            options: [...Array(20)]
-                                .reduce((a, x, i) => (
-                                    Object.assign({}, a, {[i]: 'Item ' + i})
-                                ) , {})
-                        }
-                    }]
+            }, {
+                id: "dropdown_test",
+                icon: "arrow_drop_down",
+                title: "Dropdown",
+                helper: "Dropdown component test",
+                action: {
+                    type: ActionTypes.DROPDOWN,
+                    options: [...Array(20)]
+                        .reduce((a, x, i) => (
+                            Object.assign({}, a, {[i]: 'Item ' + i})
+                        ) , {})
+                }
+            }]
 
         },{
             id: "entry_test",
