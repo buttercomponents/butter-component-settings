@@ -10,7 +10,7 @@
     & *
         vertical-align: middle
 
-.tabs
+[class=tabs-navigation]
     margin 0 auto
     font-size: 0.9em
     border-bottom: none 0
@@ -19,28 +19,28 @@
     box-shadow: none
     text-align center
 
-
     li
         display inline-block
-        color #FFF !important
         box-sizing: content-box
-        color: $FilterBarText
-        text-align: center
-        cursor: pointer
-        vertical-align: middle
         padding-bottom: 15px
-        font-family: var(--Font-title)
-        font-weight: bold
-        font-size: 1.35em
-        text-transform: uppercase
         border-bottom: 3px solid transparent
         opacity: 0.4
         margin: 0 10px
+        a
+          color #FFF !important
+          color: $FilterBarText
+          text-align: center
+          cursor: pointer
+          vertical-align: middle
+          font-family: var(--Font-title)
+          font-weight: bold
+          font-size: 1.35em
+          text-transform: uppercase
+
         &:hover
             opacity: 0.9
             border-bottom: 3px solid rgba(255,255,255,0.2)
         &[class*=active],
-        &[aria-expanded*="true"]
             border-bottom: 3px solid var(--Main-color)
             opacity: 1
 
