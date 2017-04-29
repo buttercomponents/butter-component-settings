@@ -392,7 +392,7 @@ export default {
             }]
         }, {
             id: 'opensubtitles-not-connected',
-            title: 'TVShow Time',
+            title: 'Open Subtitles',
             showIf: (() => (! Settings.opensubtitlesAuthenticated)),
             items: [{
                 id: 'opensubtitles-username',
