@@ -16,10 +16,10 @@ export default class Action extends Component {
         let value = settings[id] || props.default
         return (
             (type === ActionTypes.BUTTON)?(<Button title={t(props.title)}/>):
-            (type === ActionTypes.TEXT)?(<input type="text" value={value} onChange={this.apply}/>):
-            (type === ActionTypes.NUMBER)?(<input type="text" value={value} onChange={this.apply}/>):
+            (type === ActionTypes.TEXT)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
+            (type === ActionTypes.NUMBER)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
             (type === ActionTypes.LABEL)?(<span>{t(props.title)}</span>):
-            (type === ActionTypes.PASSWORD)?(<input type="password" value={value}/>):
+            (type === ActionTypes.PASSWORD)?(<input type="password" defaultValue={value}/>):
             (type === ActionTypes.DROPDOWN)?(<Dropdown apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.COLOR)?(<DropdownColor apply={this.apply} selected={value} {...props}/>):
             (type === ActionTypes.SWITCH)?(<Switch apply={this.apply} selected={value}/>):
