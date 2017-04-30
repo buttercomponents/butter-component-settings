@@ -1,4 +1,4 @@
-var ActionTypes = require('butter-component-action-types')
+var ActionTypes = require('butter-action-types')
 
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
