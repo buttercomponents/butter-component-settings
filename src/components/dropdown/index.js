@@ -67,7 +67,7 @@ class Dropdown extends Component {
         let activeStyle = state.open ? 'open':''
 
         return  (
-            <div className={`boostrap-dropdown ${dropdownStyle}  ${activeStyle}`}>
+            <div className={`${dropdownStyle}  ${activeStyle}`} tabIndex="-1" onBlur={this.close.bind(this)}>
                 <DropdownToggle {...props} onClick={this.toggle.bind(this)}>
                     <Label value={selected} />
                 </DropdownToggle>
