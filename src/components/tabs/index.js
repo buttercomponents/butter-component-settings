@@ -55,8 +55,6 @@ let TabPanel = ({id, active, sections, ...props}) => (
 let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
     <div className={style.navbar}>
         <ActionBar {...props} />
-        <br/>
-
     </div>
 )
 
