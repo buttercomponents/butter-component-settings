@@ -6,9 +6,10 @@ import style from './style.styl';
 
 import Action from '../action';
 import Button from '../button';
-import Row from '../row';
-import ActionBar from '../action-bar';
 import Modal from '../modal';
+import NavBar from '../nav-bar';
+import Row from '../row';
+
 
 //Test themes
 function toggle(){
@@ -49,12 +50,6 @@ let TabPanel = ({id, active, sections, ...props}) => (
              if (!show) return null
              return <TabSection key={i} {...props} {...s} />
          })}
-    </div>
-)
-
-let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
-    <div className={style.navbar}>
-        <ActionBar {...props} />
     </div>
 )
 

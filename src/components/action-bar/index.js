@@ -3,8 +3,6 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 import GoBackButton from '../go-back-button';
 
-
-
 export default ({t, action, ...props}) => (
     <div id="action-bar" className={style['action-bar']}>
             <GoBackButton t={t} action={action.goBack} title="Settings"/>
