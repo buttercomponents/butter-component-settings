@@ -1,9 +1,7 @@
 [class=tabs-navigation]
     margin 0 auto
     font-size: 0.9em
-    border-bottom: none 0
     display: block
-    
     padding-top 0px
     box-shadow: none
     text-align center
@@ -17,34 +15,39 @@
     left: 0
     right: 0
     li
-        display inline-block
-        box-sizing: content-box
+        display: inline-block
         padding: 0
-        border-bottom: 3px solid transparent
-        opacity: 0.4
         margin: 0 10px
-        cursor: pointer
         a
+          border-bottom: 3px solid transparent
           color #FFF !important
           color: $FilterBarText
           text-align: center
           vertical-align: middle
           font-family: var(--Font-title)
           font-weight: bold
-          font-size: 1.35em
+          font-size: 18px
+          height: 20px
+          line-height: 20px
           padding: 15px 0
+          margin: 0
           cursor: pointer
           display: block
+          opacity: 0.4
           text-decoration: none
           text-transform: uppercase
 
-        &:hover
+          &:hover
             opacity: 0.9
             border-bottom: 3px solid rgba(255,255,255,0.2)
 
         &[class~=is-active]
-            border-bottom: 3px solid var(--Main-color)
-            opacity: 1
+            a
+                border-bottom: 3px solid var(--Main-color)
+                opacity: 1
+
+[class=tab-panel]
+    margin-top: 53px
 
 .buttons-content
     margin: 25px auto
