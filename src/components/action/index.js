@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from '../button';
 import Switch from '../switch';
 import Dropdown, { DropdownColor } from '../dropdown';
-import ActionTypes from 'butter-component-action-types';
+import ActionTypes from 'butter-action-types';
 
 export default class Action extends Component {
     constructor (props) {
