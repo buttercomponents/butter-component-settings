@@ -3,26 +3,38 @@
     font-size: 0.9em
     border-bottom: none 0
     display: block
+    
     padding-top 0px
     box-shadow: none
     text-align center
+    background: var(--Window-bg)
+    display: flex
+    align-items: center
+    justify-content: center
+    position: fixed
+    z-index: 99
 
+    left: 0
+    right: 0
     li
         display inline-block
         box-sizing: content-box
-        padding-bottom: 15px
+        padding: 0
         border-bottom: 3px solid transparent
         opacity: 0.4
         margin: 0 10px
+        cursor: pointer
         a
           color #FFF !important
           color: $FilterBarText
           text-align: center
-          cursor: pointer
           vertical-align: middle
           font-family: var(--Font-title)
           font-weight: bold
           font-size: 1.35em
+          padding: 15px 0
+          cursor: pointer
+          display: block
           text-decoration: none
           text-transform: uppercase
 
@@ -43,7 +55,7 @@
     display: block
     width: 100%
     position: absolute
-    top: 132px
+    top: 45px
     bottom: 0
 
     & [class="role-panel"]
