@@ -110,25 +110,3 @@ export default class ButterTabs extends Component {
         )
     }
 }
-
-/*
-
-    <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
-        {props.tabs.map((t, i) => {
-             t.sections = t.sections || []
-             if (t.items) {
-                 t.sections.push({
-                     id: 'default',
-                     items: t.items
-                 })
-                 delete (t.items)
-             }
-             return <Tabs.Panel title={t.id} key={i}>
-                 <TabPanel  t={props.t}
-                            showAdvanced={state.showAdvanced}
-                            settings={props.settings}
-                            {...t} />
-             </Tabs.Panel>
-         })}
-    </Tabs>
-*/
