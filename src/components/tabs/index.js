@@ -5,9 +5,11 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 
 import Action from '../action';
-import Button from '../button';
-import Modal from '../modal';
+import Button, { ActionButton } from '../button';
 import Row from '../row';
+import ActionBar from '../action-bar';
+import Modal from '../modal';
+
 
 
 //Test themes
@@ -52,6 +54,19 @@ let TabPanel = ({id, active, sections, ...props}) => (
     </div>
 )
 
+
+let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
+    <div className={style.navbar}>
+        <ActionBar {...props} />
+        <br/>
+
+    </div>
+)
+
+let ModalContent = ({...props}) => (
+    <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
+)
+
 export default class ButterTabs extends Component {
     constructor (props) {
         super()
@@ -74,6 +89,22 @@ export default class ButterTabs extends Component {
         let {props, state} = this
         return (
             <div>
+
+                <CSSTransitionGroup
+                    transitionName="fade"
+                    transitionAppear={true}
+                    transitionAppearTimeout={5000}
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}>
+                    <Modal position="center" action={{apply: this.toggleModal.bind(this)}} show={state.showModal}>
+                        <ModalContent/>
+                    </Modal>
+                </CSSTransitionGroup>
+                <NavBar {...props} selected={state.selected} action={{
+                    toggleAdvanced: this.toggleAdvanced.bind(this),
+                    goBack: props.action.goBack
+                }}/>
+
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
@@ -96,6 +127,7 @@ export default class ButterTabs extends Component {
                     <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
                     <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
                     <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                    <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
                     <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
                 <CSSTransitionGroup
