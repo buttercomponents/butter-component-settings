@@ -1,12 +1,9 @@
 .settings
-    background-color: var(--Bg-color)
-    margin: 0
-    position absolute
-    top: 0
-    bottom: 0
-    user-select: none
-    width: 100%
-    z-index: 1
+    overlay(absolute)
+    scrollable()
+
+    &::-webkit-scrollbar-track
+        margin-top: 53px
 
     &.show-advanced
         .settings-row

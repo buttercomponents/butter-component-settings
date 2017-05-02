@@ -1,11 +1,6 @@
 .modal
-    height: 100vh
     overflow: hidden
-    width: 100vw
-    margin: auto
-    position: fixed
-    top:0
-    left:0
+    overlay(fixed)
     z-index: 999
 
     &[class*=fade-enter]
@@ -75,12 +70,8 @@
             bottom: 40px
 
 .overlay
-    position: absolute
-    background: var(--Bg-color)
-    opacity: 0.85
-    height: 100%
-    width: 100%
+    overlay(absolute)
+    background: var(--Overlay-bg)
+    opacity: var(--Overlay-alpha)
     z-index: 0
-    display: block
-    opacity: 0.75
     transition: all 0.2s ease

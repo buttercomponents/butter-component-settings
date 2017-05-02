@@ -1,6 +1,7 @@
 :global
-    ul
+    *
         list-style: none
+        text-decoration: none
 
     .error
         background: #e74c3c
@@ -25,16 +26,15 @@
         &[type=text],
         &[type=number],
         &[type=password]
-            background var(--Input-bg-color)
-            border 0
-            border-radius 5px
-            color #FFF
-            font-family: 'Arial', 'Helvetica', sans-serif
-            font-size  0.95em
-            font-weight normal
-            line-height 0.70em
-            outline 0
+            background: var(--Input-bg)
+            border: 0
+            border-radius: var(--Input-radius)
+            box-shadow: var(--Input-shadow)
+            color: #FFF
+            font-size:  0.95em
+            font-weight: normal
+            line-height: 0.70em
+            outline: 0
             padding: 7px 10px
-            width 140px
-            box-shadow: inset 0px 0px 1px 0px rgba(0,0,0,0.85)
-            transition background .2s ease
+            transition: background .2s ease
+            width: 140px
