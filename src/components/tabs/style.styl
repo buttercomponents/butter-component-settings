@@ -11,13 +11,14 @@
     justify-content: center
     position: fixed
     z-index: 99
-
     left: 0
     right: 0
+
     li
         display: inline-block
         padding: 0
         margin: 0 10px
+
         a
           border-bottom: 3px solid transparent
           color #FFF !important
@@ -47,27 +48,18 @@
                 opacity: 1
 
 [class=tab-panel]
-    margin-top: 53px
+    margin: auto
+    padding-top: 53px
+    max-width: 980px
+
 
 .buttons-content
     margin: 25px auto
     text-align: center
 
 .tabs-content
-    scrollable()
     display: block
-    width: 100%
-    position: absolute
-    top: 45px
-    bottom: 0
 
-    & [class="role-panel"]
-        display: none
-        max-width: 980px
-        margin: auto
-
-        &[class*=active]
-            display: block
 
 .tab-section
     display block

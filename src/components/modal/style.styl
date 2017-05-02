@@ -3,7 +3,7 @@
     overflow: hidden
     width: 100vw
     margin: auto
-    position: absolute
+    position: fixed
     top:0
     left:0
     z-index: 999
@@ -75,12 +75,14 @@
             bottom: 40px
 
 .overlay
-    position: absolute
-    background: var(--Bg-color)
-    opacity: 0.85
-    height: 100%
-    width: 100%
+    margin: auto
+    position: fixed
+    top:0
+    left: 0
+    right: 0
+    bottom: 0
+    background: var(--Overlay-bg)
+    opacity: var(--Overlay-alpha)
     z-index: 0
-    display: block
     opacity: 0.75
     transition: all 0.2s ease

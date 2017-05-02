@@ -1,12 +1,14 @@
 .settings
-    background-color: var(--Window-bg)
-    margin: 0
-    position absolute
+    margin: auto
+    position: absolute
     top: 0
+    left: 0
+    right: 0
     bottom: 0
-    user-select: none
-    width: 100%
-    z-index: 1
+    scrollable()
+
+    &::-webkit-scrollbar-track
+        margin-top: 53px
 
     &.show-advanced
         .settings-row

@@ -7,7 +7,6 @@ import style from './style.styl';
 import Action from '../action';
 import Button from '../button';
 import Modal from '../modal';
-import NavBar from '../nav-bar';
 import Row from '../row';
 
 
@@ -75,18 +74,6 @@ export default class ButterTabs extends Component {
         let {props, state} = this
         return (
             <div>
-                <CSSTransitionGroup
-                    transitionName="fade"
-                    transitionAppear={true}
-                    transitionAppearTimeout={5000}
-                    transitionEnterTimeout={1000}
-                    transitionLeaveTimeout={1000}>
-                    {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
-                </CSSTransitionGroup>
-                <NavBar {...props} selected={state.selected} action={{
-                    toggleAdvanced: this.toggleAdvanced.bind(this),
-                    goBack: props.action.goBack
-                }}/>
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
@@ -111,7 +98,37 @@ export default class ButterTabs extends Component {
                     <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
                     <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
+                <CSSTransitionGroup
+                    transitionName="fade"
+                    transitionAppear={true}
+                    transitionAppearTimeout={5000}
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}>
+                    {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
+                </CSSTransitionGroup>
             </div>
         )
     }
 }
+
+/*
+
+    <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
+        {props.tabs.map((t, i) => {
+             t.sections = t.sections || []
+             if (t.items) {
+                 t.sections.push({
+                     id: 'default',
+                     items: t.items
+                 })
+                 delete (t.items)
+             }
+             return <Tabs.Panel title={t.id} key={i}>
+                 <TabPanel  t={props.t}
+                            showAdvanced={state.showAdvanced}
+                            settings={props.settings}
+                            {...t} />
+             </Tabs.Panel>
+         })}
+    </Tabs>
+*/
