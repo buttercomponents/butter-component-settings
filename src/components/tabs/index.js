@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tabs from 'react-simpletabs';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import { translate } from 'react-i18next';
 import style from './style.styl';
@@ -41,11 +42,13 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
 )
 
 let TabPanel = ({id, active, sections, ...props}) => (
-    <div role="tab-panel" className={active?'active':''} id={id}>
-        {console.log(sections, props)}
-        {sections.map((s, i) => (
-             <TabSection key={i} {...props} {...s} />
-         ))}
+    <div id={id}>
+        {sections.map((s, i) => {
+             let show = s.showIf?s.showIf():true
+             console.error(s.title, show)
+             if (!show) return null
+             return <TabSection key={i} {...props} {...s} />
+         })}
     </div>
 )
 
@@ -53,13 +56,7 @@ let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
     <div className={style.navbar}>
         <ActionBar {...props} />
         <br/>
-        <ul id="myTabs" className={style.tabs} role="tablist">
-            {tabs.map((t, i) => (
-                 <li className={'source ' + (i === selected?'active':'')} key={i} href={'#' + t.id} aria-controls={t.id} role="tab" data-toggle="tab">
-                     {props.t(t.title)}
-                 </li>
-             ))}
-        </ul>
+
     </div>
 )
 
@@ -67,11 +64,11 @@ let ModalContent = ({...props}) => (
     <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
 )
 
-export default class Tabs extends Component {
+export default class ButterTabs extends Component {
     constructor (props) {
         super()
         this.state = {
-            selected: props.selected || 0,
+            selected: props.selected || 1,
             showAdvanced: props.showAdvanced || false,
             showModal: false
         }
@@ -103,7 +100,7 @@ export default class Tabs extends Component {
                     toggleAdvanced: this.toggleAdvanced.bind(this),
                     goBack: props.action.goBack
                 }}/>
-                <div id="tabPanels" className={style['tabs-content']}>
+                <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
                          if (t.items) {
@@ -113,19 +110,20 @@ export default class Tabs extends Component {
                              })
                              delete (t.items)
                          }
-                         return <TabPanel key={i} t={props.t}
-                                          active={state.selected === i}
-                                          showAdvanced={state.showAdvanced}
-                                          settings={props.settings}
-                                          {...t} />
+                         return <Tabs.Panel title={t.id} key={i}>
+                             <TabPanel  t={props.t}
+                                        showAdvanced={state.showAdvanced}
+                                        settings={props.settings}
+                                        {...t} />
+                         </Tabs.Panel>
                      })}
-                    <div className={style['buttons-content']}>
-                        <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
-                        <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
-                        <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
-                        <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
-                        <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
-                    </div>
+                </Tabs>
+                <div className={style['buttons-content']}>
+                    <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
+                    <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
+                    <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                    <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
+                    <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
             </div>
         )
