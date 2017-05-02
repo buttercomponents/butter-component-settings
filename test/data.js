@@ -1,4 +1,5 @@
 var ActionTypes = require('butter-action-types')
+var QRCode = require('butter-component-qrcode').default
 
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
@@ -154,6 +155,7 @@ var Settings = new Object({
     "subtitle_color": "#ffffff",
     "subtitle_decoration": "Outline",
     "subtitle_font": "Arial",
+    "ipAddress": '127.0.0.1',
     "httpApiPort": 8008,
     "httpApiUsername": "butter",
     "httpApiPassword": "butter",
@@ -490,7 +492,8 @@ export default {
                 icon: 'lock',
                 action: {
                     type: ActionTypes.BUTTON,
-                    title: i18n.__('Get Code')
+                    title: i18n.__('Get Code'),
+                    component: QRCode
                 }
             }]
         }, {

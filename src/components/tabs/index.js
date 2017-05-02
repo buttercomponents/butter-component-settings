@@ -5,9 +5,9 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 
 import Action from '../action';
-import Button from '../button';
-import Modal from '../modal';
+import Button, { ActionButton } from '../button';
 import Row from '../row';
+import Modal from '../modal';
 
 
 //Test themes
@@ -96,6 +96,7 @@ export default class ButterTabs extends Component {
                     <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
                     <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
                     <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                    <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
                     <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
                 <CSSTransitionGroup

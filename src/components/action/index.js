@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../button';
+import {ActionButton} from '../button';
 import Switch from '../switch';
 import Dropdown, { DropdownColor } from '../dropdown';
 import ActionTypes from 'butter-action-types';
@@ -12,10 +12,10 @@ export default class Action extends Component {
     }
 
     render() {
-        let {type, settings, id, t, ...props} = this.props
-        let value = settings[id] || props.default
+        let {type, id, t, ...props} = this.props
+        let value = props.settings.get(id) || props.default
         return (
-            (type === ActionTypes.BUTTON)?(<Button title={t(props.title)}/>):
+            (type === ActionTypes.BUTTON)?(<ActionButton title={t(props.title)} {...props} />):
             (type === ActionTypes.TEXT)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
             (type === ActionTypes.NUMBER)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
             (type === ActionTypes.LABEL)?(<span>{t(props.title)}</span>):
