@@ -23,7 +23,7 @@ class ActionButton extends Component {
         const ModalComponent = component
 
         return (
-            <Button apply={this.toggleModal}
+            <Button apply={this.toggleModal} icon="open_in_new"
                     loading={state.showModal} {...props}>
                 {state.showModal?(
                      <Modal position="center" show={state.showModal} action={{apply: this.toggleModal.bind(this)}}>
