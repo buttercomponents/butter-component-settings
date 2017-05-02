@@ -4,7 +4,7 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 
 import Action from '../action';
-import Button from '../button';
+import Button, { ActionButton } from '../button';
 import Row from '../row';
 import ActionBar from '../action-bar';
 import Modal from '../modal';
@@ -63,6 +63,10 @@ let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
     </div>
 )
 
+let ModalContent = ({...props}) => (
+    <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
+)
+
 export default class Tabs extends Component {
     constructor (props) {
         super()
@@ -91,7 +95,9 @@ export default class Tabs extends Component {
                     transitionAppearTimeout={5000}
                     transitionEnterTimeout={1000}
                     transitionLeaveTimeout={1000}>
-                    {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
+                    <Modal position="center" action={{apply: this.toggleModal.bind(this)}} show={state.showModal}>
+                        <ModalContent/>
+                    </Modal>
                 </CSSTransitionGroup>
                 <NavBar {...props} selected={state.selected} action={{
                     toggleAdvanced: this.toggleAdvanced.bind(this),
@@ -113,10 +119,11 @@ export default class Tabs extends Component {
                                           settings={props.settings}
                                           {...t} />
                      })}
-                <div className={style['buttons-content']}>
+                    <div className={style['buttons-content']}>
                         <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
                         <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
                         <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                        <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
                         <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                     </div>
                 </div>

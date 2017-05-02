@@ -27,6 +27,15 @@
   i
     margin-left: 10px
 
+    &[class*=spin]
+      animation: spin 2s linear infinite;
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 .normal
     composes: button
     background: var(--Main-color)
