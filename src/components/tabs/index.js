@@ -10,8 +10,6 @@ import Row from '../row';
 import ActionBar from '../action-bar';
 import Modal from '../modal';
 
-
-
 //Test themes
 function toggle(){
     const root = document.getElementById('root');
@@ -54,7 +52,6 @@ let TabPanel = ({id, active, sections, ...props}) => (
     </div>
 )
 
-
 let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
     <div className={style.navbar}>
         <ActionBar {...props} />
@@ -89,7 +86,6 @@ export default class ButterTabs extends Component {
         let {props, state} = this
         return (
             <div>
-
                 <CSSTransitionGroup
                     transitionName="fade"
                     transitionAppear={true}
@@ -104,7 +100,6 @@ export default class ButterTabs extends Component {
                     toggleAdvanced: this.toggleAdvanced.bind(this),
                     goBack: props.action.goBack
                 }}/>
-
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
@@ -130,14 +125,6 @@ export default class ButterTabs extends Component {
                     <ActionButton type="secondary" icon="restore" title={props.t('Open modal (Action)')} component={ModalContent}/>
                     <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
-                <CSSTransitionGroup
-                    transitionName="fade"
-                    transitionAppear={true}
-                    transitionAppearTimeout={5000}
-                    transitionEnterTimeout={1000}
-                    transitionLeaveTimeout={1000}>
-                    {(state.showModal?<Modal position="center" action={{apply: this.toggleModal.bind(this)}}/>:null)}
-                </CSSTransitionGroup>
             </div>
         )
     }
