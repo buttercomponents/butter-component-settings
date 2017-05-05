@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/buttercomponents/butter-component-settings",
   "devDependencies": {
-    "butter-component-builder": "https://github.com/buttercomponents/butter-component-builder"
+    "butter-component-builder": "git+https://github.com/buttercomponents/butter-component-builder"
   },
   "dependencies": {
     "butter-action-types": "git+https://github.com/buttercomponents/butter-action-types.git",
