@@ -1,17 +1,16 @@
 .button
-  border-radius: $ButtonRadius
-  background-clip: padding-box
   background-color: $ButtonBg
+  border-radius: $ButtonRadius
   color: $ButtonText
-  font-size: 1em
+  cursor: pointer
+  display: inline-block
   font-family: var(--Font-title)
+  font-size: 1em
   font-weight: bold
+  margin: 0
+  padding: 5px 10px
   text-align: center
   text-transform: uppercase
-  display: inline-block
-  padding: 5px 10px
-  margin: 5px
-  cursor: pointer
   transition: background-color 0.25s
 
   &:hover
@@ -19,14 +18,23 @@
     text-decoration: none
 
   &:active
-    box-shadow: inset 0 1px 4px rgba(0,0,0,0.6)
     background: var(--Button-active)
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.6)
 
   span, i
     display: inline-block
     vertical-align: middle
   i
     margin-left: 10px
+
+    &[class*=spin]
+      animation: spin 2s linear infinite;
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 .normal
     composes: button
@@ -35,3 +43,4 @@
 .secondary
     composes: button
     background-color: rgba(200,200,200,0.25)
+    margin: 5px

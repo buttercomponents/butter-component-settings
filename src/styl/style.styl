@@ -1,14 +1,12 @@
-@import './global.styl'
-
 .settings
     background-color: var(--Bg-color)
-    margin: auto
+    margin: 0
     position absolute
-    top: 33px
-    bottom: 0px
+    top: 0
+    bottom: 0
     user-select: none
-    width 100%
-    z-index 1
+    width: 100%
+    z-index: 1
 
     &.show-advanced
         .settings-row
@@ -18,3 +16,5 @@
                 overflow: visible !important
                 padding: 35px 20px !important
                 transform: scale(1) !important
+
+@import './global.styl'
