@@ -1,13 +1,12 @@
 .navbar
-    background-color: var(--Nav-color)
-    box-shadow: $TopBarShadow
-    padding: 33px 40px 0 40px
-    opacity: 1
-    position: absolute
-    top: 0
-    width: 100%
+    background-color: var(--Navbar-bg)
+    box-shadow: var(--Navbar-shadow)
+    height: (--Navbar-height)
+    line-height: (--Navbar-height)
+    padding: 0 40px
+    user-select: none
+    width: auto
     z-index: 10
-    -webkit-user-select: none
 
     & *
         vertical-align: middle
@@ -15,68 +14,69 @@
 [class=tabs-navigation]
     margin 0 auto
     font-size: 0.9em
-    border-bottom: none 0
     display: block
-    padding-top 0px
-    box-shadow: none
+    padding: 0px
+    box-shadow: var(--Tabs-shadow)
     text-align center
+    background: var(--Navbar-bg) //var(--Tabs-bg)
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 99
 
     li
-        display inline-block
-        box-sizing: content-box
-        padding-bottom: 15px
-        border-bottom: 3px solid transparent
-        opacity: 0.4
+        display: inline-block
+        padding: 0
         margin: 0 10px
+
         a
-          color #FFF !important
-          color: $FilterBarText
+          border-bottom: var(--Tab-border-size)  solid transparent
+          color: inherit
           text-align: center
-          cursor: pointer
           vertical-align: middle
           font-family: var(--Font-title)
           font-weight: bold
-          font-size: 1.35em
+          font-size: var(--Tab-font-size)
+          height: var(--Tab-font-size)
+          line-height: var(--Tab-font-size)
+          padding: var(--Tab-padding) 0
+          margin: 0
+          cursor: pointer
+          display: block
+          opacity: 0.4
           text-decoration: none
           text-transform: uppercase
 
-        &:hover
-            opacity: 0.9
-            border-bottom: 3px solid rgba(255,255,255,0.2)
+          &:hover
+            opacity: 1
+            border-bottom: var(--Tab-border-size) solid rgba(255,255,255,0.2)
 
         &[class~=is-active]
-            border-bottom: 3px solid var(--Main-color)
-            opacity: 1
+            a
+                border-bottom: 3px solid var(--Main-color)
+                opacity: 1
+
+[class=tab-panel]
+    margin: auto
+    padding-top: var(--Tabs-height)
+    max-width: 980px
 
 .buttons-content
     margin: 25px auto
     text-align: center
 
 .tabs-content
-    scrollable()
     display: block
-    width: 100%
-    position: absolute
-    top: 132px
-    bottom: 0
-
-    & [class="role-panel"]
-        display: none
-        max-width: 980px
-        margin: auto
-
-        &[class*=active]
-            display: block
 
 .tab-section
     display block
-    .content
-        max-width: 780px
-        margin: 0 auto
-    .title
-        font-family: var(--Font-title)
-        color: #FFF
-        font-weight: 900
-        padding: 20px
-        text-align: center
-        opacity: .4
+
+.content
+    max-width: 780px
+    margin: 0 auto
+
+.title
+    font-weight: 900
+    padding: 20px
+    text-align: center
+    opacity: .4

@@ -1,12 +1,14 @@
 .settings
-    background-color: var(--Bg-color)
-    margin: 0
-    position absolute
-    top: 0
-    bottom: 0
-    user-select: none
-    width: 100%
-    z-index: 1
+    background-color: var(--Window-bg)
+    color: var(--Font-color)
+    font-family: var(--Font-family)
+    overlay(absolute)
+    scrollable()
+    font-faimily: (--Font-family)
+
+
+    &::-webkit-scrollbar-track
+        margin-top: var(--Tabs-height) 
 
     &.show-advanced
         .settings-row

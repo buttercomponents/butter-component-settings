@@ -1,7 +1,7 @@
 .button
-  background-color: $ButtonBg
-  border-radius: $ButtonRadius
-  color: $ButtonText
+  background-color: var(--Button-bg)
+  border-radius: var(--Button-radius)
+  color: var(--Button-color)
   cursor: pointer
   display: inline-block
   font-family: var(--Font-title)
@@ -38,7 +38,7 @@
 
 .normal
     composes: button
-    background: var(--Main-color)
+    background: var(--Button-bg)
 
 .secondary
     composes: button

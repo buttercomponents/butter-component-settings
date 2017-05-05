@@ -1,39 +1,39 @@
 .switch
-    position: relative
     display: inline-block
-    width: 36px
     height: 20px
+    position: relative
+    width: 36px
 
     .slider
-        position: absolute
-        cursor: pointer
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        border-radius: 34px
         background-color: rgba(250,250,250, 0.25)
-        -webkit-transition: .3s
+        border-radius: 34px
+        bottom: 0
+        cursor: pointer
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        transition: .3s
 
         &:before
-            position: absolute
-            content: ""
-            height: 16px
-            width: 16px
-            left: 2px
-            bottom: 2px
             background-color: white
             border-radius: 50%
-            -webkit-transition: .3s
+            bottom: 2px
+            content: ""
+            height: 16px
+            left: 2px
+            position: absolute
+            transition: .3s
+            width: 16px
 
     input
         display:none
 
         &:checked + .slider
-            background-color: var(--Main-color)
+            background-color: var(--Switch-active)
 
         &:focus + .slider
             box-shadow: 0 0 1px rgba(0,0,0,0.5)
 
         &:checked + .slider:before
-            -webkit-transform: translateX(16px)
+            transform: translateX(16px)

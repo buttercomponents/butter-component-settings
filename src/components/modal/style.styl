@@ -1,11 +1,6 @@
 .modal
-    height: 100vh
     overflow: hidden
-    width: 100vw
-    margin: auto
-    position: fixed
-    top:0
-    left:0
+    overlay(fixed)
     z-index: 999
 
     &[class*=fade-enter]
@@ -30,19 +25,20 @@
 
 
     .widget
-        position: absolute
-        z-index:999
-        background: #FFF
+        background: var(--Modal-bg)
+        border-radius: var(--Modal-radius)
+        box-shadow:  var(--Modal-shadow)
+        color: var(--Modal-color)
         padding: 25px
         display: block
         margin: auto
-        border-radius: 5px;
         max-width: 480px
         max-height: 320px
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        position: absolute
         text-align: center
         transform: translate(0, 0px);
         transition: all 0.3s ease
+        z-index:999
 
         /* Remove this */
         img
@@ -75,12 +71,9 @@
             bottom: 40px
 
 .overlay
-    position: absolute
-    background: var(--Bg-color)
-    opacity: 0.85
-    height: 100%
-    width: 100%
-    z-index: 0
+    overlay(absolute)
+    background: var(--Overlay-bg)
+    opacity: var(--Overlay-alpha)
     display: block
-    opacity: 0.75
     transition: all 0.2s ease
+    z-index: 0
