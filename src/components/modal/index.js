@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import style from './style.styl';
 
 let Modal = ({position, action, children}) => (
-    <div className={style.modal} data-position={position} onClick={action.apply} key={style.modal}>
+    <div className={style.modal} data-position={position} onClick={action.apply} key={0}>
         <div className={style.widget}>
             {children}
         </div>
@@ -13,9 +14,15 @@ let Modal = ({position, action, children}) => (
 class ButterModal extends Component {
     render () {
         let {show, ...props} = this.props
-        if (! show) return null
         return (
-            <Modal {...props}/>
+            <CSSTransitionGroup
+                transitionName="popup"
+                transitionAppear={true}
+                transitionAppearTimeout={200}
+                transitionEnterTimeout={200}
+                transitionLeaveTimeout={200}>
+                {show?<Modal {...props}/>:null}
+            </CSSTransitionGroup>
         )
     }
 }

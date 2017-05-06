@@ -3,22 +3,22 @@
     overlay(fixed)
     z-index: 999
 
-    &[class*=fade-enter]
+    &[class*=popup-enter]
         .widget
             transform: translate(0, 100vh)
             opacity:0
 
-    &[class*=fade-enter-active]
+    &[class*=popup-enter-active]
         .widget
             transform: translate(0, 0px)
             opacity:1
 
-    &[class*=fade-leave]
+    &[class*=popup-leave]
         .widget
             transform: translate(0, 0px)
             opacity:1
 
-    &[class*=fade-leave-active]
+    &[class*=popup-leave-active]
         .widget
             transform: translate(0, 100vh)
             opacity:0
