@@ -3,12 +3,11 @@
   border-radius: var(--Button-radius)
   color: var(--Button-color)
   cursor: pointer
-  display: inline-block
   font-family: var(--Font-title)
-  font-size: 1em
+  font-size: 14px
   font-weight: bold
   margin: 0
-  padding: 5px 10px
+  padding: 6px 12px
   text-align: center
   text-transform: uppercase
   transition: background-color 0.25s
@@ -25,7 +24,12 @@
     display: inline-block
     vertical-align: middle
   i
-    margin-left: 10px
+    font-size: 20px
+    width: 20px
+    padding: 0
+    margin: 0 0 0 10px
+
+
 
     &[class*=spin]
       animation: spin 2s linear infinite;
@@ -39,6 +43,7 @@
 .normal
     composes: button
     background: var(--Button-bg)
+
 
 .secondary
     composes: button
