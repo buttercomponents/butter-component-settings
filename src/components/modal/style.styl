@@ -4,23 +4,33 @@
     z-index: 999
 
     &[class*=popup-enter]
+        .overlay
+            opacity 0
         .widget
             transform: translate(0, 100vh)
             opacity:0
 
+
     &[class*=popup-enter-active]
+        .overlay
+            opacity: var(--Overlay-alpha)
         .widget
             transform: translate(0, 0px)
             opacity:1
 
     &[class*=popup-leave]
+        .overlay
+            opacity: var(--Overlay-alpha)
         .widget
             transform: translate(0, 0px)
             opacity:1
+            transition: all 0.2s ease
 
     &[class*=popup-leave-active]
+        .overlay
+            opacity: 0
         .widget
-            transform: translate(0, 100vh)
+            transform: translate(0, 50vh)
             opacity:0
 
 
@@ -38,7 +48,9 @@
         text-align: center
         transform: translate(0, 0px);
         transition: all 0.3s ease
+        transition-delay: 0.2s;
         z-index:999
+
 
         /* Remove this */
         img
@@ -70,10 +82,10 @@
             right: 0
             bottom: 40px
 
-.overlay
-    overlay(absolute)
-    background: var(--Overlay-bg)
-    opacity: var(--Overlay-alpha)
-    display: block
-    transition: all 0.2s ease
-    z-index: 0
+    .overlay
+        overlay(absolute)
+        background: var(--Overlay-bg)
+        opacity: var(--Overlay-alpha)
+        display: block
+        z-index: 0
+        transition: opacity 0.2s ease
