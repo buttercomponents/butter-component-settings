@@ -87,7 +87,7 @@ export default class ButterTabs extends Component {
         return (
             <div>
                 <CSSTransitionGroup
-                    transitionName="fade"
+                    transitionName="popup"
                     transitionAppear={true}
                     transitionAppearTimeout={5000}
                     transitionEnterTimeout={1000}
