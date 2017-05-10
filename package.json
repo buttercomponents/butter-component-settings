@@ -31,11 +31,11 @@
   },
   "homepage": "https://github.com/buttercomponents/butter-component-settings",
   "devDependencies": {
-    "butter-component-builder": "buttercomponents/butter-component-builder#md-icons"
+    "butter-component-builder": "buttercomponents/butter-component-builder"
   },
   "dependencies": {
     "butter-action-types": "buttercomponents/butter-action-types",
-    "butter-component-qrcode": "^0.0.1",
+    "butter-component-qrcode": "buttercomponents/butter-component-qrcode",
     "react-i18next": "^3.1.0",
     "react-simpletabs": "^0.7.0",
     "react-transition-group": "^1.1.2"

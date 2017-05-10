@@ -403,22 +403,46 @@ export default {
             }]
 
         },{
+            id: "button_test",
+            title: "Buttons",
+            advanced: false,
+            items: [{
+                id: "button_simple_test",
+                icon: "touch_app",
+                title: "Button",
+                helper: "Simple button component test",
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: "Click Me",
+                }
+            },{
+                id: "button_modal_test",
+                icon: "touch_app",
+                title: "Action Button",
+                helper: "Button, Modal and QRCode component test",
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: "Open modal",
+                    component: QRCode
+                }
+            }]
+        },{
             id: "entry_test",
             title: "Entries",
             advanced: false,
             items: [{
                 id: "text_test",
                 icon: "account_box",
-                title: "TEXT",
+                title: "Text",
                 helper: "TEXT component test",
                 action: {
                     type: ActionTypes.TEXT,
-                    default: "default value",
+                    default: "default value"
                 }
             }, {
                 id: "password_test",
                 icon: "account_box",
-                title: "PASSWORD",
+                title: "Password",
                 helper: "PASSWORD component test",
                 action: {
                     type: ActionTypes.PASSWORD,
@@ -427,7 +451,7 @@ export default {
             }, {
                 id: "label_test",
                 icon: "account_box",
-                title: "LABEL",
+                title: "Label",
                 helper: "LABEL component test",
                 action: {
                     type: ActionTypes.LABEL,
@@ -436,7 +460,7 @@ export default {
             }, {
                 id: "number_test",
                 icon: "account_box",
-                title: "NUMBER",
+                title: "Number",
                 helper: "NUMBER component test",
                 action: {
                     type: ActionTypes.NUMBER,
