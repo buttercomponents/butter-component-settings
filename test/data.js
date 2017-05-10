@@ -535,10 +535,10 @@ export default {
                     subtitle: i18n.__('Subtitle test'),
                     type: ActionTypes.BUTTON,
                     value: JSON.stringify({
-                        ip: QR_opts.ipAddress,
-                        port: QR_opts.httpApiPort,
-                        user: QR_opts.httpApiUsername,
-                        pass: QR_opts.httpApiPassword
+                        ip: Settings.ipAddress,
+                        port: Settings.httpApiPort,
+                        user: Settings.httpApiUsername,
+                        pass: Settings.httpApiPassword
                     }),
                     component: QRCode
                 }
