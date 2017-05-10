@@ -1,13 +1,13 @@
 var React = require('react');
 var ActionTypes = require('butter-action-types');
 var QRCode = require('butter-component-qrcode').default;
+
+//Modal content test
 var ModalContent = React.createClass({
   render: function() {
     return React.createElement("img", {src: "https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"});
   }
 });
-
-
 
 //QR component opts
 var QR_opts = {
