@@ -42,8 +42,8 @@ class Button extends Component {
     render() {
         let {props} = this
         return (
-            <button className={props.type ? style[props.type] : style.normal } onClick={this.apply.bind(this)}>
-                {props.loading  ? <i className="material-icons spin">cached</i> : ''}
+            <button className={props.type ? style[props.type] : style.normal} onClick={this.apply.bind(this)}>
+                {props.loading ? <i className="material-icons spin">cached</i> : ''}
                 <span>{props.title}</span>
                 {props.icon ? <i className="material-icons">{props.icon}</i> : ''}
                 {props.children}
