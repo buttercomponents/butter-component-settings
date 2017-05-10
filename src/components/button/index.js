@@ -20,7 +20,7 @@ class ActionButton extends Component {
     render () {
         let {state} = this;
         let {component, ...props} = this.props;
-        const ModalComponent = component
+        const ModalComponent = component;
 
         return (
             <Button apply={this.toggleModal} icon="open_in_new"

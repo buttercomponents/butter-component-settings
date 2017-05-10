@@ -1,5 +1,21 @@
-var ActionTypes = require('butter-action-types')
-var QRCode = require('butter-component-qrcode').default
+var React = require('react');
+var ActionTypes = require('butter-action-types');
+var QRCode = require('butter-component-qrcode').default;
+var ModalContent = React.createClass({
+  render: function() {
+    return React.createElement("img", {src: "https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"});
+  }
+});
+
+
+
+//QR component opts
+var QR_opts = {
+    ipPddress: '192.168.0.1',
+    httpApiPort: '8080',
+    httpApiUsername: 'testuser',
+    httpApiPassword: 'testpassword'
+};
 
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
@@ -419,11 +435,11 @@ export default {
                 id: "button_modal_test",
                 icon: "touch_app",
                 title: "Action Button",
-                helper: "Button, Modal and QRCode component test",
+                helper: "Button and modal component test",
                 action: {
                     type: ActionTypes.BUTTON,
-                    title: "Open modal",
-                    component: QRCode
+                    title: i18n.__('Open modal'),
+                    component: ModalContent
                 }
             }]
         },{
@@ -515,8 +531,15 @@ export default {
                 helper: i18n.__('Generate Pairing QR Code'),
                 icon: 'lock',
                 action: {
-                    type: ActionTypes.BUTTON,
                     title: i18n.__('Get Code'),
+                    subtitle: i18n.__('Subtitle test'),
+                    type: ActionTypes.BUTTON,
+                    value: JSON.stringify({
+                        ip: QR_opts.ipAddress,
+                        port: QR_opts.httpApiPort,
+                        user: QR_opts.httpApiUsername,
+                        pass: QR_opts.httpApiPassword
+                    }),
                     component: QRCode
                 }
             }]
