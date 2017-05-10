@@ -1,17 +1,9 @@
 var React = require('react');
 var ActionTypes = require('butter-action-types');
+// QRCode test
 var QRCode = require('butter-component-qrcode').default;
-
 //Modal content test
 var ModalContent = require('./modal_content_test.js').default;
-
-//QR component opts
-var QR_opts = {
-    ipPddress: '192.168.0.1',
-    httpApiPort: '8080',
-    httpApiUsername: 'testuser',
-    httpApiPassword: 'testpassword'
-};
 
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
