@@ -522,12 +522,7 @@ export default {
                     title: i18n.__('Get QR'),
                     type: ActionTypes.BUTTON,
                     component: QRCode,
-                    value: JSON.stringify({
-                        ip: Settings.ipAddress,
-                        port: Settings.httpApiPort,
-                        user: Settings.httpApiUsername,
-                        pass: Settings.httpApiPassword
-                    })
+                    setttings: Settings
                 }
             }]
         }, {
