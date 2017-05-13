@@ -20,7 +20,7 @@ class ActionButton extends Component {
     render () {
         let {state} = this;
         let {component, ...props} = this.props;
-        const ModalComponent = component
+        const ModalComponent = component;
 
         return (
             <Button apply={this.toggleModal} icon="open_in_new"
@@ -42,12 +42,12 @@ class Button extends Component {
     render() {
         let {props} = this
         return (
-            <div className={props.type ? style[props.type] : style.normal} onClick={this.apply.bind(this)}>
+            <button className={props.type ? style[props.type] : style.normal} onClick={this.apply.bind(this)}>
                 {props.loading ? <i className="material-icons spin">cached</i> : ''}
                 <span>{props.title}</span>
                 {props.icon ? <i className="material-icons">{props.icon}</i> : ''}
                 {props.children}
-            </div>
+            </button>
         )
     }
 }

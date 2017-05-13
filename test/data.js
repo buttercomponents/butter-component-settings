@@ -1,5 +1,8 @@
-var ActionTypes = require('butter-action-types')
-var QRCode = require('butter-component-qrcode').default
+var ActionTypes = require('butter-action-types');
+// QRCode test
+var QRCode = require('butter-component-qrcode').default;
+//Modal content test
+var ModalContent = require('./modal_content_test.js').default;
 
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
@@ -403,22 +406,46 @@ export default {
             }]
 
         },{
+            id: "button_test",
+            title: "Buttons",
+            advanced: false,
+            items: [{
+                id: "button_simple_test",
+                icon: "touch_app",
+                title: "Button",
+                helper: "Simple button component test",
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: "Click Me",
+                }
+            },{
+                id: "button_modal_test",
+                icon: "touch_app",
+                title: "Action Button",
+                helper: "Button and modal component test",
+                action: {
+                    type: ActionTypes.BUTTON,
+                    title: i18n.__('Open modal'),
+                    component: ModalContent
+                }
+            }]
+        },{
             id: "entry_test",
             title: "Entries",
             advanced: false,
             items: [{
                 id: "text_test",
                 icon: "account_box",
-                title: "TEXT",
+                title: "Text",
                 helper: "TEXT component test",
                 action: {
                     type: ActionTypes.TEXT,
-                    default: "default value",
+                    default: "default value"
                 }
             }, {
                 id: "password_test",
                 icon: "account_box",
-                title: "PASSWORD",
+                title: "Password",
                 helper: "PASSWORD component test",
                 action: {
                     type: ActionTypes.PASSWORD,
@@ -427,7 +454,7 @@ export default {
             }, {
                 id: "label_test",
                 icon: "account_box",
-                title: "LABEL",
+                title: "Label",
                 helper: "LABEL component test",
                 action: {
                     type: ActionTypes.LABEL,
@@ -436,7 +463,7 @@ export default {
             }, {
                 id: "number_test",
                 icon: "account_box",
-                title: "NUMBER",
+                title: "Number",
                 helper: "NUMBER component test",
                 action: {
                     type: ActionTypes.NUMBER,
@@ -491,8 +518,8 @@ export default {
                 helper: i18n.__('Generate Pairing QR Code'),
                 icon: 'lock',
                 action: {
+                    title: i18n.__('Get QR'),
                     type: ActionTypes.BUTTON,
-                    title: i18n.__('Get Code'),
                     component: QRCode
                 }
             }]

@@ -51,6 +51,11 @@
         transition-delay: 0.2s;
         z-index:999
 
+        //Flex-box
+        display: flex
+        align-items: center
+        justify-content: center
+
 
         /* Remove this */
         img
@@ -83,7 +88,7 @@
             bottom: 40px
 
     .overlay
-        overlay(absolute)
+        overlay(fixed)
         background: var(--Overlay-bg)
         opacity: var(--Overlay-alpha)
         display: block
