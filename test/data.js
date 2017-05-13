@@ -1,4 +1,3 @@
-var React = require('react');
 var ActionTypes = require('butter-action-types');
 // QRCode test
 var QRCode = require('butter-component-qrcode').default;
