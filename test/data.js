@@ -519,16 +519,15 @@ export default {
                 helper: i18n.__('Generate Pairing QR Code'),
                 icon: 'lock',
                 action: {
-                    title: i18n.__('Get Code'),
-                    subtitle: i18n.__('Subtitle test'),
+                    title: i18n.__('Get QR'),
                     type: ActionTypes.BUTTON,
+                    component: QRCode,
                     value: JSON.stringify({
                         ip: Settings.ipAddress,
                         port: Settings.httpApiPort,
                         user: Settings.httpApiUsername,
                         pass: Settings.httpApiPassword
-                    }),
-                    component: QRCode
+                    })
                 }
             }]
         }, {
