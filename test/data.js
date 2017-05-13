@@ -521,8 +521,7 @@ export default {
                 action: {
                     title: i18n.__('Get QR'),
                     type: ActionTypes.BUTTON,
-                    component: QRCode,
-                    setttings: Settings
+                    component: QRCode
                 }
             }]
         }, {
