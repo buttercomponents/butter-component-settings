@@ -17,18 +17,24 @@ class ActionButton extends Component {
         this.setState({showModal: !!!this.state.showModal})
     }
 
+    hideModal() {
+        this.setState({showModal: false})
+    }
+
     render () {
         let {state} = this;
         let {component, ...props} = this.props;
         const ModalComponent = component;
 
         return (
-            <Button apply={this.toggleModal} icon="open_in_new"
+            <div>
+                <Button apply={this.toggleModal} icon="open_in_new"
                     loading={state.showModal} {...props}>
-                <Modal position="center" show={state.showModal} action={{apply: this.toggleModal.bind(this)}}>
+                </Button>
+                <Modal position="center" show={state.showModal} action={{apply: this.hideModal.bind(this)}}>
                     <ModalComponent {...props}/>
                 </Modal>
-            </Button>
+            </div>
         )
     }
 }
