@@ -41,7 +41,7 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
     </section>
 )
 
-let TabPanel = ({id, active, sections, ...props}) => (
+let TabPanel = ({id, active, sections, title, ...props}) => (
     <div id={id}>
         {sections.map((s, i) => {
              let show = s.showIf?s.showIf():true
