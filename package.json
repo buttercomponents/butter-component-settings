@@ -5,6 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "prepublish": "npm run build",
+    "install": "npm run build",
     "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
     "start": "node node_modules/butter-component-builder/server.js",
     "lint": "eslint src"
