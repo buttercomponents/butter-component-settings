@@ -3,7 +3,7 @@ import { translate } from 'react-i18next';
 import style from './styl/style.styl';
 
 import Tabs from './components/tabs';
-import Alert from './components/alert';
+import {Alert} from 'butter-base-components';
 
 let CloseButton = (props) => (props)
 

@@ -5,10 +5,11 @@ import { translate } from 'react-i18next';
 import style from './style.styl';
 
 import Action from '../action';
-import Button, { ActionButton } from '../button';
+
 import Row from '../row';
 import ActionBar from '../action-bar';
-import Modal from '../modal';
+
+import {Buttons, Modal} from 'butter-base-components';
 
 //Test themes
 function toggle(){
@@ -119,10 +120,10 @@ export default class ButterTabs extends Component {
                      })}
                 </Tabs>
                 <div className={style['buttons-content']}>
-                    <Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
-                    <Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
-                    <Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
-                    <Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
+                    <Buttons.Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
+                    <Buttons.Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
+                    <Buttons.Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
+                    <Buttons.Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
                 </div>
             </div>
         )

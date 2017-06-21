@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { translate } from 'react-i18next';
 import style from './style.styl';
-import GoBackButton from '../go-back-button';
+
+import {Buttons} from 'butter-base-components';
 
 export default ({t, action, ...props}) => (
     <div id="action-bar" className={style['action-bar']}>
-        <GoBackButton t={t} action={action.goBack} title="Settings"/>
+        <Buttons.GoBackButton t={t} action={action.goBack} title="Settings"/>
         <div className={style['buttons']}>
             <li>
                 <i data-toggle="tooltip" data-placement="left" title={t('Keyboard Shortcuts')} className="material-icons">keyboard</i>
