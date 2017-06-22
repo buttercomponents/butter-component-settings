@@ -1,6 +1,8 @@
 react-hot-boilerplate
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/buttercomponents/butter-component-settings.svg)](https://greenkeeper.io/)
+
 The minimal dev environment to enable live-editing React components.
 
 ### Usage
