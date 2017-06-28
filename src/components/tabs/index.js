@@ -61,6 +61,14 @@ export default class ButterTabs extends Component {
             showAdvanced: props.showAdvanced || false,
             showModal: false
         }
+
+        //Advanced settings button
+        props.navbar.toolbar.buttons.push({
+            title:"Advanced settings",
+            icon:"filter_list",
+            toogle: true,
+            action: this.toggleAdvanced.bind(this)
+        });
     }
 
     toggleAdvanced () {
@@ -72,32 +80,7 @@ export default class ButterTabs extends Component {
     }
 
     render () {
-        let {props, state, toggleAdvanced} = this
-        let navbar =  {
-            title: "Settings",
-            goBack: console.log.bind(console, "GO BACK pressed"),
-            toolbar: {
-                search: false,
-                buttons: [
-                    {
-                        title:"Shortcuts",
-                        icon:"keyboard",
-                        action: () => false
-                    },
-                    {
-                        title:"About",
-                        icon:"help_outline",
-                        action: () => false
-                    },
-                    {
-                        title:"Advanced settings",
-                        icon:"filter_list",
-                        toogle: true,
-                        action: toggleAdvanced.bind(this)
-                    }
-                ]
-            }
-        }
+        let {props, state} = this
 
         return (
             <div>
@@ -112,7 +95,7 @@ export default class ButterTabs extends Component {
                     </Modal>
                 </CSSTransitionGroup>
 
-                <Navbar {...navbar}/>
+                <Navbar {...props.navbar}/>
 
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
