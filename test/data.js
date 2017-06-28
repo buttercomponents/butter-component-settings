@@ -221,9 +221,6 @@ var Settings = new Object({
 })
 
 export default {
-    "action": {
-        goBack: console.log.bind(console, "GO BACK pressed")
-    },
     "tabs": [{
         title: "General",
         id: "general",
