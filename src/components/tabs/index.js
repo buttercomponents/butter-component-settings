@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import Tabs from 'react-simpletabs';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
 import { translate } from 'react-i18next';
-import style from './style.styl';
-
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import Action from '../action';
-
 import Row from '../row';
-import ActionBar from '../action-bar';
-
-import {Buttons, Modal} from 'butter-base-components';
+import Tabs from 'react-simpletabs';
+import {Buttons, Modal, Navbar} from 'butter-base-components';
+import style from './style.styl';
 
 //Test themes
 function toggle(){
@@ -53,14 +49,6 @@ let TabPanel = ({id, active, sections, title, ...props}) => (
     </div>
 )
 
-let NavBar = ({toggleAdvanced, selected, tabs, ...props}) => (
-    <div className={style.navbar}>
-        <ActionBar {...props} />
-        <br/>
-
-    </div>
-)
-
 let ModalContent = ({...props}) => (
     <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
 )
@@ -73,6 +61,14 @@ export default class ButterTabs extends Component {
             showAdvanced: props.showAdvanced || false,
             showModal: false
         }
+
+        //Advanced settings button
+        props.navbar.toolbar.buttons.push({
+            title:"Advanced settings",
+            icon:"filter_list",
+            toogle: true,
+            action: this.toggleAdvanced.bind(this)
+        });
     }
 
     toggleAdvanced () {
@@ -85,6 +81,7 @@ export default class ButterTabs extends Component {
 
     render () {
         let {props, state} = this
+
         return (
             <div>
                 <CSSTransitionGroup
@@ -97,10 +94,9 @@ export default class ButterTabs extends Component {
                         <ModalContent/>
                     </Modal>
                 </CSSTransitionGroup>
-                <NavBar {...props} selected={state.selected} action={{
-                    toggleAdvanced: this.toggleAdvanced.bind(this),
-                    goBack: props.action.goBack
-                }}/>
+
+                <Navbar {...props.navbar}/>
+
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []

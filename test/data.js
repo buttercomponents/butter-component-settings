@@ -221,8 +221,24 @@ var Settings = new Object({
 })
 
 export default {
-    "action": {
-        goBack: console.log.bind(console, "GO BACK pressed")
+    "navbar": {
+        title: "Settings",
+        goBack: console.log.bind(console, "GO BACK pressed"),
+        toolbar: {
+            search: false,
+            buttons: [
+                {
+                    title:"Shortcuts",
+                    icon:"keyboard",
+                    action: () => false
+                },
+                {
+                    title:"About",
+                    icon:"help_outline",
+                    action: () => false
+                }
+            ]
+        }
     },
     "tabs": [{
         title: "General",

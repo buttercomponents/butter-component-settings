@@ -1,4 +1,4 @@
-.navbar
+ .navbar
     background-color: var(--Navbar-bg)
     box-shadow: var(--Navbar-shadow)
     height: (--Navbar-height)
@@ -18,7 +18,7 @@
     padding: 0px
     box-shadow: var(--Tabs-shadow)
     text-align center
-    background: var(--Navbar-bg) //var(--Tabs-bg)
+    background: var(--Tabs-bg)
     display: flex
     align-items: center
     justify-content: center
@@ -26,7 +26,6 @@
 
     li
         display: inline-block
-        padding: 0
         margin: 0 10px
 
         a
@@ -34,17 +33,14 @@
           color: inherit
           text-align: center
           vertical-align: middle
-          font-family: var(--Font-title)
+          font-family: var(--Font-family)
+          font-size: var(--Tab-font-size)
           font-weight: bold
-          font-size: 18px
-          height: 18px
-          line-height: 18px
           padding: var(--Tab-padding) 0
           margin: 0
           cursor: pointer
           display: block
           opacity: 0.4
-          text-decoration: none
           text-transform: uppercase
 
           &:hover
