@@ -1,0 +1,11 @@
+dist: trusty
+
+language: node_js
+node_js:
+- '4'
+
+after_success:
+  /bin/bash -c "cd /build && npm i && npm build"
+notifications:
+  email: false
+  irc: chat.freenode.net#butterdev
