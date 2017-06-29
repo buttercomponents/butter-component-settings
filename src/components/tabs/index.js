@@ -47,7 +47,7 @@ let ModalContent = ({...props}) => (
     <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
 )
 
-let Footbar = ({...props}) => (
+let Footer = ({...props}) => (
     <div className={style.footbar}>
         { props.buttons && props.buttons.map(
             (i, k) => (<Buttons.Button type="secondary" key={k} {...i}/>)
@@ -115,7 +115,7 @@ export default class ButterTabs extends Component {
                          </Tabs.Panel>
                      })}
                 </Tabs>
-                { props.footbar && <Footbar {...props.footbar}/> }
+                { props.footer && <Footer {...props.footer}/> }
             </div>
         )
     }

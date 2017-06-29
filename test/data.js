@@ -247,17 +247,17 @@ export default {
             ]
         }
     },
-    "footbar": {
+    "footer": {
         buttons: [
             {
                 title: i18n.__('Flush all databases'),
                 icon: "delete_forever",
-                apply: () => console.log("Flushed!")
+                apply: () => console.log("Database: Flushed!")
             },
             {
                 title: i18n.__('Flush all cache'),
                 icon: "delete_forever",
-                apply: () => console.log("Flushed!")
+                apply: () => console.log("Cache: Flushed!")
             },
             {
                 title: i18n.__('Toggle theme'),
