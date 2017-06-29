@@ -4,8 +4,10 @@ language: node_js
 node_js:
 - '4'
 
+cache: yarn
+
 after_success:
-  /bin/bash -c "cd /build && npm i && npm build"
+  /bin/bash -c "cd /build && yarn install && yarn build"
 notifications:
   email: false
   irc: chat.freenode.net#butterdev
