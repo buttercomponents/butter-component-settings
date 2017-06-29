@@ -4,6 +4,13 @@ var QRCode = require('butter-component-qrcode').default;
 //Modal content test
 var ModalContent = require('./modal_content_test.js').default;
 
+//Test themes
+function toggleTheme(){
+    const root = document.documentElement;
+    root.className = (root.className === 'butter-theme-dark') ? 'butter-theme-pink' : 'butter-theme-dark';
+}
+
+
 function arrayToi18nHash(a) {
     return a.reduce((a, c) => {
         a[c] = c;
@@ -228,17 +235,41 @@ export default {
             search: false,
             buttons: [
                 {
-                    title:"Shortcuts",
-                    icon:"keyboard",
+                    title: i18n.__('Shortcuts'),
+                    icon: "keyboard",
                     action: () => false
                 },
                 {
-                    title:"About",
-                    icon:"help_outline",
+                    title: i18n.__('About'),
+                    icon: "help_outline",
                     action: () => false
                 }
             ]
         }
+    },
+    "footbar": {
+        buttons: [
+            {
+                title: i18n.__('Flush all databases'),
+                icon: "delete_forever",
+                apply: () => console.log("Flushed!")
+            },
+            {
+                title: i18n.__('Flush all cache'),
+                icon: "delete_forever",
+                apply: () => console.log("Flushed!")
+            },
+            {
+                title: i18n.__('Toggle theme'),
+                icon: "format_paint",
+                apply: toggleTheme
+            },
+            {
+                title: i18n.__('Reset to default Settings'),
+                icon: "restore",
+                apply: () => console.log("Default settings!")
+            },
+        ]
     },
     "tabs": [{
         title: "General",
@@ -378,7 +409,7 @@ export default {
                 type: ActionTypes.DROPDOWN,
                 options: arrayToi18nHash(["dark", "pink"]),
                 apply: (theme) =>
-                    (document.getElementById('root').className = `theme-${theme}`)
+                    (document.documentElement.className = `butter-theme-${theme}`)
             }
         }, {
             icon: "location_on",
