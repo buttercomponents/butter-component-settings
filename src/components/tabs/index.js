@@ -48,7 +48,7 @@ let ModalContent = ({...props}) => (
 )
 
 let Footer = ({...props}) => (
-    <div className={style.footbar}>
+    <div className={style.footer}>
         { props.buttons && props.buttons.map(
             (i, k) => (<Buttons.Button type="secondary" key={k} {...i}/>)
         )}
