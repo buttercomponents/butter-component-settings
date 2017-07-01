@@ -7,12 +7,6 @@ import Tabs from 'react-simpletabs';
 import {Buttons, Modal, Navbar} from 'butter-base-components';
 import style from './style.styl';
 
-//Test themes
-function toggle(){
-    const root = document.getElementById('root');
-    root.className = (root.className === 'theme-dark') ? 'theme-pink' : 'theme-dark';
-}
-
 let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
     <section className={style["tab-section"]} id={id}>
         {title?<div className={style.title}>{title}</div>:null}
@@ -51,6 +45,14 @@ let TabPanel = ({id, active, sections, title, ...props}) => (
 
 let ModalContent = ({...props}) => (
     <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif"/>
+)
+
+let Footer = ({...props}) => (
+    <div className={style.footer}>
+        { props.buttons && props.buttons.map(
+            (i, k) => (<Buttons.Button type="secondary" key={k} {...i}/>)
+        )}
+    </div>
 )
 
 export default class ButterTabs extends Component {
@@ -94,9 +96,7 @@ export default class ButterTabs extends Component {
                         <ModalContent/>
                     </Modal>
                 </CSSTransitionGroup>
-
                 <Navbar {...props.navbar}/>
-
                 <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
@@ -115,12 +115,7 @@ export default class ButterTabs extends Component {
                          </Tabs.Panel>
                      })}
                 </Tabs>
-                <div className={style['buttons-content']}>
-                    <Buttons.Button type="secondary" icon="delete_forever" title={props.t('Flush all databases')}/>
-                    <Buttons.Button type="secondary" icon="format_paint" title={props.t('Toggle theme')} apply={toggle}/>
-                    <Buttons.Button type="secondary" icon="restore" title={props.t('Open modal')} apply={this.toggleModal.bind(this)}/>
-                    <Buttons.Button type="secondary" icon="restore" title={props.t('Reset to Default Settings')}/>
-                </div>
+                { props.footer && <Footer {...props.footer}/> }
             </div>
         )
     }
