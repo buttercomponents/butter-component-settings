@@ -35,14 +35,14 @@
     "react": "15.x.x - 16.x.x"
   },
   "devDependencies": {
-    "butter-component-builder": "buttercomponents/butter-component-builder"
+    "butter-component-builder": "git@github.com:buttercomponents/butter-component-builder"
   },
   "dependencies": {
-    "butter-action-types": "buttercomponents/butter-action-types",
-    "butter-base-components": "github:buttercomponents/butter-base-components",
-    "butter-component-qrcode": "buttercomponents/butter-component-qrcode",
+    "butter-action-types": "git@github.com:buttercomponents/butter-action-types",
+    "butter-base-components": "git@github.com:buttercomponents/butter-base-components",
+    "butter-component-qrcode": "git@github.com:buttercomponents/butter-component-qrcode",
     "react-i18next": "^3.1.0",
-    "react-simpletabs": "^0.7.0",
+    "react-simpletabs": "git@github.com:pedronauck/react-simpletabs",
     "react-transition-group": "^1.1.2"
   }
 }
