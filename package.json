@@ -39,7 +39,7 @@
     "butter-base-components": "github:buttercomponents/butter-base-components",
     "butter-component-qrcode": "buttercomponents/butter-component-qrcode",
     "react-i18next": "^3.1.0",
-    "react-simpletabs": "buttercomponents/react-simpletabs",
+    "react-simpletabs": "^0.7.0",
     "react-transition-group": "^1.1.2"
   }
 }
