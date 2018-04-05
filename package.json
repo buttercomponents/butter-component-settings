@@ -42,7 +42,7 @@
     "butter-base-components": "buttercomponents/butter-base-components",
     "butter-component-qrcode": "buttercomponents/butter-component-qrcode",
     "react-i18next": "^3.1.0",
-    "react-simpletabs": "pedronauck/react-simpletabs",
+    "react-tabs": "^2.2.1",
     "react-transition-group": "^1.1.2"
   }
 }

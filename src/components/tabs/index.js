@@ -3,7 +3,7 @@ import { translate } from 'react-i18next';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import Action from '../action';
 import Row from '../row';
-import Tabs from 'react-simpletabs';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {Buttons, Modal, Navbar} from 'butter-base-components';
 import style from './style.styl';
 
@@ -27,19 +27,19 @@ let TabSection = ({t, id, title, items, settings, showAdvanced}) => (
                  return (
                      <Row key={i} action={actionElement} {...rest}/>
                  )
-             })}
+            })}
         </CSSTransitionGroup>
     </section>
 )
 
-let TabPanel = ({id, active, sections, title, ...props}) => (
+let ButterTabPanel = ({id, active, sections, title, ...props}) => (
     <div id={id}>
         {sections.map((s, i) => {
              let show = s.showIf?s.showIf():true
              console.error(s.title, show)
              if (!show) return null
              return <TabSection key={i} {...props} {...s} />
-         })}
+        })}
     </div>
 )
 
@@ -97,7 +97,17 @@ export default class ButterTabs extends Component {
                     </Modal>
                 </CSSTransitionGroup>
                 <Navbar {...props.navbar}/>
-                <Tabs id="tabPanels" tabActive={state.selected} className={style['tabs-content']}>
+                <Tabs id="tabPanels"
+                      selectedIndex={state.selected}
+                      onSelect={(s) => {this.setState({selected: s})}}
+                      className={style['tabs-content']}>
+                    <TabList>
+                        {
+                            props.tabs.map((t, i) => (
+                                <Tab key={i}>{t.id}</Tab>
+                            ))
+                        }
+                    </TabList>
                     {props.tabs.map((t, i) => {
                          t.sections = t.sections || []
                          if (t.items) {
@@ -107,13 +117,13 @@ export default class ButterTabs extends Component {
                              })
                              delete (t.items)
                          }
-                         return <Tabs.Panel title={t.id} key={i}>
-                             <TabPanel  t={props.t}
-                                        showAdvanced={state.showAdvanced}
-                                        settings={props.settings}
-                                        {...t} />
-                         </Tabs.Panel>
-                     })}
+                         return <TabPanel title={t.id} key={i}>
+                             <ButterTabPanel  t={props.t}
+                                              showAdvanced={state.showAdvanced}
+                                              settings={props.settings}
+                                              {...t} />
+                         </TabPanel>
+                    })}
                 </Tabs>
                 { props.footer && <Footer {...props.footer}/> }
             </div>
