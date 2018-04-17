@@ -67,9 +67,11 @@ let I18nSettings = translate(['settings'], {wait: true, withRef: true})(Settings
 
 let Test = (props) => (
     <HashRouter>
-        <Window>
-            <Settings {...props}/>
-        </Window>
+        <Route render={(routerProps) => (
+            <Window>
+                <Settings {...props} {...routerProps}/>
+            </Window>
+        )} />
     </HashRouter>)
 
 let I18nTest = translate(['settings'], {wait: true, withRef: true})(Test)
