@@ -1,3 +1,3 @@
-import Settings from './src'
+import {I18nSettings} from './src'
 
-export {Settings as default}
+export {I18nSettings as default}

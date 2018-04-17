@@ -13,8 +13,9 @@ export default class Action extends Component {
     render() {
         let {type, id, t, ...props} = this.props
         let value = props.settings.get(id) || props.default
+
         return (
-            (type === ActionTypes.BUTTON)?(<Buttons.ActionButton title={t(props.title)} {...props} />):
+            (type === ActionTypes.BUTTON)?(<Buttons.Button title={t(props.title)} {...props} />):
             (type === ActionTypes.TEXT)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
             (type === ActionTypes.NUMBER)?(<input type="text" defaultValue={value} onChange={this.apply}/>):
             (type === ActionTypes.LABEL)?(<span>{t(props.title)}</span>):

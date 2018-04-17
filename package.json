@@ -2,13 +2,13 @@
   "name": "butter-component-settings",
   "version": "0.2.0",
   "description": "A Butter Component to show and set the settings ",
-  "main": "dist/bundle.js",
+  "main": "dist/",
   "scripts": {
     "prepublish": "npm run build",
-    "install": "PATH=$PATH:../.bin webpack --config ../butter-component-builder/webpack/webpack.prod.config.js --progress --profile --colors",
-    "build": "PATH=$PATH:../.bin webpack --config node_modules/butter-component-builder/webpack/webpack.prod.config.js --progress --profile --colors",
-    "start": "node node_modules/butter-component-builder/server/server.js",
-    "lint": "eslint src"
+    "install": "PATH=$PATH:../.bin bcb-run install",
+    "build": "bcb-run build",
+    "start": "bcb-run start",
+    "lint": "bcb-run lint"
   },
   "repository": {
     "type": "git",
@@ -35,14 +35,14 @@
     "react": "15.x.x - 16.x.x"
   },
   "devDependencies": {
-    "butter-component-builder": "buttercomponents/butter-component-builder"
+    "butter-component-builder": "buttercomponents/butter-component-builder",
+    "butter-component-qrcode": "^0.0.1"
   },
   "dependencies": {
     "butter-action-types": "buttercomponents/butter-action-types",
     "butter-base-components": "buttercomponents/butter-base-components",
-    "butter-component-qrcode": "buttercomponents/butter-component-qrcode",
+    "butter-component-menu": "buttercomponents/butter-component-menu",
     "react-i18next": "^3.1.0",
-    "react-tabs": "^2.2.1",
     "react-transition-group": "^1.1.2"
   }
 }
