@@ -63,7 +63,7 @@ Settings.propTypes = {
     tabs: PropTypes.array.isRequired
 }
 
-let I18nSettings = translate(['settings'], {wait: true, withRef: true})(Settings)
+let I18nSettings = translate(['settings'])(Settings)
 
 let Test = (props) => (
     <HashRouter>
@@ -74,6 +74,6 @@ let Test = (props) => (
         )} />
     </HashRouter>)
 
-let I18nTest = translate(['settings'], {wait: true, withRef: true})(Test)
+let I18nTest = translate(['settings'])(Test)
 
 export {I18nTest as default, I18nSettings, Settings}
