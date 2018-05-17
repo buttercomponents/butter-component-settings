@@ -230,7 +230,10 @@ var Settings = new Object({
 export default {
     "navbar": {
         title: "Settings",
-        goBack: console.log.bind(console, "GO BACK pressed"),
+        goBack: {
+            action: console.log.bind(console, "GO BACK pressed"),
+            title: 'Go Back'
+        },
         toolbar: {
             search: false,
             buttons: [
