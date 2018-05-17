@@ -29,7 +29,8 @@ const Toolbar = ({showAdvancedSettings, ...settings}) => (
     <ul>
         <li onClick={() => settings.set('showAdvancedSettings', !!showAdvancedSettings)}>
             <i className='material-icons' style={{
-                color: showAdvancedSettings?'white':'red'
+                color: showAdvancedSettings?'white':'red',
+                padding: '2vw'
             }}>
                 filter_list
             </i>
