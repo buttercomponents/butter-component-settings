@@ -25,15 +25,27 @@ const relativePath = (location, path) => {
     return `${basepath}/${path}`
 }
 
+const Toolbar = ({showAdvancedSettings, ...settings}) => (
+    <ul>
+        <li onClick={() => settings.set('showAdvancedSettings', !!showAdvancedSettings)}>
+            <i className='material-icons' style={{
+                color: showAdvancedSettings?'white':'red'
+            }}>
+                filter_list
+            </i>
+        </li>
+    </ul>
+)
+
 const Settings = ({navbar, footer, settings, location, tabs, t, ...props}) => (
     <div className={style['settings']}>
         <Alert message={t('Saved')}/>
-        <Navbar  left={<RouterMenu items={tabs.map((c) => ({
-                path: relativePath(location, c.title),
-                ...c
-        }))} {...props}/>}
-                 {...navbar}
-        />
+        <Navbar {...navbar} right={<Toolbar {...settings}/>}>
+            <RouterMenu items={tabs.map((c) => ({
+                    path: relativePath(location, c.title),
+                    ...c
+            }))} {...props}/>
+        </Navbar>
         <Switch>
             {tabs.map((tab, i) => {
                  tab.sections = tab.sections || []
