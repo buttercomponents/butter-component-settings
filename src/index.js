@@ -10,9 +10,9 @@ import {RouterMenu} from 'butter-component-menu';
 import style from './styl/style.styl';
 import TabPanel from './components/tabs';
 
-let CloseButton = (props) => (props)
+const CloseButton = (props) => (props)
 
-let Footer = ({buttons}) => (
+const Footer = ({buttons}) => (
     <div className={style.footer}>
         { buttons && buttons.map(
               (i, k) => (<Buttons.Button type="secondary" key={k} {...i}/>)
@@ -20,12 +20,12 @@ let Footer = ({buttons}) => (
     </div>
 )
 
-let relativePath = (location, path) => {
-    let basepath = location.pathname.split('/').slice(0, -1).join('/')
+const relativePath = (location, path) => {
+    const basepath = location.pathname.split('/').slice(0, -1).join('/')
     return `${basepath}/${path}`
 }
 
-let Settings = ({navbar, footer, settings, location, tabs, t, ...props}) => (
+const Settings = ({navbar, footer, settings, location, tabs, t, ...props}) => (
     <div className={style['settings']}>
         <Alert message={t('Saved')}/>
         <Navbar  left={<RouterMenu items={tabs.map((c) => ({
@@ -63,9 +63,9 @@ Settings.propTypes = {
     tabs: PropTypes.array.isRequired
 }
 
-let I18nSettings = translate(['settings'])(Settings)
+const I18nSettings = translate(['settings'])(Settings)
 
-let Test = (props) => (
+const Test = (props) => (
     <HashRouter>
         <Route render={(routerProps) => (
             <Window>
@@ -74,6 +74,6 @@ let Test = (props) => (
         )} />
     </HashRouter>)
 
-let I18nTest = translate(['settings'])(Test)
+const I18nTest = translate(['settings'])(Test)
 
 export {I18nTest as default, I18nSettings, Settings}
