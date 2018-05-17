@@ -35,7 +35,6 @@ let ButterTabPanel = ({id, active, sections, title, ...props}) => (
     <div id={id} role='tabpanel'>
         {sections.map((s, i) => {
              let show = s.showIf?s.showIf():true
-             console.error(s.title, show)
              if (!show) return null
              return <TabSection key={i} {...props} {...s} />
         })}
