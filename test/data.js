@@ -34,8 +34,8 @@ var App = {
     }
 }
 var Settings = new Object({
-    set: function () {console.log(arguments)},
-    get: function () {return this[arguments[0]]},
+    set: function (key, value) {this[key] = value; console.log(key, value)},
+    get: function (key) {return this[key]},
     "projectName": "Butter",
     "projectUrl": "http://butterproject.org",
     "projectTwitter": "butterproject",
