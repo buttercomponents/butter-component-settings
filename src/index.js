@@ -27,7 +27,7 @@ const relativePath = (location, path) => {
 
 const Toolbar = ({showAdvancedSettings, ...settings}) => (
     <ul>
-        <li onClick={() => settings.set('showAdvancedSettings', !!showAdvancedSettings)}>
+        <li onClick={() => settings.set('showAdvancedSettings', !!!showAdvancedSettings)}>
             <i className='material-icons' style={{
                 color: showAdvancedSettings?'white':'red',
                 padding: '2vw'
@@ -59,7 +59,7 @@ const Settings = ({navbar, footer, settings, location, tabs, t, ...props}) => (
                  }
                  return (
                      <Route path={`/settings/${tab.title}`} key={tab.title} render={() => (
-                         <TabPanel  t={t} showAdvanced={props.showAdvanced}
+                         <TabPanel  t={t} showAdvanced={settings.showAdvanced}
                                       settings={settings}
                                       {...tab} />
                      )}/>
